@@ -1,0 +1,28 @@
+<style>
+.container {
+  max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+.tag-btn {
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+</style>
