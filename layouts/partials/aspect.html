@@ -1,0 +1,9 @@
+<section class="topic">
+  <h3>{{ .context.Title }}</h3>
+  <div>{{ .context.Content }}</div>
+  <ul>
+  	{{ range where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
+			{{ partial "link.html" . }}
+		{{ end }}
+  </ul>
+</section>

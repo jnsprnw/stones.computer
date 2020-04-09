@@ -1,0 +1,165 @@
+@import "./global";
+
+::-moz-selection {
+  color: $color-white;
+  background-color: $color-accent;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-accent;
+}
+
+.logo {
+	font-weight: $font-weight-bold;
+	line-height: 1.1;
+	margin-bottom: $spacing / 2;
+  display: inline-block;
+  position: relative;
+  margin-left: 2.8rem;
+
+  i {
+    line-height: 1.37;
+    font-size: 1.7rem;
+    width: 2.4rem;
+    display: inline-block;
+    color: $color-accent;
+    position: relative;
+    margin-right: 0.4em;
+    left: -3.2rem;
+    position: absolute;
+  }
+
+  @include query($medium) {
+    margin-left: 0;
+  }
+}
+
+.icon {
+  font-size: 0.8em;
+  color: $color-white;
+  transition: color $transition;
+  position: absolute;
+}
+
+h2 {
+  margin-top: 4em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.2em;
+  font-weight: $font-weight-bold;
+  position: relative;
+  transition: border-bottom-color $transition;
+
+  i {
+    left: -1.9rem;
+  }
+}
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: $font-weight-bold;
+  line-height: 1.3;
+  position: relative;
+
+  i {
+    left: -1.6rem;
+    line-height: 2;
+  }
+}
+
+h2, h3 {
+  &:hover, &:focus {
+    i {
+      color: $color-mute;
+    }
+  }
+}
+
+.job-title {
+  font-weight: $font-weight-bold;
+  display: block;
+}
+
+a {
+	color: $color-default;
+	text-decoration-color: rgba($color-accent, 0.5);
+	transition: text-decoration-color $transition;
+
+  &[href^="#"], &[rel="self"] {
+    text-decoration: none;
+    text-decoration-color: $color-white;
+  }
+
+	&:hover, &:focus {
+    &:not(.headline) {
+      text-decoration: underline;
+      text-decoration-color: $color-accent;
+    }
+
+    &.headline > * {
+      border-bottom-color: $color-accent;
+    }
+	}
+}
+
+p {
+	@include query($medium) {
+    margin: $spacing 0;
+    font-size: 1.1rem;
+    line-height: 1.35;
+	}
+
+	@include query($wide) {
+    margin: $spacing 0;
+    line-height: 1.4;
+    width: 66%;
+	}
+}
+
+.homepage-content .note {
+	display: block;
+	margin: $spacing / 2 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0.2em $spacing 0.2em 1.6em;
+    position: relative;
+    line-height: 1.5em;
+    display: block;
+
+    &:before {
+      content: "—";
+      color: $color-accent;
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+    	color: $color-default;
+    	text-decoration-color: $color-white;
+    	transition: text-decoration-color $transition;
+
+    	&:hover, &:focus {
+    		text-decoration: underline;
+    		text-decoration-color: $color-accent;
+    	}
+    }
+  }
+}
+
+.mute {
+  color: rgb(200, 200, 200);
+}
+
+small, .page-footer span {
+  font-size: 0.80rem;
+  display: inline-block;
+  line-height: 1.4rem;
+}

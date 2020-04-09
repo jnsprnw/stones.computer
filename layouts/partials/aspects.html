@@ -1,0 +1,4 @@
+{{ $pages := .context.Site.RegularPages }}
+{{ range where .context.Site.RegularPages "Section" "aspects" }}
+	{{ partial "aspect.html" (dict "context" . "pages" $pages) }}
+{{ end }}

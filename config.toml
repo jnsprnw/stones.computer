@@ -1,30 +1,6 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-
-[permalinks]
-  posts = "/:filename/"
+baseURL = "https://stones.computer"
+languageCode = "en-gb"
+title = "Steine, die rechnen"
 
 [params]
-	dateFormat = "Jan 2, 2006"
-  homeText = "You just made a Hugo blog from scratch."
-
-[taxonomies]
-  tag = "tags"
-
-[menu]
-  [[menu.main]]
-    name = "Home"
-    pre = "home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Posts"
-    pre = "edit"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
-    weight = 3
+  description = "Materialität im Post-Digitalen"

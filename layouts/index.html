@@ -1,8 +1,24 @@
 {{ define "main" }}
 
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1>{{ .Site.Title }}</h1>
-  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
-</div>
+  <main aria-role="main" class="container">
+    <header class="homepage-header">
+      <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo">{{ .Title }}</h1></a>
+    </header>
+    <section class="homepage-intro">
+      {{ .Content }}
+    </section>
+    <section class="homepage-topics">
+      <h2>Topics</h2>
+      {{ partial "topics.html" (dict "context" .) }}
+    </section>
+    <section class="homepage-aspects">
+      <h2>Aspects</h2>
+      {{ partial "aspects.html" (dict "context" .) }}
+    </section>
+    <section class="homepage-projects">
+      <h2>Projects</h2>
+      {{ partial "projects.html" . }}
+    </section>
+  </main>
 
 {{ end }}

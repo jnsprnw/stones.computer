@@ -1,0 +1,3 @@
+{{ range where .context.Site.RegularPages "Section" "topics" }}
+	{{ partial "topic.html" . }}
+{{ end }}

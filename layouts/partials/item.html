@@ -1,0 +1,16 @@
+<ul aria-labelledby="{{ .id }}">
+{{ range .context }}
+	<li>
+		{{- if reflect.IsSlice (index . 0) -}}
+			{{/* Multiple links (Links with something in parentheses afterwards) */}}
+			{{ range first 1 . }}
+				{{ partial "element.html" . }}
+			{{ end }}
+			({{- range $index, $element := after 1 . -}}{{ cond (gt $index 0) ", " "" }}{{- partial "element.html" $element -}}{{- end -}})
+		{{- else -}}
+			{{/* Single links */}}
+			{{- partial "element.html" . -}}
+		{{- end -}}
+	</li>
+{{ end }}
+</ul>

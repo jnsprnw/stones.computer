@@ -1,0 +1,84 @@
+@import "./global";
+
+body {
+  margin: $spacing 0;
+
+  @include query($narrow) {
+		margin: $spacing * 2 0;
+	}
+
+	@include query($medium) {
+		margin: $spacing * 3 0;
+	}
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 $spacing / 2;
+
+  @include query($narrow) {
+		padding: 0 $spacing;
+	}
+
+  @include query($medium) {
+		padding: 0 $spacing * 2;
+	}
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.wrap {
+  	.list {
+		  width: 100%;
+
+		  @include query($narrow) {
+				width: 49%;
+			}
+
+			@include query($wide) {
+				width: 33%;
+			}
+		}
+
+		&.professional .list {
+			&:last-child {
+				width: 100%;
+
+				ul {
+					@include query($narrow) {
+						column-count: 2;
+					}
+
+					@include query($wide) {
+						column-count: 3;
+					}
+				}
+			}
+		}
+  }
+
+	&.columns {
+		.list {
+			width: 100%;
+		}
+
+		ul {
+		  column-count: 1;
+
+		  @include query($narrow) {
+				column-count: 2;
+			}
+
+			@include query($wide) {
+				column-count: 3;
+			}
+		}
+	}
+}
+
+.page-footer {
+	margin-top: $spacing * 2;
+}

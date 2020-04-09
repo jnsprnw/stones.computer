@@ -1,12 +1,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {{ $css := "css/bootstrap.min.css" | absURL }}
-  <link rel="stylesheet" href="{{ $css }}">
-	{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
-  {{ $title := print .Title " | " .Site.Title }}
-  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-  <title>{{ $title }}</title>
-  {{ partial "style.html" . }}
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="robots" content="index,follow">
+
+  <meta name="ICBM" content="52.518611, 13.408333">
+  <meta name="geo.position" content="52.518611;13.408333">
+  <meta name="geo.region" content="DE">
+  <meta name="geo.placename" content="Berlin">
+
+  <meta name="telegram:channel" content="@{{ .Site.Params.telegram }}">
+
+  <link rel="me" href="https://jonasparnow.com" type="text/html">
+  <link rel="me" href="mailto:jonas-at-datavis.berlin">
+
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:image" content="{{ "preview-fb.png" | absURL }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@{{ .Site.Params.author }}">
+  <meta name="twitter:url" content="{{ .Site.BaseURL }}">
+  <meta name="twitter:title" content="{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ "preview-tw.png" | absURL }}">
+
+  <link rel="icon" sizes="196x196" href="favicon-196x196.png">
+  <link rel="apple-touch-icon" href="favicon-196x196.png">
+  <link rel="mask-icon" href="favicon.svg" color="#ff4626">
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:500,700&display=swap" rel="stylesheet">
+  {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 </head>
