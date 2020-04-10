@@ -26,6 +26,26 @@ body {
 	}
 }
 
+.aspect {
+	border-top: 2px solid $color-default;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	&:last-child {
+		border-bottom: 2px solid $color-default;
+	}
+
+	.images {
+		justify-self: center;
+		align-self: center;
+	}
+}
+
+.topics {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
 .category {
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  <main aria-role="main" class="container">
+  <main aria-role="main">
     <header class="homepage-header">
       <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo">{{ .Title }}</h1></a>
     </header>
@@ -9,7 +9,9 @@
     </section>
     <section class="homepage-topics">
       <h2>Topics</h2>
-      {{ partial "topics.html" (dict "context" .) }}
+      <div class="topics">
+        {{ partial "topics.html" (dict "context" .) }}
+      </div>
     </section>
     <section class="homepage-aspects">
       <h2>Aspects</h2>

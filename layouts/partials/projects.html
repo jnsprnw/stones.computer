@@ -1,7 +1,7 @@
 <section class="projects">
-  <ul>
+  <table>
   	{{ range where .Site.RegularPages "Section" "projects" }}
-			{{ partial "link.html" . }}
+			{{ partial "row.html" . }}
 		{{ end }}
-  </ul>
+  </table>
 </section>
