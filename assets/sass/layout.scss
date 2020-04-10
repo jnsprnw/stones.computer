@@ -26,6 +26,11 @@ body {
 	}
 }
 
+.wrapper {
+	padding-left: $spacing;
+	padding-right: $spacing;
+}
+
 .aspect {
 	border-top: 2px solid $color-default;
 	display: grid;
@@ -33,6 +38,10 @@ body {
 
 	&:last-child {
 		border-bottom: 2px solid $color-default;
+	}
+
+	.content {
+		padding: $spacing;
 	}
 
 	.images {

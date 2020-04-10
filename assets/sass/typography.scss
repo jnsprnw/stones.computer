@@ -2,12 +2,12 @@
 
 ::-moz-selection {
   color: $color-white;
-  background-color: $color-accent;
+  background-color: $color-accent-dark;
 }
 
 ::selection {
   color: $color-white;
-  background-color: $color-accent;
+  background-color: $color-accent-dark;
 }
 
 .logo {
@@ -18,18 +18,17 @@
   font-size: 4rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headline;
+}
+
 h2 {
-  margin-top: 4em;
-  margin-bottom: 0;
-  border-bottom: 2px solid $color-default;
+  margin: $spacing * 2 0 $spacing / 2 $spacing;
   line-height: 1.2em;
   font-weight: $font-weight-bold;
-  position: relative;
-  transition: border-bottom-color $transition;
-
-  i {
-    left: -1.9rem;
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  font-size: 0.9rem;
 }
 
 h3 {
@@ -60,7 +59,7 @@ h2, h3 {
 
 a {
 	color: $color-default;
-	text-decoration-color: rgba($color-accent, 0.5);
+	text-decoration-color: rgba($color-accent-dark, 0.5);
 	transition: text-decoration-color $transition;
 
   &[href^="#"], &[rel="self"] {
@@ -71,7 +70,7 @@ a {
 	&:hover, &:focus {
     &:not(.headline) {
       text-decoration: underline;
-      text-decoration-color: $color-accent;
+      text-decoration-color: $color-accent-dark;
     }
 
     &.headline > * {
@@ -83,7 +82,7 @@ a {
 p {
 	@include query($medium) {
     margin: $spacing 0;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.35;
 	}
 
@@ -111,7 +110,7 @@ ul {
 
     &:before {
       content: "—";
-      color: $color-accent;
+      color: $color-accent-dark;
       position: absolute;
       left: 0;
     }

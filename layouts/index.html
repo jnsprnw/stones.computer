@@ -1,15 +1,15 @@
 {{ define "main" }}
 
   <main aria-role="main">
-    <header class="homepage-header">
+    <header class="homepage-header wrapper">
       <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo">{{ .Title }}</h1></a>
     </header>
-    <section class="homepage-intro">
+    <section class="homepage-intro wrapper">
       {{ .Content }}
     </section>
     <section class="homepage-topics">
       <h2>Topics</h2>
-      <div class="topics">
+      <div class="topics wrapper">
         {{ partial "topics.html" (dict "context" .) }}
       </div>
     </section>
