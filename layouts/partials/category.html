@@ -1,7 +1,0 @@
-<section class="list">
-	{{ range $title, $items := . }}
-		{{ $id := $title | urlize | lower }}
-		{{ partial "subheadline.html" (dict "id" $id "title" $title) }}
-		{{ partial "item.html" (dict "context" $items "id" $id) }}
-	{{ end }}
-</section>

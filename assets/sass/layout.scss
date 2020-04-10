@@ -53,59 +53,7 @@ body {
 .topics {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-}
-
-.category {
-  display: flex;
-  flex-wrap: wrap;
-
-  &.wrap {
-  	.list {
-		  width: 100%;
-
-		  @include query($narrow) {
-				width: 49%;
-			}
-
-			@include query($wide) {
-				width: 33%;
-			}
-		}
-
-		&.professional .list {
-			&:last-child {
-				width: 100%;
-
-				ul {
-					@include query($narrow) {
-						column-count: 2;
-					}
-
-					@include query($wide) {
-						column-count: 3;
-					}
-				}
-			}
-		}
-  }
-
-	&.columns {
-		.list {
-			width: 100%;
-		}
-
-		ul {
-		  column-count: 1;
-
-		  @include query($narrow) {
-				column-count: 2;
-			}
-
-			@include query($wide) {
-				column-count: 3;
-			}
-		}
-	}
+	grid-column-gap: $spacing;
 }
 
 .page-footer {

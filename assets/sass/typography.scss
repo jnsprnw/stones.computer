@@ -52,9 +52,14 @@ h2, h3 {
   }
 }
 
-.job-title {
-  font-weight: $font-weight-bold;
-  display: block;
+h4 {
+  display: inline;
+}
+
+.homepage-header {
+  span {
+    display: block;
+  }
 }
 
 a {
@@ -90,6 +95,19 @@ p {
     margin: $spacing 0;
     line-height: 1.4;
 	}
+}
+
+.link {
+  margin-bottom: $spacing;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    display: inline;
+  }
 }
 
 .homepage-content .note {
@@ -136,4 +154,16 @@ small, .page-footer span {
   font-size: 0.80rem;
   display: inline-block;
   line-height: 1.4rem;
+}
+
+.projects {
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+
+    td, th {
+      border-bottom: 1px solid $color-default;
+    }
+  }
 }

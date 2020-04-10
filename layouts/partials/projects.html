@@ -1,7 +1,19 @@
 <section class="projects wrapper">
   <table>
-  	{{ range where .Site.RegularPages "Section" "projects" }}
-			{{ partial "row.html" . }}
-		{{ end }}
+  	<thead>
+  		<tr>
+  			<th>Title</th>
+  			<th>Authors</th>
+  			<th>Aspects</th>
+  			<th>Topic</th>
+  			<th>Medium</th>
+  			<th>Description</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+	  	{{ range where .Site.RegularPages "Section" "projects" }}
+				{{ partial "row.html" . }}
+			{{ end }}
+		</tbody>
   </table>
 </section>
