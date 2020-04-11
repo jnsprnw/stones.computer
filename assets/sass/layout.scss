@@ -59,7 +59,7 @@ body {
 			opacity: 0;
 			transition: opacity 0.1s;
 
-			&.active {
+			&[aria-hidden="false"] {
 				opacity: 1;
 			}
 

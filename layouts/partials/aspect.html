@@ -14,7 +14,7 @@
 	</div>
 	<div class="images" id="{{ .context.UniqueID }}">
 		{{ range $index, $value := where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
-			<figure class="image {{ if not $index }}active{{ end }}" id="{{ .UniqueID }}">
+			<figure class="image" aria-hidden="{{ ne $index 0 }}" id="{{ .UniqueID }}">
 				<img src="{{ printf "/images/%s" $value.Params.image }}">
 				<figcaption>{{ $value.Params.figcaption }}</figcaption>
 			</figure>
