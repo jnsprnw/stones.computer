@@ -7,6 +7,8 @@ authors: ["Liam Young"]
 topic: "material"
 link: "https://www.press.uchicago.edu/ucp/books/book/chicago/M/bo20069392.html"
 medium: "film"
+image: "tumblr_p54dtk9WLd1qjjis9o1_640.jpg"
+figcaption: "Unknown Fields"
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt.

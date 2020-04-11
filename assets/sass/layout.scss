@@ -47,6 +47,40 @@ body {
 	.images {
 		justify-self: center;
 		align-self: center;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		position: relative;
+
+		.image {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: opacity 0.1s;
+
+			&.active {
+				opacity: 1;
+			}
+
+			img, figcaption {
+				position: absolute;
+			}
+
+			img {
+				left: 50%;
+    		transform: translate(-50%, -50%);
+    		top: 50%;
+    		object-fit: cover;
+    		width: 100%;
+    		height: 100%;
+			}
+
+			figcaption {
+				bottom: 0;
+				right: 0;
+			}
+		}
 	}
 }
 

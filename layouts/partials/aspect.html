@@ -1,14 +1,23 @@
+{{ $parentID := .context.UniqueID }}
 <section class="aspect">
 	<div class="content">
 	  <h3>{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
 	  <ul>
 	  	{{ range where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
-				{{ partial "link.html" . }}
+				<li class="link" data-id="{{ .UniqueID }}" data-parent="{{ $parentID }}">
+					<h4><a href="{{ .Params.link }}">{{ .Title }}</a></h4>
+					{{ .Content }}
+				</li>
 			{{ end }}
 	  </ul>
 	</div>
-	<div class="images">
-		Images
+	<div class="images" id="{{ .context.UniqueID }}">
+		{{ range $index, $value := where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
+			<figure class="image {{ if not $index }}active{{ end }}" id="{{ .UniqueID }}">
+				<img src="{{ printf "/images/%s" $value.Params.image }}">
+				<figcaption>{{ $value.Params.figcaption }}</figcaption>
+			</figure>
+		{{ end }}
 	</div>
 </section>
