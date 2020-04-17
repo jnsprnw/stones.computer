@@ -1,7 +1,8 @@
 {{ $parentID := .context.UniqueID }}
-<section class="aspect">
+{{ $id := .context.Title | urlize | lower }}
+<section class="aspect" role="listitem" aria-labelledby="{{ $id }}">
 	<div class="content">
-	  <h3>{{ .context.Title }}</h3>
+	  <h3 id="{{ $id }}">{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
 	  <h4>Related projects</h4>
 	  <ul>
@@ -14,12 +15,12 @@
 			{{ end }}
 	  </ul>
 	</div>
-	<div class="images" id="{{ .context.UniqueID }}">
+	<aside class="images" id="{{ .context.UniqueID }}" role="complementary">
 		{{ range $index, $value := $content }}
-			<figure class="image" aria-hidden="{{ ne $index 0 }}" id="{{ .UniqueID }}">
+			<figure class="image" aria-hidden="{{ ne $index 0 }}" id="{{ .UniqueID }}" role="figure">
 				<img src="{{ printf "/images/%s" $value.Params.image }}">
 				<figcaption>{{ $value.Params.figcaption }}</figcaption>
 			</figure>
 		{{ end }}
-	</div>
+	</aside>
 </section>
