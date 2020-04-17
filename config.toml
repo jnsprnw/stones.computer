@@ -4,3 +4,4 @@ title = "Steine, die rechnen"
 
 [params]
   description = "Materialität im Post-Digitalen"
+  contentTypes = ["articles", "projects"]

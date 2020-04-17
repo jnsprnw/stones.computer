@@ -53,6 +53,15 @@ h2, h3 {
 }
 
 h4 {
+  text-transform: uppercase;
+  font-weight: $font-weight-default;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: $color-accent-dark;
+  margin-top: $spacing;
+}
+
+h5 {
   display: inline;
 }
 
@@ -98,7 +107,7 @@ p {
 }
 
 .link {
-  margin-bottom: $spacing;
+  margin-bottom: $spacing / 4;
 
   &:last-child {
     margin-bottom: 0;

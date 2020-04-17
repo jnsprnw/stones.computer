@@ -3,10 +3,11 @@
 	<div class="content">
 	  <h3>{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
+	  <h4>Related projects</h4>
 	  <ul>
-	  	{{ range where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
+	  	{{ range where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
 				<li class="link" data-id="{{ .UniqueID }}" data-parent="{{ $parentID }}">
-					<h4><a href="{{ .Params.link }}">{{ .Title }}</a></h4>
+					<h5><a href="{{ .Params.link }}">{{ .Title }}</a></h5>
 					{{ .Content }}
 				</li>
 			{{ end }}
