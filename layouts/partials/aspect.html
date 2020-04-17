@@ -5,7 +5,8 @@
 	  <div>{{ .context.Content }}</div>
 	  <h4>Related projects</h4>
 	  <ul>
-	  	{{ range where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
+	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
+	  	{{ range $content }}
 				<li class="link" data-id="{{ .UniqueID }}" data-parent="{{ $parentID }}">
 					<h5><a href="{{ .Params.link }}">{{ .Title }}</a></h5>
 					{{ .Content }}
@@ -14,7 +15,7 @@
 	  </ul>
 	</div>
 	<div class="images" id="{{ .context.UniqueID }}">
-		{{ range $index, $value := where (where .context.Site.RegularPages "Section" "projects") "Params.aspect" .context.File.BaseFileName }}
+		{{ range $index, $value := $content }}
 			<figure class="image" aria-hidden="{{ ne $index 0 }}" id="{{ .UniqueID }}">
 				<img src="{{ printf "/images/%s" $value.Params.image }}">
 				<figcaption>{{ $value.Params.figcaption }}</figcaption>

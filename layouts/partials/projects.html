@@ -11,7 +11,8 @@
   		</tr>
   	</thead>
   	<tbody>
-	  	{{ range where .Site.RegularPages "Section" "projects" }}
+      {{ $content := where .Site.RegularPages "Section" "in" site.Params.contentTypes }}
+	  	{{ range $content }}
 				{{ partial "row.html" . }}
 			{{ end }}
 		</tbody>
