@@ -21,6 +21,10 @@ html {
   font-weight: $font-weight-default;
 }
 
+body {
+  font-size: var(--margin);
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
