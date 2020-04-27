@@ -2,6 +2,7 @@
 title: "Macht und Politik im Digitalen"
 date: 2020-04-08T13:22:57+02:00
 draft: false
+weight: 2
 ---
 
 Lorem Macht und Politik im Digitalen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
