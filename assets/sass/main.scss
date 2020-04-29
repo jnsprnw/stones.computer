@@ -25,6 +25,7 @@ body {
   font-size: var(--margin);
   background-color: var(--color-background);
   color: var(--color-font);
+  transition: background-color $transition, color $transition;
 }
 
 *, *:before, *:after {

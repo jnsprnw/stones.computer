@@ -75,6 +75,7 @@ h5 {
 
 a {
 	color: var(--color-font);
+  transition: color $transition;
 	text-decoration-color: rgba($color-accent-dark, 0.5);
 	transition: text-decoration-color $transition;
 
@@ -143,6 +144,7 @@ ul {
     }
 
     a {
+      transition: color $transition;
     	color: var(--color-font);
     	text-decoration-color: $color-white;
     	transition: text-decoration-color $transition;
@@ -172,6 +174,7 @@ small, .page-footer span {
     border-collapse: separate;
 
     td, th {
+      transition: border-bottom-color $transition;
       border-bottom: 1px solid var(--color-font);
       text-align: left;
     }
