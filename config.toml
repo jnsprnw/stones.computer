@@ -2,6 +2,16 @@ baseURL = "https://stones.computer"
 languageCode = "en-gb"
 title = "Steine, die rechnen"
 
+[outputFormats]
+  [outputFormats.Items]
+	  mediaType = "application/json"
+	  baseName = "items"
+	  isPlainText = true
+	  notAlternative = true
+
 [params]
   description = "Materialität im Post-Digitalen"
   contentTypes = ["articles", "projects"]
+
+[outputs]
+  home = ["HTML", "Items"]

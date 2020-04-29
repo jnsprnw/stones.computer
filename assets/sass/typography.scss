@@ -95,7 +95,7 @@ a {
 	}
 }
 
-p, ul, td, th {
+p, ul, td, th, input {
   font-size: calc(var(--margin) * 0.8);
   line-height: 1.4;
 }
@@ -176,4 +176,10 @@ small, .page-footer span {
       text-align: left;
     }
   }
+}
+
+input {
+  border: 2px solid #000;
+  padding: $spacing / 4 $spacing / 2;
+  margin-bottom: $spacing;
 }

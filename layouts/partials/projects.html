@@ -1,4 +1,5 @@
 <section class="projects wrapper">
+  <input type="text" id="search" placeholder="Search…" />
   <table>
   	<thead>
   		<tr>
@@ -10,11 +11,54 @@
   			<th>Description</th>
   		</tr>
   	</thead>
-  	<tbody>
-      {{ $content := where .Site.RegularPages "Section" "in" site.Params.contentTypes }}
-	  	{{ range $content }}
-				{{ partial "row.html" . }}
-			{{ end }}
+  	<tbody id="list">
 		</tbody>
   </table>
 </section>
+
+<script>
+  const options = {
+    keys: [
+      'title',
+      'description',
+      'authors',
+      'aspect',
+      'topic',
+      'medium'
+    ]
+  };
+
+  const columns = ['title', 'authors', 'aspect', 'topic', 'medium', 'description']
+
+  d3.json("/items.json").then(function (items) {
+    const fuse = new Fuse(items, options);
+
+    const input = document.getElementById('search')
+    input.addEventListener('input', function () {
+      update(input.value.length ? fuse.search(input.value) : items)
+    })
+
+    update(items)
+  });
+
+  const list = d3.select("#list")
+
+  function update (data) {
+    const rows = list.selectAll('tr')
+      .data(data, d => {
+        return 'item' in d ? d.item.id : d.id
+      })
+      .join('tr')
+      .selectAll("td")
+      .data(function (row) {
+        const datum = 'item' in row ? row.item : row
+        return columns.map(function (column) {
+          return { value: datum[column] };
+        });
+      })
+      .enter()
+      .append('td')
+        .text(function (d) { return d.value; });
+  }
+
+</script>

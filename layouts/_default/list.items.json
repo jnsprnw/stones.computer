@@ -1,0 +1,5 @@
+{{- $.Scratch.Add "list" slice -}}
+{{- range $index, $element := (where .Site.RegularPages "Section" "in" site.Params.contentTypes) -}}
+  {{- $.Scratch.Add "list" (dict "id" $index "title" $element.Title "authors" $element.Params.authors "aspect" $element.Params.aspect "topic" $element.Params.topic "medium" $element.Params.medium "description" $element.Content) -}}
+{{- end -}}
+{{- $.Scratch.Get "list" | jsonify -}}
