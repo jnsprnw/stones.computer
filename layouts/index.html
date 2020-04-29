@@ -3,6 +3,7 @@
   <main aria-role="main">
     <header class="homepage-header wrapper" role="banner">
       <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1></a>
+      <button id="switch" class="btn" onclick="toggleTheme()">Switch</button>
       <span>{{ .Site.Params.description }}</span>
     </header>
     <section class="homepage-intro wrapper">

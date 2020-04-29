@@ -74,7 +74,7 @@ h5 {
 }
 
 a {
-	color: $color-default;
+	color: var(--color-font);
 	text-decoration-color: rgba($color-accent-dark, 0.5);
 	transition: text-decoration-color $transition;
 
@@ -95,7 +95,7 @@ a {
 	}
 }
 
-p, ul, td, th, input {
+p, ul, td, th, input, .btn {
   font-size: calc(var(--margin) * 0.8);
   line-height: 1.4;
 }
@@ -143,7 +143,7 @@ ul {
     }
 
     a {
-    	color: $color-default;
+    	color: var(--color-font);
     	text-decoration-color: $color-white;
     	transition: text-decoration-color $transition;
 
@@ -172,7 +172,7 @@ small, .page-footer span {
     border-collapse: separate;
 
     td, th {
-      border-bottom: 1px solid $color-default;
+      border-bottom: 1px solid var(--color-font);
       text-align: left;
     }
   }

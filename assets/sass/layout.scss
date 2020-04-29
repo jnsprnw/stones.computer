@@ -32,12 +32,12 @@ body {
 }
 
 .aspect {
-	border-top: 2px solid $color-default;
+	border-top: 2px solid var(--color-font);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
 	&:last-child {
-		border-bottom: 2px solid $color-default;
+		border-bottom: 2px solid var(--color-font);
 	}
 
 	.content {

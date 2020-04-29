@@ -41,4 +41,14 @@ $extra-wide:    1700px !default;
   --color-lo:rgb(240,240,240);
   --color-ft:rgb(0,0,0,0.3);
   --margin:calc(1vw + 1vh + 0.5vmin);
+  --color-background: #fff;
+  --color-font: #000;
+}
+
+.theme-dark {
+  --color-background: #000;
+  --color-font: #fff;
+  --color-secondary: #243133;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
 }

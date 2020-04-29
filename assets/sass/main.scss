@@ -23,6 +23,8 @@ html {
 
 body {
   font-size: var(--margin);
+  background-color: var(--color-background);
+  color: var(--color-font);
 }
 
 *, *:before, *:after {
@@ -32,6 +34,11 @@ body {
 
 .clickable {
   cursor: pointer;
+}
+
+.btn {
+  display: block;
+  border: 2px solid var(--color-font);
 }
 
 @import "./layout";
