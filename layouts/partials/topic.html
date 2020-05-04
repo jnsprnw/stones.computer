@@ -1,5 +1,10 @@
 <section class="topic">
-  <h3>{{ .Title }}</h3>
-  <h4>{{ .Params.Question }}</h4>
-  <div>{{ .Content }}</div>
+	<header>
+	  <h3>{{ .Title }}</h3>
+	  <span class="number">{{ .Weight }}</span>
+	</header>
+  <div>
+  	<h5>{{ .Params.Question }}</h5>
+  	{{ .Content }}
+  </div>
 </section>

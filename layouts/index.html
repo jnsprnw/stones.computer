@@ -8,16 +8,23 @@
           <span>{{ .Site.Params.description }}</span>
         </hgroup>
         <!-- <button id="switch" class="btn" onclick="toggleTheme()">Switch</button> -->
-        <span>Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
+        <span class="p">Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
       </div>
     </header>
     <section class="homepage-intro wrapper">
       <div class="wrapper">
-        {{ .Content }}
+        {{ with .Site.GetPage "intro.md" }}
+          {{ .Content }}
+        {{ end }}
       </div>
     </section>
-    <section class="homepage-topics wrapper" aria-labelledby="topics">
-      <h2 id="topics" role="heading" aria-level="2">Topics</h2>
+    <section class="homepage-topics" aria-labelledby="topics">
+      <header class="wrapper">
+        <h2 id="topics" role="heading" aria-level="2">Topics</h2>
+        {{ with .Site.GetPage "_topics.md" }}
+          {{ .Content }}
+        {{ end }}
+      </header>
       <div class="topics wrapper">
         {{ partial "topics.html" (dict "context" .) }}
       </div>

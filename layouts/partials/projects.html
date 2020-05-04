@@ -1,6 +1,6 @@
 <section class="projects wrapper">
   <input type="text" id="search" placeholder="Search…" />
-  <table>
+<!--   <table>
   	<thead>
   		<tr>
   			<th>Title</th>
@@ -11,9 +11,11 @@
   			<th>Description</th>
   		</tr>
   	</thead>
-  	<tbody id="list">
+  	<tbody>
 		</tbody>
-  </table>
+  </table> -->
+  <ul id="list" class="plain">
+  </ul>
 </section>
 
 <script>
@@ -43,16 +45,16 @@
   const list = d3.select('#list')
 
   function update (data) {
-    const rows = list.selectAll('tr')
+    const rows = list.selectAll('li')
       .data(data, (d) => 'item' in d ? d.item.id : d.id)
-      .join('tr')
-      .selectAll('td')
+      .join('li')
+      .selectAll('div')
       .data((row) => {
         const datum = 'item' in row ? row.item : row
         return columns.map((column) => ({ value: datum[column] }))
       })
       .enter()
-      .append('td')
+      .append('div')
         .text((d) => d.value)
   }
 
