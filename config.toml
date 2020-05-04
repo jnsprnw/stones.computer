@@ -1,6 +1,6 @@
 baseURL = "https://stones.computer"
 languageCode = "en-gb"
-title = "Steine, die rechnen"
+title = "Stones, that calculate"
 
 [outputFormats]
   [outputFormats.Items]
@@ -10,7 +10,7 @@ title = "Steine, die rechnen"
 	  notAlternative = true
 
 [params]
-  description = "Materialität im Post-Digitalen"
+  description = "Post-Digital Materiality"
   contentTypes = ["articles", "projects"]
 
 [outputs]

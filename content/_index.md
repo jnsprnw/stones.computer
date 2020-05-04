@@ -1,7 +1,7 @@
 ---
-title: "Steine, die rechnen"
+title: "Stones, that calculate"
 date: 2020-03-11T11:46:31+01:00
 draft: false
 ---
 
-Ohne Steinen, die rechnen, meinen wir grundsätzlich alle informationsverarbeitenden Geräte und Infrastrukturen unserer automatisierten Gesellschaft, deren Grundkomponenten aus (seltenen) Erden bestehen. Vom iPhone, Internetkabeln bis hin zu Datenzentren betrachten wir die materielle Komplexität, Kreisläufe und Abhängigkeiten, die es benötigt den enormen Daten- und Energieressourcen für u.a. unseren täglichen Netflix-Konsum bereitzustellen. Im Klimasemester 2020 interessieren uns dabei vor allem die Zusammenhänge zwischen Ökologie, Macht und Informationstechnik sichtbar zu machen. 🌎
+By stones that calculate, we mean all information processing devices and infrastructures of our automated society, whose basic components consist of (rare-earth) elements. From smartphones, internet cables to data centres, we consider the material complexity, cycles and dependencies that it requires to provide the enormous data and energy resources for, among other things, our daily Netflix consumption. Taking into account the effects of both climate crisis and Corona pandemic, we are interested in making visible the connections between ecology, power and information technology.
