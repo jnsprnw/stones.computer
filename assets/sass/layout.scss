@@ -4,6 +4,7 @@
   --spacing-1: calc(var(--margin) * 3);
   --spacing-2: calc(var(--margin) * 2);
   --spacing-3: calc(var(--margin) * 2.5);
+  --spacing-4: calc(var(--margin) * 0.5);
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 	@include query($medium) {
 		margin: calc(var(--margin)) 0;
 	}
+	background-color: #edbe3e;
 }
 
 .container {
@@ -33,25 +35,52 @@ body {
 }
 
 .wrapper {
-	margin-left: var(--margin);
-	margin-right: var(--margin);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--margin);
+	padding-right: var(--margin);
+	max-width: 1600px;
+}
+
+.titles {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+
+	.logo {
+		border-right: 10px solid #fff;
+		padding-right: calc(var(--spacing-4) * 6);
+		// text-align: right;
+	}
+
+	.subtitle {
+		padding-left: calc(var(--spacing-4) * 6);
+	}
+
+	.logo, .subtitle {
+		padding-top: calc(var(--spacing-4) * 3);
+		padding-bottom: calc(var(--spacing-4) * 3.5);
+	}
 }
 
 .homepage-intro, .homepage-topics {
-	border-bottom: 2px solid $color-accent-dark;
+	// border-bottom: 2px solid $color-accent-dark;
 }
 
 .homepage-header {
 	padding-top: calc(var(--margin) * 1);
-	padding-bottom: calc(var(--margin) * 2);
+	// padding-bottom: calc(var(--margin) * 2);
 
 	.wrapper {
-		border-bottom: 1px solid $color-accent-dark;
+		// border-bottom: 1px solid $color-accent-dark;
 		padding-bottom: calc(var(--margin) * 2);
+		text-align: center;
+		display: flex;
+	}
 
-		hgroup {
-			margin-bottom: calc(var(--margin) * 1);
-		}
+	.info {
+		text-align: right;
 	}
 }
 
@@ -60,13 +89,67 @@ body {
 }
 
 .homepage-topics {
-	padding-top: calc(var(--margin) * 3);
-	background-color: #E1E1E1;
+	// padding-top: calc(var(--margin) * 3);
+	border-top: 20px solid #000;
 
 	.wrapper {
-		border-bottom: 1px solid #eee;
+		border-bottom: 20px dotted #eee;
 		padding-bottom: calc(var(--margin) * 2);
-		margin-bottom: calc(var(--margin) * 2);
+		// margin-bottom: calc(var(--margin) * 2);
+	}
+
+	.header {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: var(--spacing-3);
+		padding: var(--spacing-3);
+
+		h5 {
+			display: inline-block;
+			border-bottom: 3px solid #000;
+			padding: 0 calc(var(--spacing-4) * 2) var(--spacing-4);
+			margin-bottom: var(--spacing-4);
+			margin-left: calc(var(--spacing-4) * -2);
+			// box-shadow: 0px 1px 0px #fff;
+		}
+	}
+
+	.questions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		ul {
+			// border-top: 1px solid #000;
+			// border-bottom: 1px solid #000;
+			padding: calc(var(--spacing-3) / 3);
+			// box-shadow: 1px 1px 0px #000;
+
+			li {
+				border-bottom: 1px solid #000;
+				padding: calc(var(--spacing-3) / 3) calc(var(--spacing-3) / 2);
+				text-align: center;
+				display: flex;
+		  	justify-content: space-between;
+		  	// font-weight: $font-weight-bold;
+		  	font-size: var(--size-3);
+
+		  	i {
+		  		margin-left: calc(var(--spacing-3) / 3);
+		  	}
+				// font-weight: $font-weight-bold;
+
+				&:last-child {
+					// border: 0;
+					// padding-bottom: 0;
+				}
+
+				&:first-child {
+					border-top: 1px solid #000;
+					// padding-top: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -133,16 +216,14 @@ body {
 }
 
 .topics {
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
+	// display: grid;
+	// grid-template-rows: repeat(3, 1fr);
 
 	.topic {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		border-bottom: 1px solid #fff;
+		border-bottom: 20px dotted #eee;
 		grid-column-gap: var(--spacing-3);
-		padding-bottom: var(--spacing-3);
-		padding-top: var(--spacing-3);
 		padding: var(--spacing-3);
 
 		&:last-child {
@@ -164,7 +245,47 @@ body {
 				left: calc(var(--spacing-3) / 2 * -1);
 			}
 		}
+
+		.description {
+			h5 {
+				display: inline-block;
+				border-bottom: 3px solid #000;
+				padding: 0 calc(var(--spacing-4) * 2) var(--spacing-4);
+				margin-bottom: var(--spacing-4);
+				margin-left: calc(var(--spacing-4) * -2);
+			}
+		}
+
+		.aspects {
+			margin-top: var(--spacing-4);
+		}
+
+
+		.aspects li {
+		  // margin-bottom: var(--spacing-4);
+		  padding-bottom: var(--spacing-4);
+		  padding-top: var(--spacing-4);
+		  border-bottom: 1px solid #000;
+
+		  a {
+		  	display: flex;
+		  	justify-content: space-between;
+		  	padding: 0 var(--spacing-4);
+		  }
+
+		  &:first-child {
+		  	border-top: 1px solid #000;
+		  }
+
+		  // &:last-child {
+		  // 	border: 0;
+		  // }
+		}
 	}
+}
+
+p + p {
+	margin-top: var(--margin);
 }
 
 .homepage-projects {

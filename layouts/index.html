@@ -3,12 +3,12 @@
   <main aria-role="main">
     <header class="homepage-header wrapper" role="banner">
       <div class="wrapper">
-        <hgroup>
-          <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1></a>
-          <span>{{ .Site.Params.description }}</span>
-        </hgroup>
+        <a href="{{ .Site.BaseURL }}" rel="self" class="titles">
+          <h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1>
+          <span class="subtitle">{{ .Site.Params.description }}</span>
+        </a>
         <!-- <button id="switch" class="btn" onclick="toggleTheme()">Switch</button> -->
-        <span class="p">Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
+        <span class="p info">Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
       </div>
     </header>
     <section class="homepage-intro wrapper">
@@ -19,11 +19,20 @@
       </div>
     </section>
     <section class="homepage-topics" aria-labelledby="topics">
-      <header class="wrapper">
-        <h2 id="topics" role="heading" aria-level="2">Topics</h2>
-        {{ with .Site.GetPage "_topics.md" }}
-          {{ .Content }}
-        {{ end }}
+      <header class="header wrapper">
+        <div>
+          <h5 id="topics" role="heading" aria-level="2">Framework</h5>
+          {{ with .Site.GetPage "_topics.md" }}
+            {{ .Content }}
+          {{ end }}
+        </div>
+        <div class="questions">
+          <ul>
+            <li><span>Dematerialised</span><i>?</i></li>
+            <li><span>Ethical</span><i>?</i></li>
+            <li><span>Disembodied</span><i>?</i></li>
+          </ul>
+        </div>
       </header>
       <div class="topics wrapper">
         {{ partial "topics.html" (dict "context" .) }}
