@@ -2,14 +2,21 @@
 
   <main aria-role="main">
     <header class="homepage-header wrapper" role="banner">
-      <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1></a>
-      <button id="switch" class="btn" onclick="toggleTheme()">Switch</button>
-      <span>{{ .Site.Params.description }}</span>
+      <div class="wrapper">
+        <hgroup>
+          <a href="{{ .Site.BaseURL }}" rel="self"><h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1></a>
+          <span>{{ .Site.Params.description }}</span>
+        </hgroup>
+        <!-- <button id="switch" class="btn" onclick="toggleTheme()">Switch</button> -->
+        <span>Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
+      </div>
     </header>
     <section class="homepage-intro wrapper">
-      {{ .Content }}
+      <div class="wrapper">
+        {{ .Content }}
+      </div>
     </section>
-    <section class="homepage-topics" aria-labelledby="topics">
+    <section class="homepage-topics wrapper" aria-labelledby="topics">
       <h2 id="topics" role="heading" aria-level="2">Topics</h2>
       <div class="topics wrapper">
         {{ partial "topics.html" (dict "context" .) }}

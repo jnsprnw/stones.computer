@@ -1,14 +1,14 @@
 @import "./global";
 
 body {
-  margin: $spacing 0;
+  margin: var(--margin) 0;
 
   @include query($narrow) {
-		margin: $spacing * 2 0;
+		margin: calc(var(--margin)) 0;
 	}
 
 	@include query($medium) {
-		margin: $spacing * 3 0;
+		margin: calc(var(--margin)) 0;
 	}
 }
 
@@ -27,17 +27,30 @@ body {
 }
 
 .wrapper {
-	padding-left: $spacing;
-	padding-right: $spacing;
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+}
+
+.homepage-header, .homepage-intro, .homepage-topics {
+	border-bottom: 2px solid $color-accent-dark;
+}
+
+.homepage-header {
+	padding-top: calc(var(--margin) * 1);
+	padding-bottom: calc(var(--margin) * 1);
 }
 
 .aspect {
 	border-top: 2px solid var(--color-font);
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 
 	&:last-child {
 		border-bottom: 2px solid var(--color-font);
+	}
+
+	@include query($medium) {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.content {
@@ -51,6 +64,11 @@ body {
 		height: 100%;
 		width: 100%;
 		position: relative;
+		display: none;
+
+		@include query($medium) {
+			display: block;
+		}
 
 		.image {
 			position: absolute;

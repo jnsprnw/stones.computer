@@ -40,9 +40,10 @@ $extra-wide:    1700px !default;
   --color-hi:rgb(0,0,255);
   --color-lo:rgb(240,240,240);
   --color-ft:rgb(0,0,0,0.3);
-  --margin:calc(1vw + 1vh + 0.5vmin);
+  --margin: calc(1vw + 1vh + 0.5vmin);
   --color-background: #fff;
   --color-font: #000;
+  --base: calc(1vw + 1vh + 0.5vmin);
 }
 
 .theme-dark {
