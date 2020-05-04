@@ -1,16 +1,9 @@
 ---
-title: "Körper des Digitalen"
+title: "Bodies of the digital"
+question: "Who holds the stone?"
 date: 2020-04-08T13:22:57+02:00
 draft: false
 weight: 3
 ---
 
-Lorem Körper des Digitalen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-
-- Arbeit (Wer, was und für wen?) → Neo-Extractivism
-- Feminismus + Kapitalismuskritik (Feminism for the 99 percent)
-    – Gender
-    – Demonstrationen
-- Produktionsbedingungen digitaler Infrastrukturen
-- Ausbeutung des menschlichen Körpers
-- Sinnesinstrumente und Selbstwahrnehmung
+The last viewing angle focuses on the production conditions of digital infrastructures. The focus is on the concept of labour and the exploitation of the human body. The discussion is nourished, for example, by embodiment and feminist theories. The complex relationship of dependence between human self-perception and technical devices in the sense of techno-intimacy or moments of identification are also examined.

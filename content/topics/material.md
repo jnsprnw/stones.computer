@@ -1,15 +1,9 @@
 ---
-title: "Material des Materiellen"
+title: "Material of the material"
+question: "What is the stone?"
 date: 2020-04-08T13:22:57+02:00
 draft: false
 weight: 1
 ---
 
-Lorem Material des Materiellen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-
-- Materiellen Folgen der Digitalisierung
-- Open up the black box
-- Digitale Stoffwechsel beschreiben (Armin Nassehi)
-- Gaia-Theorien → Notion of the Earth (see Lukas' Introduction to Comparative Planetology)
-- Energie und Ressourcen
-- Polytemporality (nach Rosi Braidotti)
+The focus here is particularly on the material consequences of digitisation. In contrast to supposed dematerialisation narratives, we are interested in the extended cycles of digital infrastructures. In the sense of opening the black box, this focus looks at the resources needed to keep this planetary-scale computation going. In addition to new spatial orders, altered temporal relations become apparent. Under the concept of deep time, we are also dealing with different notions of the Earth.
