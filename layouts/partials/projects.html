@@ -30,35 +30,30 @@
 
   const columns = ['title', 'authors', 'aspect', 'topic', 'medium', 'description']
 
-  d3.json("/items.json").then(function (items) {
+  d3.json('/items.json').then((items) => {
     const fuse = new Fuse(items, options);
 
     const input = document.getElementById('search')
-    input.addEventListener('input', function () {
+    input.addEventListener('input', () => {
       update(input.value.length ? fuse.search(input.value) : items)
     })
-
     update(items)
   });
 
-  const list = d3.select("#list")
+  const list = d3.select('#list')
 
   function update (data) {
     const rows = list.selectAll('tr')
-      .data(data, d => {
-        return 'item' in d ? d.item.id : d.id
-      })
+      .data(data, (d) => 'item' in d ? d.item.id : d.id)
       .join('tr')
-      .selectAll("td")
-      .data(function (row) {
+      .selectAll('td')
+      .data((row) => {
         const datum = 'item' in row ? row.item : row
-        return columns.map(function (column) {
-          return { value: datum[column] };
-        });
+        return columns.map((column) => ({ value: datum[column] }))
       })
       .enter()
       .append('td')
-        .text(function (d) { return d.value; });
+        .text((d) => d.value)
   }
 
 </script>
