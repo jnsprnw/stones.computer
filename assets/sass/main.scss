@@ -1,9 +1,5 @@
 @import "./global";
-
-blockquote, body, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, time, ul {
-  margin: 0;
-  padding: 0;
-}
+@import "./fonts";
 
 html {
   font: normal normal 105%/1.7 $font-family-default;
@@ -11,14 +7,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
-  font-kerning: normal;
   font-weight: $font-weight-default;
+  font-kerning: normal;
+  font-variant-ligatures: contextual common-ligatures;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
 }
 
 body {
@@ -31,15 +23,7 @@ body {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.btn {
-  display: block;
-  border: 2px solid var(--color-font);
+  padding: 0;
 }
 
 @import "./layout";
