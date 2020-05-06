@@ -97,7 +97,7 @@ h4 {
 a {
 	color: var(--color-font);
   transition: color $transition;
-	text-decoration-color: rgba(#fff, 0.5);
+	text-decoration-color: $color-accent-secondary;
 	transition: text-decoration-color $transition;
 
   &[href^="#"], &[rel="self"] {
@@ -108,6 +108,7 @@ a {
 	&:hover, &:focus {
     &:not(.headline) {
       text-decoration: underline;
+      color: $color-accent-secondary;
       text-decoration-color: #fff;
     }
 

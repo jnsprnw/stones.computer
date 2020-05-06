@@ -13,6 +13,7 @@ $color-mute:		#999999 !default;
 $color-secondary: #d4d4d4 !default;
 $color-accent-dark: #A37878 !default;
 $color-accent-light: #B29D9D !default;
+$color-accent-secondary: #1437dd !default;
 
 $size-smallest:		0.7rem !default;
 $size-smaller:		0.8rem !default;
@@ -46,10 +47,10 @@ $extra-wide:    1700px !default;
   --base: calc(1vw + 1vh + 0.5vmin);
 }
 
-.theme-dark {
-  --color-background: #000;
-  --color-font: #fff;
-  --color-secondary: #243133;
-  --color-accent: #12cdea;
-  --font-color: #ffffff;
-}
+// .theme-dark {
+//   --color-background: #000;
+//   --color-font: #fff;
+//   --color-secondary: #243133;
+//   --color-accent: #12cdea;
+//   --font-color: #ffffff;
+// }

@@ -17,7 +17,7 @@ body {
 	@include query($medium) {
 		margin: calc(var(--margin)) 0;
 	}
-	background-color: #edbe3e;
+	// background-color: #edbe3e;
 	// background-color: #96ab96;
 	// background-color: #ECC454;
 	// background-color: #d4baba;
@@ -97,7 +97,7 @@ body {
 	border-top: 20px solid #000;
 
 	.wrapper {
-		border-bottom: 20px dotted #eee;
+		border-bottom: 20px dotted $color-accent-secondary;
 		padding-bottom: calc(var(--margin) * 2);
 		// margin-bottom: calc(var(--margin) * 2);
 	}
@@ -226,7 +226,7 @@ body {
 	.topic {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		border-bottom: 20px dotted #eee;
+		border-bottom: 20px dotted $color-accent-secondary;
 		grid-column-gap: var(--spacing-3);
 		padding: var(--spacing-3);
 
