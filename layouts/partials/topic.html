@@ -1,5 +1,6 @@
 <section class="topic">
 	<header>
+		<span class="caption float">Topic</span>
 	  <h3>{{ .Title }}</h3>
 	  <span class="number">{{ .Weight }}</span>
 	</header>
@@ -9,10 +10,12 @@
   	{{ .Content }}
   	<div class="aspects">
 	  	<span class="caption">Aspects</span>
-	  	<ul>
-	  		<li><a href=""><span>Computational Racism</span><i>↓</i></a></li>
-	  		<li><a href=""><span>Planetary Scale</span><i>↓</i></a></li>
-	  		<li><a href=""><span>Product Cycle</span><i>↓</i></a></li>
+	  	{{ $content := where (where .Site.RegularPages "Section" "eq" "aspects") "Params.topics" "intersect" (slice .File.BaseFileName) }}
+	  	<ul class="list">
+	  		{{ range $content }}
+	  		{{ $id := .Title | urlize | lower }}
+	  		<li><a href="#{{ $id }}"><span>{{ .Title }}</span><i>↓</i></a></li>
+	  		{{ end }}
 	  	</ul>
 	  </div>
   </div>

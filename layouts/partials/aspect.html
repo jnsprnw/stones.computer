@@ -2,10 +2,11 @@
 {{ $id := .context.Title | urlize | lower }}
 <section class="aspect" role="listitem" aria-labelledby="{{ $id }}">
 	<div class="content">
+		<span class="caption float">Aspect</span>
 	  <h3 id="{{ $id }}">{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
-	  <h4>Related projects</h4>
-	  <ul>
+	  <span class="caption">Related projects</span>
+	  <ul class="list">
 	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
 	  	{{ range $content }}
 				<li class="link" data-id="{{ .UniqueID }}" data-parent="{{ $parentID }}">

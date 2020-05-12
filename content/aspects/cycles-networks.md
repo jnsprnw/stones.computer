@@ -1,7 +1,8 @@
 ---
-title: "Product Cycle"
+title: "Cycles / Networks"
 date: 2020-03-11T11:46:31+01:00
 draft: false
+topics: ["material", "power"]
 ---
 
 Der Produkt-Zyklus von Resourcen, Herstellung, Verwendung und Verschrottung/Recycling wird häufig nicht gesehen.
