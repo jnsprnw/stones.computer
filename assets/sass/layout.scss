@@ -95,6 +95,16 @@ body {
 .homepage-topics, .homepage-aspects {
 	border-top: 20px solid #000;
 
+	h2 {
+		background-color: #000;
+		border-bottom: 20px solid #000;
+		color: #000;
+		font-size: var(--size-1);
+		padding-left: 40px;
+		line-height: 1;
+		text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+	}
+
 	.header {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
