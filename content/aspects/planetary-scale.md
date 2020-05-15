@@ -6,4 +6,4 @@ topics: ["bodies", "material"]
 ---
 
 Some systems are now on a planetary scale Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-This field has been especially researched by [Paul Heinicker](http://paul-heinicker.com).
+This field has been especially researched by [someone](http://paul-heinicker.com).
