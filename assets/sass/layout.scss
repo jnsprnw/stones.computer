@@ -365,3 +365,21 @@ p + p {
 .page-footer {
 	margin-top: $spacing * 2;
 }
+
+.table-link {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+	a {
+		text-decoration: none;
+		padding: var(--spacing-4) calc(var(--spacing-4) * 2);
+		display: block;
+		background-color: $color-accent;
+
+		&:hover, &:focus {
+			background-color: #000;
+			color: $color-white !important;
+		}
+	}
+}
