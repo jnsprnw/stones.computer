@@ -5,5 +5,6 @@ draft: false
 topics: ["material"]
 ---
 
-Material Witness – Schuppli
-Situated Knowledge – Harraway
+- Material Witness – Schuppli
+- Situated Knowledge – Harraway
+- Evidentiary Realism – Cirio

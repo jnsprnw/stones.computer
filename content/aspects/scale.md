@@ -5,7 +5,8 @@ draft: false
 topics: ["material", "power", "bodies"]
 ---
 
-spatial structures
-planetary scale
-Anthropozän
-→ Time, Spatial Order
+- spatial structures
+- Benjamin Bratton (planetary scale)
+- Rosi Braidotti (Non-Anthropocentrism)
+- John Tresch (Anthropotechnics)
+- → Time, Spatial Order

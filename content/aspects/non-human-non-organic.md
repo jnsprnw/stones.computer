@@ -5,5 +5,7 @@ draft: false
 topics: ["material", "body"]
 ---
 
-Posthumanism
-Cyborg Manifesto
+- Posthumanism
+- Cyborg Manifesto
+- Karen Barad
+- Pluralität

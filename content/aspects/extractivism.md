@@ -5,5 +5,6 @@ draft: false
 topics: ["material"]
 ---
 
-Raw material
-Neo-Kolonialismus
+- Raw material
+- Neo-Kolonialismus
+- Slow Violence

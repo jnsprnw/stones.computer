@@ -5,5 +5,9 @@ draft: false
 topics: ["material", "power"]
 ---
 
-Urbanism
-Data centres
+- Urbanism
+- Data centres
+- Ingrid Burrington
+- Jamie Allen (Critical Infrastructures)
+- Shannon Mattern (A City is Not a Computer)
+- → Arch+

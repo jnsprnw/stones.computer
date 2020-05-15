@@ -5,5 +5,7 @@ draft: false
 topics: ["power", "bodies"]
 ---
 
-Black Box, Hiding, Hyperface
-Cloud
+- Black Box, Hiding, Hyperface
+- Cloud
+- Hito Steyerl (poor images etc.)
+- James Bridle

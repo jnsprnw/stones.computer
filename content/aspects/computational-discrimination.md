@@ -5,5 +5,7 @@ draft: false
 topics: ["power", "bodies"]
 ---
 
-Data Feminism
-Algorithms of Oppression
+- Data Feminism
+- Algorithms of Oppression
+- Matteo Pasquinelli
+- Kate Crawford + Vladan Joler

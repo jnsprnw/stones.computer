@@ -5,4 +5,5 @@ draft: false
 topics: ["power", "body"]
 ---
 
-Sousveillance, Counter-Surveillance, CCTV, Tracking
+- Sousveillance, Counter-Surveillance, CCTV, Tracking
+- Geoff Manaugh http://www.bldgblog.com/tag/surveillance/

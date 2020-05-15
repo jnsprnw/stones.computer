@@ -5,4 +5,7 @@ draft: false
 topics: ["body"]
 ---
 
-Arvida
+- Arvida byström
+- Alienation (Entfremdung) → Xenophily (Patricia Reed und Wendy Chun)
+- Sensing → Asia
+- ???

@@ -5,6 +5,8 @@ draft: false
 topics: ["power"]
 ---
 
-Multiple Internets
-Stack
-Technosphäre
+- Multiple Internets
+- Benjamin Bratton (Black Stack)
+- Technosphäre
+- Vilem Flusser (Räume)
+- Ursula K. Heise (From the Blue Planet to Google Earth)

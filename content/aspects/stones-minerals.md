@@ -5,6 +5,7 @@ draft: false
 topics: ["material"]
 ---
 
-physisch/chemische Grundlagen
-Philosophie der Steine
-Terraforming
+- physisch/chemische Grundlagen
+- Jeffrey Cohen (Geophilia)
+- Gary Dahl (Pet Rock)
+- Paul Dourish (The Stuff of Bits)

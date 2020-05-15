@@ -5,5 +5,6 @@ draft: false
 topics: ["power"]
 ---
 
-Google, Facebook, DNS-Anbieter
-Verhältnis von Firmen und Staat
+- Google, Facebook, DNS-Anbieter
+- Verhältnis von Firmen und Staat
+- Evgeny Morozov

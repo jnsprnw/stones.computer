@@ -5,4 +5,6 @@ draft: false
 topics: ["body"]
 ---
 
-Anesthetic – Mark Wigley
+- Anesthetic – Mark Wigley
+- Sad by Design – Geert Lovink
+- Addiction by Design – Natash Dow Schüll
