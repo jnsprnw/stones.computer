@@ -6,15 +6,18 @@
 	  <h3 id="{{ $id }}">{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
 	  <span class="caption">Related projects</span>
-	  <ul class="list">
+	  <ol class="list list-complex">
 	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
-	  	{{ range $content }}
+	  	{{ range $index, $element := $content }}
 				<li class="link" data-id="{{ .UniqueID }}" data-parent="{{ $parentID }}">
-					<h5><a href="{{ .Params.link }}">{{ .Title }}</a></h5>
-					{{ .Content }}
+					<a href="{{ .Params.link }}">
+						<span>{{ add $index 1 }}</span>
+						<h5>{{ $element.Title }}</h5>
+						{{ $element.Content }}
+					</a>
 				</li>
 			{{ end }}
-	  </ul>
+	  </ol>
 	</div>
 	<aside class="images" id="{{ .context.UniqueID }}" role="complementary">
 		{{ range $index, $value := $content }}

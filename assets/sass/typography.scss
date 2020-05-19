@@ -119,7 +119,7 @@ a {
 	}
 }
 
-p, ul, td, th, input, .btn, .p, h5 {
+p, ul, td, th, input, .btn, .p, h5, ol {
   font-size: var(--size-4);
   line-height: 1.6;
   max-width: calc(var(--size-4) * 50);
@@ -148,7 +148,7 @@ h5 {
 	margin: $spacing / 2 0;
 }
 
-ul:not(.plain) {
+ul:not(.plain), ol:not(.plain) {
   list-style: none;
   padding: 0;
   margin: 0;

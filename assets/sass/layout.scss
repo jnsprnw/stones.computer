@@ -333,26 +333,46 @@ body {
 	}
 }
 
-.list li {
-  // margin-bottom: var(--spacing-4);
-  padding-bottom: var(--spacing-4);
-  padding-top: var(--spacing-4);
-  border-bottom: 1px solid #000;
+.list {
+	li {
+		padding-bottom: var(--spacing-4);
+	  padding-top: var(--spacing-4);
+	  border-bottom: 1px solid #000;
 
-  a {
-  	display: flex;
-  	justify-content: space-between;
-  	padding: 0 var(--spacing-4);
+	  a {
+	  	display: flex;
+	  	justify-content: space-between;
+	  	padding: 0 var(--spacing-4);
+	  }
+
+	  &:first-child {
+	  	border-top: 1px solid #000;
+	  }
+	}
+
+  &.list-complex {
+  	a {
+  		display: grid;
+  		grid-template-columns: calc(var(--spacing-4) * 2) 1fr;
+  		align-items: center;
+
+  		p {
+  			grid-column: 2 / span 1;
+  		}
+  	}
   }
-
-  &:first-child {
-  	border-top: 1px solid #000;
-  }
-
-  // &:last-child {
-  // 	border: 0;
-  // }
 }
+
+ol.list.list-complex li {
+	list-style: none;
+
+	span {
+		font-size: var(--size-5);
+		text-transform: uppercase;
+		letter-spacing: .02em;
+	}
+}
+
 
 p + p {
 	margin-top: var(--margin);
