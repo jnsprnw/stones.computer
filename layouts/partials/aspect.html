@@ -5,7 +5,7 @@
 		<span class="caption float">Aspect</span>
 	  <h3 id="{{ $id }}">{{ .context.Title }}</h3>
 	  <div>{{ .context.Content }}</div>
-	  <span class="caption">Related projects</span>
+	  <span class="caption">Primary sources</span>
 	  <ol class="list list-complex">
 	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
 	  	{{ range $index, $element := $content }}
