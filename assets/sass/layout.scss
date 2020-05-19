@@ -335,7 +335,7 @@ body {
 ol.list.list-complex li {
 	list-style: none;
 
-	span {
+	span, i {
 		font-size: var(--size-5);
 		text-transform: uppercase;
 		letter-spacing: .02em;
