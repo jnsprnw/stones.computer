@@ -1,8 +1,8 @@
 {{ $parentID := .context.UniqueID }}
 {{ $id := .context.Title | urlize | lower }}
-<section class="aspect" role="listitem" aria-labelledby="{{ $id }}">
-	<span class="caption float">Aspect</span>
-	<h3 id="{{ $id }}">{{ .context.Title }}</h3>
+<section class="aspect" role="listitem" aria-labelledby="title_{{ $id }}" id="{{ $id }}">
+	<a href="#{{ $id }}"><span class="caption float">Aspect</span></a>
+	<h3 id="title_{{ $id }}">{{ .context.Title }}</h3>
 	<div class="content">
 	  {{ .context.Content }}
 	</div>
