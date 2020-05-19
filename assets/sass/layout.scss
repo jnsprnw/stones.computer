@@ -176,6 +176,10 @@ body {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	margin-bottom: var(--spacing-3);
+	padding: calc(var(--spacing-3) / 2) var(--spacing-3);
+	position: relative;
+	grid-column-gap: var(--spacing-3);
+	align-items: start;
 
 	&:last-child {
 		border-bottom: 1px solid var(--color-font);
@@ -185,61 +189,22 @@ body {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.content {
-		padding: var(--margin);
-		position: relative;
-
-		.float {
-			position: absolute;
-			left: $spacing;
-			top: calc(var(--size-5) * -2);
-			// writing-mode: vertical-lr;
-			// transform: rotate(-180deg);
-		}
+	.caption {
+		display: inherit;
 	}
 
-	.images {
-		justify-self: center;
-		align-self: center;
-		overflow: hidden;
-		height: calc(100% - var(--margin) - var(--margin));
-		width: calc(100% - var(--margin) - var(--margin));
-		position: relative;
-		display: none;
+	h3 {
+		grid-column-end: span 2;
+		max-width: calc(50% - var(--spacing-3) / 2);
+	}
 
-		@include query($medium) {
-			display: block;
-		}
-
-		.image {
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			opacity: 0;
-			transition: opacity 0.1s;
-
-			&[aria-hidden="false"] {
-				opacity: 1;
-			}
-
-			img, figcaption {
-				position: absolute;
-			}
-
-			img {
-				left: 50%;
-    		transform: translate(-50%, -50%);
-    		top: 50%;
-    		object-fit: cover;
-    		width: 100%;
-    		height: 100%;
-			}
-
-			figcaption {
-				bottom: 0;
-				right: 0;
-			}
-		}
+	.float {
+		position: absolute;
+		left: var(--spacing-3);
+		// top: calc(var(--spacing-3) * -2);
+		top: calc(var(--size-5) * -1.8);
+		// writing-mode: vertical-lr;
+		// transform: rotate(-180deg);
 	}
 }
 
@@ -335,14 +300,12 @@ body {
 
 .list {
 	li {
-		padding-bottom: var(--spacing-4);
-	  padding-top: var(--spacing-4);
 	  border-bottom: 1px solid #000;
 
 	  a {
 	  	display: flex;
 	  	justify-content: space-between;
-	  	padding: 0 var(--spacing-4);
+	  	padding: var(--spacing-4);
 	  }
 
 	  &:first-child {
@@ -353,11 +316,17 @@ body {
   &.list-complex {
   	a {
   		display: grid;
-  		grid-template-columns: calc(var(--spacing-4) * 2) 1fr;
-  		align-items: center;
+  		grid-template-columns: calc(var(--spacing-4) * 2) 1fr calc(var(--spacing-4) * 2);
+  		// align-items: center;
 
   		p {
   			grid-column: 2 / span 1;
+  		}
+
+  		i {
+  			grid-row-start: 1;
+				grid-column-start: 3;
+				justify-self: end;
   		}
   	}
   }

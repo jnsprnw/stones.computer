@@ -57,7 +57,7 @@ h2 {
 h3 {
   margin-bottom: 0.5em;
   // font-weight: $font-weight-bold;
-  line-height: 1;
+  line-height: 0.95;
   position: relative;
   font-size: var(--size-1);
   letter-spacing: -0.05em;
@@ -126,7 +126,7 @@ p, ul, td, th, input, .btn, .p, h5, ol {
 }
 
 h5 {
-  font-size: var(--size-6);
+  font-size: var(--size-4);
   text-transform: uppercase;
 }
 
@@ -140,6 +140,7 @@ h5 {
   p {
     margin: 0;
     display: inline;
+    font-size: var(--size-5);
   }
 }
 
@@ -169,12 +170,15 @@ ul:not(.plain), ol:not(.plain) {
     a {
       transition: color $transition;
     	color: var(--color-font);
-    	text-decoration-color: $color-white;
-    	transition: text-decoration-color $transition;
+    	// text-decoration-color: $color-white;
+    	// transition: text-decoration-color $transition;
+      text-decoration: none;
 
     	&:hover, &:focus {
-    		text-decoration: underline;
-    		text-decoration-color: $color-accent;
+    		// text-decoration: underline;
+        color: $color-accent-secondary;
+        text-decoration: none;
+    		// text-decoration-color: $color-accent;
     	}
     }
   }

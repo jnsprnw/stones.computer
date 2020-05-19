@@ -1,11 +1,12 @@
 {{ $parentID := .context.UniqueID }}
 {{ $id := .context.Title | urlize | lower }}
 <section class="aspect" role="listitem" aria-labelledby="{{ $id }}">
+	<span class="caption float">Aspect</span>
+	<h3 id="{{ $id }}">{{ .context.Title }}</h3>
 	<div class="content">
-		<span class="caption float">Aspect</span>
-	  <h3 id="{{ $id }}">{{ .context.Title }}</h3>
-	  <div>{{ .context.Content }}</div>
-	  <span class="caption">Primary sources</span>
+	  {{ .context.Content }}
+	</div>
+	<aside>
 	  <ol class="list list-complex">
 	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
 	  	{{ range $index, $element := $content }}
@@ -14,17 +15,10 @@
 						<span>{{ add $index 1 }}</span>
 						<h5>{{ $element.Title }}</h5>
 						{{ $element.Content }}
+						<i>↗</i>
 					</a>
 				</li>
 			{{ end }}
 	  </ol>
-	</div>
-	<aside class="images" id="{{ .context.UniqueID }}" role="complementary">
-		{{ range $index, $value := $content }}
-			<figure class="image" aria-hidden="{{ ne $index 0 }}" id="{{ .UniqueID }}" role="figure">
-				<img src="{{ printf "/images/%s" $value.Params.image }}">
-				<figcaption>{{ $value.Params.figcaption }}</figcaption>
-			</figure>
-		{{ end }}
 	</aside>
 </section>
