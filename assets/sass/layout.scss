@@ -186,7 +186,7 @@ body {
 	}
 
 	.content {
-		padding: $spacing;
+		padding: var(--margin);
 		position: relative;
 
 		.float {
@@ -202,8 +202,8 @@ body {
 		justify-self: center;
 		align-self: center;
 		overflow: hidden;
-		height: 100%;
-		width: 100%;
+		height: calc(100% - var(--margin) - var(--margin));
+		width: calc(100% - var(--margin) - var(--margin));
 		position: relative;
 		display: none;
 
