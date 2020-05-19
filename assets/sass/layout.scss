@@ -47,10 +47,13 @@ body {
 }
 
 .titles {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: 1fr 1fr;
-	width: 80%;
+	@include query($medium) {
+		grid-template-columns: 1fr 1fr;
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: 1fr;
+		width: 80%;
+	}
 
 	.logo {
 		border-right: 10px solid #fff;
@@ -80,7 +83,10 @@ body {
 		// border-bottom: 1px solid $color-accent-dark;
 		padding-bottom: calc(var(--margin) * 2);
 		text-align: center;
-		display: flex;
+
+		@include query($medium) {
+			display: flex;
+		}
 	}
 
 	.info {
@@ -107,9 +113,13 @@ body {
 
 	.header {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-column-gap: var(--spacing-3);
 		padding: var(--spacing-3) calc(var(--spacing-3) + var(--margin));
+
+		@include query($medium) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 
 		h5 {
 			display: inline-block;
@@ -195,15 +205,15 @@ body {
 
 	@include query($medium) {
 		grid-template-columns: repeat(2, 1fr);
+
+		h3 {
+			grid-column-end: span 2;
+			max-width: calc(50% - var(--spacing-3) / 2);
+		}
 	}
 
 	.caption {
 		display: inherit;
-	}
-
-	h3 {
-		grid-column-end: span 2;
-		max-width: calc(50% - var(--spacing-3) / 2);
 	}
 
 	.float {
@@ -222,14 +232,18 @@ body {
 
 	.topic {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		// position: relative;
 		// border-bottom: 20px dotted #ffff01; // $color-accent-secondary;
 		grid-column-gap: var(--spacing-3);
-		padding: var(--spacing-3);
 		// background-color: #ffff01;
 		// background-color: #fff;
 		// z-index: -2;
+
+		@include query($medium) {
+			grid-template-columns: repeat(2, 1fr);
+			padding: var(--spacing-3);
+		}
 
 		&:last-child {
 			border-bottom: 0;
