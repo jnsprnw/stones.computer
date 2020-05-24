@@ -14,7 +14,7 @@
 					<a href="{{ .Params.link }}">
 						<span>{{ add $index 1 }}</span>
 						<h5>{{ $element.Title }}</h5>
-						{{ $element.Content }}
+						<p class="content">{{ with $element.Params.authors }}{{ delimit . ", " " and " }}; {{ end }}{{ with $element.Params.year }}{{ . }}{{ end }}</p>
 						<i>↗</i>
 					</a>
 				</li>

@@ -366,7 +366,7 @@ ol.list.list-complex li {
 
 
 p + p {
-	margin-top: var(--margin);
+	margin-top: calc(var(--margin) / 2);
 }
 
 .homepage-projects {

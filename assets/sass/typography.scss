@@ -21,13 +21,19 @@
   --size-8: calc(var(--base) * 2.8);
 }
 
-.logo, .subtitle {
-	font-weight: $font-weight-bold;
-	line-height: 1;
-	margin-bottom: $spacing / 2;
-  display: inline-block;
+@mixin headline-1 () {
+  font-weight: $font-weight-bold;
+  line-height: 1;
   font-size: var(--size-1);
 }
+
+.logo, .subtitle {
+  @include headline-1();
+  display: inline-block;
+  margin-bottom: $spacing / 2;
+}
+
+
 
 // .subtitle {
 //   font-weight: $font-weight-bold;

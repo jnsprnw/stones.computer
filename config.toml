@@ -11,7 +11,10 @@ title = "Stones that calculate"
 
 [params]
   description = "Post-Digital Materiality"
-  contentTypes = ["articles", "projects"]
+  contentTypes = ["articles", "projects", "sources"]
 
 [outputs]
   home = ["HTML", "Items"]
+
+[markup.goldmark.renderer]
+  unsafe = true
