@@ -98,7 +98,7 @@ p, ul, td, th, input, .btn, .p, ol {
   font-size: var(--size-5);
 }
 
-.reference-description, .page-footer {
+.reference-description, .page-footer, .tag {
   @include text-2();
 }
 
