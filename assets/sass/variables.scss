@@ -36,8 +36,15 @@ $wide:        	1200px !default;
 $extra-wide:    1700px !default;
 
 :root {
-  --color-fg:rgb(0,0,0);
-  --color-bg:rgb(255,255,255);
+  --color-fg: rgb(0, 0, 0);
+  --color-bg: rgb(255, 255, 255);
+  --color-accent: #f73c2f;
+  --color-interactive: #1437dd;
+  --color-gray-1: #42403C;
+  --color-gray-2: #9C9995;
+  --color-gray-3: #C0C0BE;
+  --color-gray-4: #F5F5F5;
+
   --color-hi:rgb(0,0,255);
   --color-lo:rgb(240,240,240);
   --color-ft:rgb(0,0,0,0.3);
@@ -45,6 +52,9 @@ $extra-wide:    1700px !default;
   --color-background: #fff;
   --color-font: #000;
   --base: calc(1vw + 1vh);
+
+  --color-border-primary: var(--color-fg);
+  --color-border-secondary: var(--color-fg);
 }
 
 // .theme-dark {

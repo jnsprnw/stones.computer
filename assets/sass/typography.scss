@@ -1,15 +1,5 @@
 @import "./global";
 
-::-moz-selection {
-  color: $color-white;
-  background-color: $color-accent;
-}
-
-::selection {
-  color: $color-white;
-  background-color: $color-accent;
-}
-
 :root {
   --size-1: max(calc(var(--base) * 3), 1.2rem); // Headlines topics and aspects
   --size-2: calc(var(--base) * 2.2);
@@ -19,6 +9,13 @@
   --size-6: calc(var(--base) * 0.8);
   --size-7: calc(var(--base) * 2.8);
   --size-8: calc(var(--base) * 2.8);
+}
+
+i { font-style: normal; }
+
+::selection {
+  color: $color-white;
+  background-color: $color-accent;
 }
 
 @mixin headline-1 () {
@@ -33,59 +30,127 @@
   margin-bottom: $spacing / 2;
 }
 
-
-
-// .subtitle {
-//   font-weight: $font-weight-bold;
-//   line-height: 1.1;
-//   margin-bottom: $spacing / 2;
-//   display: inline-block;
-//   font-size: var(--size-2);
-//   color: $color-accent;
-//   margin-top: -3rem;
-// }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-headline;
-  font-size: inherit;
-}
-
-h2 {
-  margin: 0;
-  line-height: 1.2em;
+@mixin headline-2 () {
   font-weight: $font-weight-bold;
   text-transform: uppercase;
   letter-spacing: 0.8em;
-  font-size: var(--size-4);
-  color: $color-accent-dark;
+  background-color: #000;
+  color: #000;
+  font-size: var(--size-1);
+  line-height: 1;
+  @include outline(#fff);
 }
 
-h3 {
-  margin-bottom: 0.5em;
-  // font-weight: $font-weight-bold;
+.section-headline {
+  @include headline-2();
+}
+
+@mixin headline-3 () {
+  font-weight: $font-weight-bold;
   line-height: 0.95;
-  position: relative;
   font-size: var(--size-1);
   letter-spacing: -0.05em;
-  // font-weight: 400;
-  // hyphens: auto;
-  // text-decoration: underline;
-  // text-decoration-color: #fff;
-  // text-decoration-thickness: 0.2rem;
-
-  i {
-    left: -1.6rem;
-    line-height: 2;
-  }
 }
 
-h2, h3 {
+.aspect-title, .topic-title {
+  @include headline-3();
+}
+
+@mixin headline-4 () {
+  font-size: var(--size-3);
+}
+
+.question {
+  @include headline-4();
+}
+
+@mixin headline-5 () {
+  font-size: var(--size-4);
+  line-height: 1.6;
+}
+
+.section-intro-headline, .topic-description-intro, .link-title {
+  @include headline-5();
+}
+
+@mixin headline-6 () {
+  font-size: var(--size-5);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+.caption {
+  @include headline-6();
+}
+
+@mixin text-1 () {
+  font-size: var(--size-4);
+  line-height: 1.6;
+}
+
+p, ul, td, th, input, .btn, .p, ol {
+  @include text-1();
+  max-width: calc(var(--size-4) * 50);
+}
+
+@mixin text-2 () {
+  font-size: var(--size-5);
+}
+
+.reference-description, .page-footer {
+  @include text-2();
+}
+
+.reference-counter, .reference-icon {
+  @include text-2();
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+@mixin link-1 () {
+  color: var(--color-font);
+  text-decoration-color: $color-accent-secondary;
+  transition: text-decoration-color $transition, color $transition;
+
   &:hover, &:focus {
-    i {
-      color: $color-mute;
-    }
+    color: $color-accent-secondary;
+    text-decoration-color: var(--color-bg);
   }
 }
+
+p a, .page-footer a, .info a { // TODO
+  @include link-1();
+}
+
+@mixin link-2 () {
+  color: var(--color-fg);
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover, &:focus {
+    color: $color-accent;
+  }
+}
+
+.link-aspect {
+  @include link-2();
+}
+
+@mixin link-3 () {
+  color: var(--color-fg);
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover, &:focus {
+    color: $color-accent-secondary;
+  }
+}
+
+.link-reference {
+  @include link-3();
+}
+
 
 h4 {
   text-transform: uppercase;
@@ -102,45 +167,7 @@ h4 {
   }
 }
 
-a {
-	color: var(--color-font);
-  transition: color $transition;
-	text-decoration-color: $color-accent-secondary;
-	transition: text-decoration-color $transition;
-
-  &[href^="#"], &[rel="self"] {
-    text-decoration: none;
-    text-decoration-color: $color-white;
-  }
-
-	&:hover, &:focus {
-    &:not(.headline) {
-      text-decoration: underline;
-      color: $color-accent-secondary;
-      text-decoration-color: #fff;
-    }
-
-    &.headline > * {
-      border-bottom-color: $color-accent;
-    }
-	}
-}
-
-p, ul, td, th, input, .btn, .p, h5, ol {
-  font-size: var(--size-4);
-  line-height: 1.6;
-  max-width: calc(var(--size-4) * 50);
-}
-
-h5 {
-  // font-weight: normal;
-  font-size: var(--size-4);
-  // text-transform: uppercase;
-}
-
 .link {
-  // margin-bottom: $spacing / 4;
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -157,49 +184,16 @@ h5 {
 	margin: $spacing / 2 0;
 }
 
-ul:not(.plain), ol:not(.plain) {
+ul, ol {
   list-style: none;
   padding: 0;
   margin: 0;
 
   li {
-    // padding: 0.2em $spacing 0.2em 1.6em;
     position: relative;
     line-height: 1.5em;
     display: block;
-
-    // &:before {
-    //   content: "—";
-    //   color: $color-accent-dark;
-    //   position: absolute;
-    //   left: 0;
-    // }
-
-    a {
-      transition: color $transition;
-    	color: var(--color-font);
-    	// text-decoration-color: $color-white;
-    	// transition: text-decoration-color $transition;
-      text-decoration: none;
-
-    	&:hover, &:focus {
-    		// text-decoration: underline;
-        color: $color-accent-secondary;
-        text-decoration: none;
-    		// text-decoration-color: $color-accent;
-    	}
-    }
   }
-}
-
-.mute {
-  color: rgb(200, 200, 200);
-}
-
-small, .page-footer span {
-  font-size: 0.80rem;
-  display: inline-block;
-  line-height: 1.4rem;
 }
 
 .projects {
@@ -229,35 +223,9 @@ input {
 }
 
 .topics .topic header .number {
-  font-size: calc(var(--base) * 10);
+  font-size: calc(var(--base) * 15);
   line-height: 1;
   font-weight: $font-weight-bold;
-  color: $color-accent;
-}
-
-.topics .topic .aspects li {
-  span {
-    // font-style: italic;
-  }
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: $color-accent;
-    }
-  }
-}
-
-i {
-  font-style: normal;
-}
-
-.caption {
-  font-size: var(--size-5);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #000;
-  // font-style: italic;
-  // font-weight: $font-weight-bold;
+  color: var(--color-bg);
+  @include outline(var(--color-accent));
 }

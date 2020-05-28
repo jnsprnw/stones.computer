@@ -1,11 +1,11 @@
 <section class="topic">
 	<header>
 		<span class="caption float">Topic</span>
-	  <h3>{{ .Title }}</h3>
+	  <h3 class="topic-title">{{ .Title }}</h3>
 	  <span class="number">{{ .Weight }}</span>
 	</header>
   <div class="description">
-  	<h5>{{ .Params.Question }}</h5>
+  	<h5 class="topic-description-intro">{{ .Params.Question }}</h5>
   	{{ .Content }}
   	{{ .Content }}
   	<div class="aspects">
@@ -14,7 +14,7 @@
 	  	<ul class="list">
 	  		{{ range $content }}
 	  		{{ $id := .Title | urlize | lower }}
-	  		<li><a href="#{{ $id }}"><span>{{ .Title }}</span><i>↓</i></a></li>
+	  		<li><a href="#{{ $id }}" class="link-aspect"><span>{{ .Title }}</span><i>↓</i></a></li>
 	  		{{ end }}
 	  	</ul>
 	  </div>
