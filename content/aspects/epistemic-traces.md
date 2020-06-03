@@ -5,6 +5,13 @@ draft: false
 topics: ["material"]
 ---
 
-- Material Witness – Schuppli
-- Situated Knowledge – Harraway
-- Evidentiary Realism – Cirio
+Material Knowledge, Sensing, ...
+
+- Susan Schuppli (Material Witness)
+- Donna Haraway (Situated Knowledge)
+- Paul Edwards (Vast Machine)
+- Jennifer Gabrys (Program Earth)
+
+- Paolo Cirio (Evidentiary Realism)
+- Geocinema
+- Sasha Litvintseva

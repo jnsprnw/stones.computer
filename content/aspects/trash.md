@@ -5,8 +5,15 @@ draft: false
 topics: ["material"]
 ---
 
-- Jennifer Gabrys (Program Earth – Pollution Sensing)
-- Jussi Parikka (Geology of Earth – Trash)
+Expaneded notion of media
+
+- Jussi Parikka (Geology of Media)
 - Robert Smithson (Earth Project)
 - Donna Haraway (Naturecultures)
 - John Durham Peters (Marvellous Clouds)
+- Shannon Mattern (Code and Clay, Data and Dirt)
+- Jennifer Gabrys (Digital Rubbish – Pollution Sensing)
+
+https://makingandbreaking.org/article/crapularity-aesthetics/
+
+Is the Earth a Medium? http://www.ctrl-z.net.au/articles/issue-7/russill-is-the-earth-a-medium/

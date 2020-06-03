@@ -5,7 +5,13 @@ draft: false
 topics: ["material", "bodies"]
 ---
 
-- Posthumanism
-- Cyborg Manifesto
-- Karen Barad
-- Pluralität
+Posthumanism, Thought versus Consciousness, ...
+
+- Katherine Hayles (How We Became Posthuman)
+- Donna Haraway (Cyborg Manifesto)
+- Karen Barad (Unconscious)
+- Eugene Thacker (In the Dust of this Planet, World-without-us)
+- Elizabeth Povinelli (Nonlife → Geontologies)
+- Jan Zalasiewicz (The Earth After Us)
+
+Lawerence Lek (Sinofuturism)

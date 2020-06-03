@@ -5,5 +5,13 @@ draft: false
 topics: ["power", "bodies"]
 ---
 
-- Sousveillance, Counter-Surveillance, CCTV, Tracking
-- Geoff Manaugh http://www.bldgblog.com/tag/surveillance/
+Sousveillance/Counter-Surveillance, CCTV, Tracking
+
+- Geoff Manaugh [http://www.bldgblog.com/tag/surveillance/](http://www.bldgblog.com/tag/surveillance/)
+- Glenn Greenwald [https://www.ted.com/talks/glenn_greenwald_why_privacy_matters](https://www.ted.com/talks/glenn_greenwald_why_privacy_matters)
+- Metahaven – Black Transparency
+
+- Adam Harvey (Hyperface)
+- Julien Oliver  (...)
+- Watched! Surveillance, Art & Photography (CO Berlin exhibition)
+- Julian Assange (WikiLeaks)
