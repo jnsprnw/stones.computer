@@ -154,7 +154,7 @@ p a, .page-footer a, .info a { // TODO
 }
 
 // Internal links to aspects
-.link-aspect, .link-reference {
+.link-aspect, .link-reference, .link-table {
   @include link-2();
 }
 

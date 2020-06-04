@@ -400,12 +400,13 @@ p + p {
 }
 
 .homepage-projects {
-	li {
+	li a {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
 		// border-bottom: 1px solid $color-accent-dark;
-		padding-bottom: var(--margin);
-		margin-bottom: var(--margin);
+		padding-bottom: calc(var(--margin) / 6);
+		padding-top: calc(var(--margin) / 6);
+		// margin-bottom: var(--margin);
 
 		// span.title {
 		// 	grid-column-end: span 6;
