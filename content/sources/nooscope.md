@@ -9,6 +9,7 @@ link: "https://nooscope.ai/"
 medium: "book"
 year: 2020
 tags: ["algorithmic discrimination", "machine bias", "jim code", "racial hierarchies", "discriminatory designs"]
+weight: 3
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt.

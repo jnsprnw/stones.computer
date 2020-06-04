@@ -9,6 +9,7 @@ link: "https://weaponsofmathdestructionbook.com/"
 medium: "book"
 year: 2016
 tags: ["algorithmic discrimination", "machine bias", "jim code", "racial hierarchies", "discriminatory designs"]
+weight: 1
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt.

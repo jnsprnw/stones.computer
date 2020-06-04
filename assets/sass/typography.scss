@@ -92,6 +92,10 @@ sup { font-size: 0.7em; }
 
 p, ul, td, th, input, .btn, .p, ol {
   @include text-1();
+  // max-width: calc(var(--size-4) * 50);
+}
+
+p {
   max-width: calc(var(--size-4) * 50);
 }
 
@@ -118,8 +122,17 @@ p, ul, td, th, input, .btn, .p, ol {
     color: $color-accent-secondary;
     text-decoration-color: var(--color-bg);
   }
+
+  &[href^="#"] { // Style internal links differently
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $color-accent;
+    }
+  }
 }
 
+// Regular links in paragraphs, footer or intro
 p a, .page-footer a, .info a { // TODO
   @include link-1();
 }
@@ -130,28 +143,20 @@ p a, .page-footer a, .info a { // TODO
   transition: color $transition;
 
   &:hover, &:focus {
-    color: $color-accent;
-  }
-}
-
-.link-aspect {
-  @include link-2();
-}
-
-@mixin link-3 () {
-  color: var(--color-fg);
-  text-decoration: none;
-  transition: color $transition;
-
-  &:hover, &:focus {
     color: $color-accent-secondary;
   }
+
+  &[href^="#"] { // Style internal links differently
+    &:hover, &:focus {
+      color: $color-accent;
+    }
+  }
 }
 
-.link-reference {
-  @include link-3();
+// Internal links to aspects
+.link-aspect, .link-reference {
+  @include link-2();
 }
-
 
 h4 {
   text-transform: uppercase;
@@ -212,7 +217,7 @@ ul, ol {
 }
 
 .homepage-projects {
-  li div:first-child {
+  li .title {
     font-weight: $font-weight-bold;
   }
 }

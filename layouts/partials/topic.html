@@ -14,7 +14,7 @@
 	  	<ul class="list">
 	  		{{ range $content }}
 	  		{{ $id := .Title | urlize | lower }}
-	  		<li><a href="#{{ $id }}" class="link-aspect"><span>{{ .Title }}</span><i>↓</i></a></li>
+	  		<li class="link"><a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«"><span>{{ .Title }}</span><i>↓</i></a></li>
 	  		{{ end }}
 	  	</ul>
 	  </div>

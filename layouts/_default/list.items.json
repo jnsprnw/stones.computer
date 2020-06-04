@@ -1,5 +1,9 @@
+{{- $aspects := where .Site.RegularPages "Section" "eq" "aspects" -}}
+{{- $topics := where .Site.RegularPages "Section" "eq" "topics" -}}
 {{- $.Scratch.Add "list" slice -}}
 {{- range $index, $element := (where .Site.RegularPages "Section" "in" site.Params.contentTypes) -}}
-  {{- $.Scratch.Add "list" (dict "id" $index "title" $element.Title "authors" $element.Params.authors "aspect" $element.Params.aspect "topic" $element.Params.topic "medium" $element.Params.medium "description" $element.Content) -}}
+	{{- $aspect := index (where $aspects "File.BaseFileName" "eq" $element.Params.aspect) 0 -}}
+	{{- $topic := index (where $topics "File.BaseFileName" "eq" $element.Params.topic) 0 -}}
+  {{- $.Scratch.Add "list" (dict "id" $index "title" $element.Title "authors" (delimit $element.Params.authors ", " " and ") "aspect" $aspect.Title "topic" $topic.Title "medium" $element.Params.medium "year" $element.Params.year "tags" $element.Params.tags "link" $element.Params.link) -}}
 {{- end -}}
 {{- $.Scratch.Get "list" | jsonify -}}

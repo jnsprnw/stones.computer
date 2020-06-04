@@ -26,11 +26,14 @@
       'authors',
       'aspect',
       'topic',
-      'medium'
+      'medium',
+      'tags',
+      'link',
+      'year'
     ]
   };
 
-  const columns = ['title', 'authors', 'aspect', 'topic', 'medium', 'description']
+  const columns = ['title', 'authors', 'aspect', 'topic', 'medium', 'year']
 
   d3.json('/items.json').then((items) => {
     const fuse = new Fuse(items, options);
@@ -48,13 +51,15 @@
     const rows = list.selectAll('li')
       .data(data, (d) => 'item' in d ? d.item.id : d.id)
       .join('li')
-      .selectAll('div')
+      .append('a')
+      .selectAll('span')
       .data((row) => {
         const datum = 'item' in row ? row.item : row
-        return columns.map((column) => ({ value: datum[column] }))
+        return columns.map((column) => ({ value: datum[column], className: column }))
       })
       .enter()
-      .append('div')
+      .append('span')
+        .attr('class', (d) => d.className)
         .text((d) => d.value)
   }
 

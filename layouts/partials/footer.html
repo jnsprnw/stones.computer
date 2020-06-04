@@ -3,38 +3,58 @@
 </footer>
 
 <script>
-	const links = document.getElementsByClassName('link');
+	// const links = document.getElementsByClassName('link');
 
-	for (let l = 0; l < links.length; l++) {
-	  links[l].addEventListener('mouseenter', function (e) {
-	    const images = document.getElementById(e.target.dataset.parent).getElementsByClassName('image')
-	    for (let i = 0; i < images.length; i++) {
-	    	images[i].setAttribute('aria-hidden', 'true');
-	    	if (images[i].id === e.target.dataset.id) {
-	    		images[i].setAttribute('aria-hidden', 'false');
-	    	}
-	    }
-	  })
+	// for (let l = 0; l < links.length; l++) {
+	//   links[l].addEventListener('mouseenter', function (e) {
+	//     const images = document.getElementById(e.target.dataset.parent).getElementsByClassName('image')
+	//     for (let i = 0; i < images.length; i++) {
+	//     	images[i].setAttribute('aria-hidden', 'true');
+	//     	if (images[i].id === e.target.dataset.id) {
+	//     		images[i].setAttribute('aria-hidden', 'false');
+	//     	}
+	//     }
+	//   })
+	// }
+
+	const footnotes = document.getElementsByClassName('footnote');
+	const references = document.getElementsByClassName('references');
+
+	for (let l = 0; l < footnotes.length; l++) {
+		footnotes[l].addEventListener('mouseenter', function (e) {
+			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
+			reference.classList.add('isHover');
+			for (let l = 0; l < references.length; l++) {
+				references[l].classList.add('hasHover');
+			}
+		})
+		footnotes[l].addEventListener('mouseleave', function (e) {
+			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
+			reference.classList.remove('isHover');
+			for (let l = 0; l < references.length; l++) {
+				references[l].classList.remove('hasHover');
+			}
+		})
 	}
 
-	// function to set a given theme/color-scheme
-	function setTheme(themeName) {
-	    localStorage.setItem('theme', themeName);
-	    document.documentElement.className = themeName;
-	}// function to toggle between light and dark theme
-	function toggleTheme() {
-	   if (localStorage.getItem('theme') === 'theme-dark'){
-	       setTheme('theme-light');
-	   } else {
-	       setTheme('theme-dark');
-	   }
-	}// Immediately invoked function to set the theme on initial load
-	(function () {
-	   if (localStorage.getItem('theme') === 'theme-dark') {
-	       setTheme('theme-dark');
-	   } else {
-	       setTheme('theme-light');
-	   }
-	})();
+	// // function to set a given theme/color-scheme
+	// function setTheme(themeName) {
+	//     localStorage.setItem('theme', themeName);
+	//     document.documentElement.className = themeName;
+	// }// function to toggle between light and dark theme
+	// function toggleTheme() {
+	//    if (localStorage.getItem('theme') === 'theme-dark'){
+	//        setTheme('theme-light');
+	//    } else {
+	//        setTheme('theme-dark');
+	//    }
+	// }// Immediately invoked function to set the theme on initial load
+	// (function () {
+	//    if (localStorage.getItem('theme') === 'theme-dark') {
+	//        setTheme('theme-dark');
+	//    } else {
+	//        setTheme('theme-light');
+	//    }
+	// })();
 
 </script>
