@@ -1,6 +1,7 @@
-<section class="topic">
-	<header>
-		<span class="caption float">Topic</span>
+{{ $id := .Title | urlize | lower }}
+<section class="topic" id="{{ $id }}">
+	<header class="topic-header">
+		<a href="#{{ $id }}" class="caption anchor float" title="Jump to section">Topic</a>
 	  <h3 class="topic-title">{{ .Title }}</h3>
 	  <span class="number">{{ .Weight }}</span>
 	</header>

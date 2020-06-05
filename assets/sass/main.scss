@@ -2,7 +2,9 @@
 @import "./fonts";
 
 html {
-  font: normal normal 105%/1.7 $font-family-default;
+  font-size: var(--base);
+  line-height: 1.7;
+  font-family: $font-family-default;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -14,7 +16,6 @@ html {
 }
 
 body {
-  font-size: var(--margin);
   background-color: var(--color-background);
   color: var(--color-font);
   transition: background-color $transition, color $transition;
@@ -24,6 +25,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @import "./layout";

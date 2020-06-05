@@ -1,32 +1,14 @@
 $font-family-default: 'Inter', system-ui, sans-serif;
-$font-family-headline: 'Inter', system-ui, sans-serif;
 $font-weight-default: 500 !default;
-$font-weight-bold: 800 !default;
-$base-line-height: 1.7 !default;
+$font-weight-bold:    800 !default;
 
-$spacing:     2rem !default;
+$spacing:     2rem !default; // TODO: Clean up;
 
-$color-default: #000 !default;
-$color-white:		#fff !default;
-$color-accent:	#f73c2f !default;
-$color-mute:		#999999 !default;
-$color-secondary: #d4d4d4 !default;
-$color-accent-dark: #A37878 !default;
-$color-accent-light: #B29D9D !default;
-$color-accent-secondary: #1437dd !default;
-
-$size-smallest:		0.7rem !default;
-$size-smaller:		0.8rem !default;
-$size-small:			0.9rem !default;
-$size-default:		1.5rem !default;
-$size-big:				1.7rem !default;
-$size-bigger:			2.5rem !default;
-$size-biggest:		2.9rem !default;
-
-$spacing-default:	0.01em !default;
-$spacing-wide:		0.02em !default;
-$spacing-wider:		0.05em !default;
-$spacing-widest:	0.10em !default;
+$color-default:      #000000 !default;
+$color-white:		     #ffffff !default;
+$color-accent:	     #f73c2f !default;
+$color-interactive:  #1437dd !default;
+$color-highlight:    #ffff00 !default;
 
 $transition: 			0.3s !default;
 
@@ -35,32 +17,43 @@ $medium:				900px !default;
 $wide:        	1200px !default;
 $extra-wide:    1700px !default;
 
+$z-index-table-link: 3 !default;
+$z-index-header-background: 1 !default;
+$z-index-header-foreground: 2 !default;
+
 :root {
-  --color-fg: rgb(0, 0, 0);
-  --color-bg: rgb(255, 255, 255);
-  --color-accent: #f73c2f;
-  --color-interactive: #1437dd;
+  --color-fg: #{$color-default};
+  --color-bg: #{$color-white};
+  --color-accent: #{$color-accent};
+  --color-interactive: #{$color-interactive};
+  --color-highlight: #{$color-highlight};
   --color-gray-1: #42403C;
   --color-gray-2: #9C9995;
   --color-gray-3: #C0C0BE;
   --color-gray-4: #F5F5F5;
 
-  --color-hi:rgb(0,0,255);
-  --color-lo:rgb(240,240,240);
-  --color-ft:rgb(0,0,0,0.3);
-  --margin: calc(1vw + 1vh + 0.5vmin);
-  --color-background: #fff;
-  --color-font: #000;
-  --base: calc(1vw + 1vh);
+  --margin: max(calc(2vw + 0.5vmin), 2px); // Used for spacing
+  --base: calc(1.5vw); // Used for fonts
 
-  --color-border-primary: var(--color-fg);
-  --color-border-secondary: var(--color-fg);
+  --color-border-primary: var(--color-fg); // TODO: is this used?
+  --color-border-secondary: var(--color-fg); // TODO: is this used?
 }
 
-// .theme-dark {
-//   --color-background: #000;
-//   --color-font: #fff;
-//   --color-secondary: #243133;
-//   --color-accent: #12cdea;
-//   --font-color: #ffffff;
-// }
+// background-color: #ffff01;
+// background-color: #edbe3e;
+// background-color: #96ab96;
+// background-color: #ECC454;
+// background-color: #d4baba;
+// background-color: #f9e2e4;
+
+@keyframes fade-target {
+  0% {
+    background-color: var(--color-highlight);
+  }
+  50% {
+    background-color: var(--color-highlight);
+  }
+  100% {
+    background-color: transparent;
+  }
+}

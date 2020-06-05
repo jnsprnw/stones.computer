@@ -5,17 +5,12 @@
       <a href="/table">All projects</a>
     </nav>
     <header class="homepage-header wrapper" role="banner">
-      <div class="wrapper">
-        <div class="titles">
-          <h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1>
-          <span class="subtitle">{{ .Site.Params.description }}</span>
-        </div>
-        <!-- <button id="switch" class="btn" onclick="toggleTheme()">Switch</button> -->
-        <span class="p info">Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
-      </div>
+      <h1 class="logo" role="heading" aria-level="1">{{ .Title }}</h1>
+      <span class="subtitle">{{ .Site.Params.description }}</span>
+      <span class="p info">Notes, thoughts and ressources curated by <a href="http://paulheinicker.com/">Paul Heinicker</a> and <a href="https://jonasparnow.com/">Jonas Parnow</a>.</span>
     </header>
     <section class="homepage-intro wrapper">
-      <div class="wrapper">
+      <div>
         {{ with .Site.GetPage "intro.md" }}
           {{ .Content }}
         {{ end }}
@@ -38,7 +33,7 @@
           </ul>
         </div>
       </header>
-      <div class="topics wrapper">
+      <div class="topics-list wrapper">
         {{ partial "topics.html" (dict "context" .) }}
       </div>
     </section>

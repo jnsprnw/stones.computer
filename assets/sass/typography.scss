@@ -1,14 +1,10 @@
 @import "./global";
 
 :root {
-  --size-1: max(calc(var(--base) * 3), 1.2rem); // Headlines topics and aspects
-  --size-2: calc(var(--base) * 2.2);
-  --size-3: calc(var(--base) * 1.2);
-  --size-4: max(calc(var(--base) * 0.6), 0.9rem); // Default text size
-  --size-5: max(calc(var(--base) * 0.45), 0.7rem); // Captions
-  --size-6: calc(var(--base) * 0.8);
-  --size-7: calc(var(--base) * 2.8);
-  --size-8: calc(var(--base) * 2.8);
+  --size-1: min(max(3rem, 30px), 80px); // Headlines topics and aspects
+  --size-3: min(max(1.2rem, 13px), 18px); // Questions and table link
+  --size-4: min(max(0.9rem, 13px), 16px); // Default text size
+  --size-5: min(max(0.7rem, 11px), 16px); // Captions
 }
 
 i { font-style: normal; }
@@ -25,31 +21,27 @@ sup { font-size: 0.7em; }
   font-size: var(--size-1);
 }
 
-.logo, .subtitle {
+.logo {
   @include headline-1();
   display: inline-block;
   margin-bottom: $spacing / 2;
 }
 
 @mixin headline-2 () {
-  font-weight: $font-weight-bold;
+  @include headline-1();
   text-transform: uppercase;
   letter-spacing: 0.8em;
-  background-color: #000;
-  color: #000;
-  font-size: var(--size-1);
-  line-height: 1;
-  @include outline(#fff);
 }
 
 .section-headline {
   @include headline-2();
+  color: var(--color-fg);
+  @include outline(var(--color-bg));
 }
 
 @mixin headline-3 () {
-  font-weight: $font-weight-bold;
+  @include headline-1();
   line-height: 0.95;
-  font-size: var(--size-1);
   letter-spacing: -0.05em;
 }
 
@@ -67,22 +59,12 @@ sup { font-size: 0.7em; }
 
 @mixin headline-5 () {
   font-size: var(--size-4);
+  font-weight: $font-weight-bold;
   line-height: 1.6;
 }
 
-.section-intro-headline, .topic-description-intro, .link-title {
+.section-intro-headline, .topic-description-intro, .link-title, .subtitle {
   @include headline-5();
-}
-
-@mixin headline-6 () {
-  font-size: var(--size-5);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #000;
-}
-
-.caption {
-  @include headline-6();
 }
 
 @mixin text-1 () {
@@ -90,13 +72,16 @@ sup { font-size: 0.7em; }
   line-height: 1.6;
 }
 
-p, ul, td, th, input, .btn, .p, ol {
+p, ul, input, .btn, .p, ol {
   @include text-1();
-  // max-width: calc(var(--size-4) * 50);
 }
 
 p {
   max-width: calc(var(--size-4) * 50);
+}
+
+p + p {
+  margin-top: var(--spacing-1)
 }
 
 @mixin text-2 () {
@@ -113,13 +98,26 @@ p {
   letter-spacing: .02em;
 }
 
+.caption,  {
+  font-size: var(--size-5);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.topics-list .topic .number {
+  @include headline-1();
+  font-size: calc(var(--base) * 15);
+  color: var(--color-bg);
+  @include outline(var(--color-accent));
+}
+
 @mixin link-1 () {
   color: var(--color-font);
-  text-decoration-color: $color-accent-secondary;
+  text-decoration-color: var(--color-interactive);
   transition: text-decoration-color $transition, color $transition;
 
   &:hover, &:focus {
-    color: $color-accent-secondary;
+    color: var(--color-interactive);
     text-decoration-color: var(--color-bg);
   }
 
@@ -133,7 +131,7 @@ p {
 }
 
 // Regular links in paragraphs, footer or intro
-p a, .page-footer a, .info a { // TODO
+p a, .page-footer a, .info a, ul a {
   @include link-1();
 }
 
@@ -143,7 +141,7 @@ p a, .page-footer a, .info a { // TODO
   transition: color $transition;
 
   &:hover, &:focus {
-    color: $color-accent-secondary;
+    color: var(--color-interactive);
   }
 
   &[href^="#"] { // Style internal links differently
@@ -154,84 +152,12 @@ p a, .page-footer a, .info a { // TODO
 }
 
 // Internal links to aspects
-.link-aspect, .link-reference, .link-table {
+.link-aspect, .link-reference, .link-table, .caption.anchor {
   @include link-2();
 }
 
-h4 {
-  text-transform: uppercase;
-  font-weight: $font-weight-default;
-  letter-spacing: 0.1em;
-  font-size: 0.7rem;
-  color: $color-accent-dark;
-  // margin-top: $spacing;
-}
-
-.homepage-header {
-  span {
-    display: block;
-  }
-}
-
-.link {
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  p {
-    margin: 0;
-    display: inline;
-    font-size: var(--size-5);
-  }
-}
-
-.homepage-content .note {
-	display: block;
-	margin: $spacing / 2 0;
-}
-
-ul, ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    position: relative;
-    line-height: 1.5em;
-    display: block;
-  }
-}
-
-.projects {
-  table {
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: separate;
-
-    td, th {
-      transition: border-bottom-color $transition;
-      border-bottom: 1px solid var(--color-font);
-      text-align: left;
-    }
-  }
-}
-
 .homepage-projects {
-  li .title {
+  .title {
     font-weight: $font-weight-bold;
   }
-}
-
-input {
-  border: 2px solid #000;
-  padding: $spacing / 4 $spacing / 2;
-  margin-bottom: $spacing;
-}
-
-.topics .topic header .number {
-  font-size: calc(var(--base) * 15);
-  line-height: 1;
-  font-weight: $font-weight-bold;
-  color: var(--color-bg);
-  @include outline(var(--color-accent));
 }
