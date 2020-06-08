@@ -121,7 +121,7 @@ p + p {
     text-decoration-color: var(--color-bg);
   }
 
-  &[href^="#"] { // Style internal links differently
+  &[href^="#"], &[href^="/#"] { // Style internal links differently
     text-decoration: none;
 
     &:hover, &:focus {
@@ -144,7 +144,7 @@ p a, .page-footer a, .info a, ul a {
     color: var(--color-interactive);
   }
 
-  &[href^="#"] { // Style internal links differently
+  &[href^="#"], &[href^="/#"] { // Style internal links differently
     &:hover, &:focus {
       color: $color-accent;
     }

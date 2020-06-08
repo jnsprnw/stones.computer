@@ -40,13 +40,13 @@
 <input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} />
 
 <ul class="plain">
-	{#each result as { title, authors, aspect, topic, medium, year, link }, i}
+	{#each result as { title, authors, aspect, topic, aspect, year, link }, i}
 	<li>
 		<a href="{link}" class="link-table">
 			<span class="title">{ title }</span>
 			<span class="authors">{ authors }</span>
 			<span class="year">{ year }</span>
-			<span class="medium">{ medium }</span>
+			<a href="/#scale" class="aspect">{ aspect }</a>
 			<i class="reference-icon">↗</i>
 		</a>
 	</li>

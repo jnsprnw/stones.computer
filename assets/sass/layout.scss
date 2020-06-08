@@ -284,7 +284,7 @@
 }
 
 .homepage-projects {
-	li a {
+	li > a {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
 		padding-bottom: var(--spacing);
@@ -299,6 +299,8 @@
 		}
 
 		@include query($medium) {
+			grid-column-gap: var(--spacing);
+
 			.title {
 				grid-column-end: span 1;
 			}
@@ -310,9 +312,16 @@
 	}
 
 	input {
-    border: var(--border-link);
-    padding: var(--spacing) var(--spacing-1);
+		width: 100%;
+		border: 0;
+    border-bottom: var(--border-link);
+    padding: var(--spacing) var(--spacing);
     margin-bottom: var(--spacing-2);
+    transition: border-color $transition;
+
+    &:focus, &:hover {
+    	border-color: var(--color-accent);
+    }
   }
 }
 
