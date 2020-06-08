@@ -20,7 +20,7 @@
 	  	{{ range $index, $element := $content }}
 				<li class="link reference" id="{{ .File.BaseFileName }}">
 					<a href="{{ .Params.link }}" class="link-reference" title="External link to »{{ $element.Title }}«">
-						<span class="reference-counter">{{ add $index 1 }}</span>
+						<span class="reference-counter">{{ if not $element.Params.notReferenced }}{{ add $index 1 }}{{ end }}</span>
 						<h5 class="link-title">{{ $element.Title }}</h5>
 						<span class="reference-description">{{ with $element.Params.authors }}{{ delimit . ", " " and " }}; {{ end }}{{ with $element.Params.year }}{{ . }}{{ end }}</span>
 						<i class="reference-icon">↗</i>
