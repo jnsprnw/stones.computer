@@ -11,7 +11,7 @@ title = "Stones that calculate"
 
 [params]
   description = "Post-Digital Materiality"
-  contentTypes = ["articles", "projects", "sources"]
+  contentTypes = ["sources"]
 
 [outputs]
   home = ["HTML", "Items"]
