@@ -11,8 +11,8 @@ i { font-style: normal; }
 sup { font-size: 0.7em; }
 
 ::selection {
-  color: $color-white;
-  background-color: $color-accent;
+  color: var(--color-fg);
+  background-color: var(--color-highlight);
 }
 
 @mixin headline-1 () {
@@ -41,8 +41,8 @@ sup { font-size: 0.7em; }
 
 @mixin headline-3 () {
   @include headline-1();
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 .aspect-title, .topic-title {
@@ -60,7 +60,7 @@ sup { font-size: 0.7em; }
 @mixin headline-5 () {
   font-size: var(--size-4);
   font-weight: $font-weight-bold;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .section-intro-headline, .topic-description-intro, .link-title, .subtitle {
