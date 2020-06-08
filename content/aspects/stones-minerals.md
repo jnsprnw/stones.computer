@@ -14,8 +14,8 @@ Raw material, Energy and Computation
 
 Neri Oxman (Mediated Matter)
 
-- Toxic Water Series [http://tomhegen.de/fotodesign/the-toxic-series/](http://tomhegen.de/fotodesign/the-toxic-series/)
+- Toxic Water Series [the-toxic-series/](http://tomhegen.de/fotodesign/the-toxic-series/)
 - Earth [http://erde-film.at/english](http://erde-film.at/english)
-- Examining AI and Data Platforms through the Lens of Digital Materialitie lecture: [https://www.youtube.com/watch?v=fL_mJ1Fpufg](https://www.youtube.com/watch?v=fL_mJ1Fpufg)
+- Examining AI and Data Platforms through the Lens of Digital Materialitie lecture: [https://www.youtube](https://www.youtube.com/watch?v=fL_mJ1Fpufg)
 - Jeffrey Cohen ([Geophilia](http://www.continentcontinent.cc/index.php/continent/article/view/181))
 - Nathan Ensmenger ([Environmental History of Computing](https://muse.jhu.edu/article/712112))

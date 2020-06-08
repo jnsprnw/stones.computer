@@ -14,6 +14,6 @@ Expaneded notion of media
 - Shannon Mattern (Code and Clay, Data and Dirt)
 - Jennifer Gabrys (Digital Rubbish – Pollution Sensing)
 
-https://makingandbreaking.org/article/crapularity-aesthetics/
+[crapularity-aesthetics/](https://makingandbreaking.org/article/crapularity-aesthetics/)
 
-Is the Earth a Medium? http://www.ctrl-z.net.au/articles/issue-7/russill-is-the-earth-a-medium/
+Is the Earth a Medium? [russill-is-the-earth-a-medium/](http://www.ctrl-z.net.au/articles/issue-7/russill-is-the-earth-a-medium/)

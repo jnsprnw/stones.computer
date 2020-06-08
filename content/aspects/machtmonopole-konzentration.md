@@ -13,5 +13,5 @@ Google, Facebook, DNS-Anbieter, Verhältnis von Firmen und Staat
 - Safiya Umoja Noble – Algorithms of Oppression
 - Bucher, Taina. If... Then: Algorithmic Power and Politics. Oxford University Press, 2018.
 
-- Why We Terminated Daily Stormer – [https://blog.cloudflare.com/why-we-terminated-daily-stormer/](https://blog.cloudflare.com/why-we-terminated-daily-stormer/)
-- Vielleicht: [https://er.educause.edu/articles/2017/7/pedagogy-and-the-logic-of-platforms/](https://er.educause.edu/articles/2017/7/pedagogy-and-the-logic-of-platforms/)
+- Why We Terminated Daily Stormer – [why-we-terminated-daily-stormer/](https://blog.cloudflare.com/why-we-terminated-daily-stormer/)
+- Vielleicht: [pedagogy-and-the-logic-of-platforms/](https://er.educause.edu/articles/2017/7/pedagogy-and-the-logic-of-platforms/)

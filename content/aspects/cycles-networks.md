@@ -13,6 +13,6 @@ Kreisläufe und Produktionsketten
 - terra0
 - Critical Atlas of the Internet
 
-- [https://strelkamag.com/en/article/black-natures-enframing-the-natural-as-technological](https://strelkamag.com/en/article/black-natures-enframing-the-natural-as-technological)
-- [https://flugschriften.com/2020/03/24/the-dark-forest-theory-of-the-internet-by-bogna-konior/](https://flugschriften.com/2020/03/24/the-dark-forest-theory-of-the-internet-by-bogna-konior/)
+- [black-natures](https://strelkamag.com/en/article/black-natures-enframing-the-natural-as-technological)
+- [the-dark-forest-theory-of-the-internet](https://flugschriften.com/2020/03/24/the-dark-forest-theory-of-the-internet-by-bogna-konior/)
 
