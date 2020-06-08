@@ -18,7 +18,7 @@
 	  <ol class="list list-complex references">
 	  	{{ $content := where (where .context.Site.RegularPages "Section" "in" site.Params.contentTypes) "Params.aspect" .context.File.BaseFileName }}
 	  	{{ range $index, $element := $content }}
-				<li class="link" id="{{ .File.BaseFileName }}">
+				<li class="link reference" id="{{ .File.BaseFileName }}">
 					<a href="{{ .Params.link }}" class="link-reference" title="External link to »{{ $element.Title }}«">
 						<span class="reference-counter">{{ add $index 1 }}</span>
 						<h5 class="link-title">{{ $element.Title }}</h5>
