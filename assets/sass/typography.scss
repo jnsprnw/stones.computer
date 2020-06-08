@@ -81,7 +81,7 @@ p {
 }
 
 p + p {
-  margin-top: var(--spacing-1)
+  margin-top: var(--spacing)
 }
 
 @mixin text-2 () {
