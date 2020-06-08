@@ -18,22 +18,28 @@
 	// }
 
 	const footnotes = document.getElementsByClassName('footnote');
-	const references = document.getElementsByClassName('references');
 
 	for (let l = 0; l < footnotes.length; l++) {
 		footnotes[l].addEventListener('mouseenter', function (e) {
 			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
 			reference.classList.add('isHover');
-			for (let l = 0; l < references.length; l++) {
-				references[l].classList.add('hasHover');
-			}
 		})
 		footnotes[l].addEventListener('mouseleave', function (e) {
 			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
 			reference.classList.remove('isHover');
-			for (let l = 0; l < references.length; l++) {
-				references[l].classList.remove('hasHover');
-			}
+		})
+	}
+
+	const references = document.getElementsByClassName('reference');
+
+	for (let l = 0; l < references.length; l++) {
+		references[l].addEventListener('mouseenter', function (e) {
+			const footnote = document.getElementById('fn-' + e.target.getAttribute('id'))
+			footnote.classList.add('isHover');
+		})
+		references[l].addEventListener('mouseleave', function (e) {
+			const footnote = document.getElementById('fn-' + e.target.getAttribute('id'))
+			footnote.classList.remove('isHover');
 		})
 	}
 
