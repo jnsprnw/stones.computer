@@ -114,9 +114,17 @@
 				position: relative;
 				padding-bottom: var(--spacing-2);
 
+				@include query($medium) {
+					padding: var(--spacing-3) var(--spacing) 0 var(--spacing-3);
+				}
+
 				.topic-title {
 					z-index: $z-index-header-foreground;
 					margin-top: var(--spacing-1);
+
+					@include query($medium) {
+						margin-top: 0;
+					}
 				}
 
 				.number {
@@ -132,7 +140,7 @@
 
 					.float {
 						position: absolute;
-						left: calc(var(--spacing-3) * -1/2 + var(--size-5));
+						left: calc(var(--spacing-1) * -1);
 						top: 0;
 						writing-mode: vertical-lr;
 						transform: rotate(-180deg);
@@ -181,7 +189,7 @@
 
 		@include query($medium) {
 			grid-template-columns: repeat(2, 1fr);
-			padding: var(--spacing-1) var(--spacing-3) var(--spacing-3);
+			padding: var(--spacing-2) var(--spacing-3) var(--spacing-3);
 
 			&:nth-child(odd) {
 				border-right: var(--border-area);
@@ -202,8 +210,8 @@
 			margin-top: var(--spacing-2);
 
 			@include query($medium) {
-				margin-bottom: var(--spacing); // TODO: Change to variable
-				margin-top: var(--spacing);
+				margin-bottom: var(--spacing-1);
+				margin-top: 0;
 			}
 		}
 
@@ -227,6 +235,12 @@
 			.tag {
 				display: inline-block;
 			}
+		}
+
+		.footnote {
+		  &.isHover {
+		    background-color: var(--color-highlight);
+		  }
 		}
 	}
 }
