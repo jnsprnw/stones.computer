@@ -251,7 +251,7 @@
 
 	@include query($medium) {
 		margin-bottom: 0; // TODO: Bigger screens undo;
-		margin-top: var(--spacing); // TODO: Bigger screens undo;
+		margin-top: 0.5em; // List starts optically at the same level as the text
 	}
 
 	.link {
