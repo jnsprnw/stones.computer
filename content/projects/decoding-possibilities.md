@@ -7,4 +7,5 @@ authors: ["Romi Morrison"]
 topic: "bodies"
 link: "https://elegantcollisions.com/decoding-possibilities"
 medium: ""
+year: 2017
 ---
