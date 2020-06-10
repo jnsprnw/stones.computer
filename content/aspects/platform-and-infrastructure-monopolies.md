@@ -1,6 +1,6 @@
 ---
 title: "Platform and infrastructure monopolies"
-date: 2020-03-11T11:46:31+01:00
+date: 2020-06-10T23:15:50+02:00
 draft: false
 topics: ["power"]
 ---
