@@ -13,6 +13,7 @@ sup { font-size: 0.7em; }
 ::selection {
   color: var(--color-fg);
   background-color: var(--color-highlight);
+  text-shadow: none;
 }
 
 @mixin headline-1 () {
