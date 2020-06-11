@@ -121,14 +121,18 @@
       grid-column-gap: var(--spacing-3);
       padding-bottom: var(--spacing-4);
 
+      @include query($medium) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: var(--spacing-3) 0;
+      }
+
+      @include query($wide) {
+        padding: var(--spacing-3);
+      }
+
       @media print {
         display: block;
         padding-bottom: 1em;
-      }
-
-      @include query($medium) {
-        grid-template-columns: repeat(2, 1fr);
-        padding: var(--spacing-3);
       }
 
       &:last-child {
