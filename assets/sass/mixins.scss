@@ -5,5 +5,10 @@
 }
 
 @mixin outline($color) {
-	text-shadow: -1px 1px 0 $color, 1px 1px 0 $color, 1px -1px 0 $color, -1px -1px 0 $color;
+  text-shadow: -1px 1px 0 $color, 1px 1px 0 $color, 1px -1px 0 $color, -1px -1px 0 $color;
+
+  @media print {
+    text-shadow: none;
+    color: #000;
+  }
 }

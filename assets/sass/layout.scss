@@ -39,6 +39,10 @@
 	.section-headline {
 		padding: var(--spacing-1) var(--spacing-2);
 		background-color: var(--color-fg);
+
+		@media print {
+	  	background-color: transparent;
+	  }
 	}
 
 	.header {
@@ -53,21 +57,27 @@
 			grid-template-columns: repeat(2, 1fr);
 		}
 
+		@media print {
+	  	display: block;
+	  	padding-top: 1em;
+	  	padding-bottom: 1em;
+	  }
+
 		.section-intro-headline {
 			display: inline-block;
 			border-bottom: var(--border-area);
 			padding: 0 0 var(--spacing) var(--spacing-1);
 			margin-bottom: var(--spacing);
 			margin-left: calc(var(--spacing-1) * -1);
+
+			@media print {
+		  	border-bottom: 1px solid rgba(0, 0, 0, .2);
+		  }
 		}
 	}
 }
 
 .homepage-topics {
-	.topic-title {
-	  position: relative; // Used to position in front of number
-	}
-
 	.questions {
 		display: flex;
 		align-items: center;
@@ -89,6 +99,16 @@
 
 				&:first-child {
 					border-top: var(--border-area);
+
+					@media print {
+						border-top: $border-print;
+					}
+				}
+
+				@media print {
+					border-bottom: $border-print;
+					padding-top: 0.5em;
+					padding-bottom: 0.5em;
 				}
 			}
 		}
@@ -100,6 +120,11 @@
 			grid-template-columns: repeat(1, 1fr);
 			grid-column-gap: var(--spacing-3);
 			padding-bottom: var(--spacing-4);
+
+			@media print {
+		  	display: block;
+		  	padding-bottom: 1em;
+		  }
 
 			@include query($medium) {
 				grid-template-columns: repeat(2, 1fr);
@@ -118,13 +143,27 @@
 					padding: var(--spacing-3) var(--spacing) 0 var(--spacing-3);
 				}
 
+				@media print {
+			  	position: unset;
+			  	padding-bottom: 1em;
+			  	page-break-inside: avoid;
+			  }
+
 				.topic-title {
 					z-index: $z-index-header-foreground;
 					margin-top: var(--spacing-1);
+					position: relative; // Used to position in front of number
 
 					@include query($medium) {
 						margin-top: 0;
 					}
+
+					@media print {
+				  	position: unset;
+				  	border-top: $border-print;
+				  	padding-top: 1em;
+				  	margin-top: 0;
+				  }
 				}
 
 				.number {
@@ -132,6 +171,10 @@
 					top: var(--spacing-1);
 					z-index: $z-index-header-background;
 					left: calc(var(--spacing-3) / 2 * 1);
+
+					@media print {
+				  	position: unset;
+				  }
 				}
 
 				@include query($medium) {
@@ -144,12 +187,20 @@
 						top: 0;
 						writing-mode: vertical-lr;
 						transform: rotate(-180deg);
+
+						@media print {
+					  	position: unset;
+					  }
 					}
 				}
 			}
 
 			.description {
 				margin-top: var(--spacing-3);
+
+				@media print {
+			  	margin-top: 0;
+			  }
 
 				.topic-description-intro {
 					display: inline-block;
@@ -162,6 +213,10 @@
 
 				@include query($medium) {
 					margin-top: var(--spacing-1);
+				}
+
+				@media print {
+					margin-top: 1em;
 				}
 			}
 		}
@@ -183,8 +238,16 @@
 
 		border-top: var(--border-area);
 
+		@media print {
+			border-top: $border-print;
+		}
+
 		&:last-child {
 			border-bottom: var(--border-area);
+
+			@media print {
+				border-bottom: $border-print;
+			}
 		}
 
 		@include query($medium) {
@@ -212,6 +275,11 @@
 			@include query($medium) {
 				margin-bottom: var(--spacing-1);
 				margin-top: 0;
+			}
+
+			@media print {
+				margin-top: 1em;
+				margin-bottom: 1em;
 			}
 		}
 
@@ -254,9 +322,18 @@
 		margin-top: 0.5em; // List starts optically at the same level as the text
 	}
 
+	@media print {
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+
 	.link {
 	  border-bottom: var(--border-link);
 	  transition: background-color $transition; // Used for highlighting
+
+	  @media print {
+	  	border-bottom: $border-print;
+	  }
 
 	  &.isHover { // Triggered by highlighting footnotes
 		  background-color: var(--color-highlight);
@@ -270,10 +347,18 @@
 
 	  &:first-child {
 	  	border-top: var(--border-link);
+
+	  	@media print {
+		  	border-top: $border-print;
+		  }
 	  }
 	}
 
   &.list-complex {
+  	@media print {
+			margin-top: 2em;
+		}
+
   	a {
   		display: grid;
   		grid-template-columns: var(--spacing-2) 1fr var(--spacing);
@@ -348,6 +433,10 @@
 	z-index: $z-index-table-link;
 	bottom: 0;
 	right: 0;
+
+	@media print {
+  	display: none;
+  }
 
 	a {
 		text-decoration: none;

@@ -20,6 +20,10 @@ sup { font-size: 0.7em; }
   font-weight: $font-weight-bold;
   line-height: 1;
   font-size: var(--size-1);
+
+  @media print {
+    font-size: 20pt;
+  }
 }
 
 .logo {
@@ -32,6 +36,12 @@ sup { font-size: 0.7em; }
   @include headline-1();
   text-transform: uppercase;
   letter-spacing: 0.8em;
+
+  @media print {
+    font-size: 20pt;
+    letter-spacing: 0;
+    text-transform: none;
+  }
 }
 
 .section-headline {
@@ -44,6 +54,11 @@ sup { font-size: 0.7em; }
   @include headline-1();
   line-height: 1;
   letter-spacing: -0.03em;
+
+  @media print {
+    font-size: 18pt;
+    letter-spacing: 0;
+  }
 }
 
 .aspect-title, .topic-title {
@@ -62,15 +77,27 @@ sup { font-size: 0.7em; }
   font-size: var(--size-4);
   font-weight: $font-weight-bold;
   line-height: 1.5;
+
+  @media print {
+    font-size: 14pt;
+  }
 }
 
 .section-intro-headline, .topic-description-intro, .link-title, .subtitle {
   @include headline-5();
+
+  @media print {
+    font-size: 12pt;
+  }
 }
 
 @mixin text-1 () {
   font-size: var(--size-4);
   line-height: 1.6;
+
+  @media print {
+    font-size: 12pt;
+  }
 }
 
 p, ul, input, .btn, .p, ol {
@@ -79,6 +106,10 @@ p, ul, input, .btn, .p, ol {
 
 p {
   max-width: calc(var(--size-4) * 50);
+
+  @media print {
+    max-width: calc(12pt * 40);
+  }
 }
 
 p + p {
@@ -87,6 +118,10 @@ p + p {
 
 @mixin text-2 () {
   font-size: var(--size-5);
+
+  @media print {
+    font-size: 10pt;
+  }
 }
 
 .reference-description, .page-footer, .tag {
@@ -97,12 +132,22 @@ p + p {
   @include text-2();
   text-transform: uppercase;
   letter-spacing: .02em;
+
+  @media print {
+    letter-spacing: 0;
+    text-transform: none;
+  }
 }
 
 .caption,  {
   font-size: var(--size-5);
   text-transform: uppercase;
   letter-spacing: 0.02em;
+
+  @media print {
+    letter-spacing: 0;
+    text-transform: none;
+  }
 }
 
 .topics-list .topic .number {
@@ -110,12 +155,21 @@ p + p {
   font-size: calc(var(--base) * 15);
   color: var(--color-bg);
   @include outline(var(--color-accent));
+
+  @media print {
+    font-size: var(--size-5);
+    font-weight: normal;
+  }
 }
 
 @mixin link-1 () {
   color: var(--color-font);
   text-decoration-color: var(--color-interactive);
   transition: text-decoration-color $transition, color $transition;
+
+  @media print {
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+  }
 
   &:hover, &:focus {
     color: var(--color-interactive);

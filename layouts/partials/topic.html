@@ -2,8 +2,8 @@
 <section class="topic" id="{{ $id }}">
 	<header class="topic-header">
 		<a href="#{{ $id }}" class="caption anchor float" title="Jump to section">Topic</a>
+		<span class="number">{{ .Weight }}</span>
 	  <h3 class="topic-title">{{ .Title }}</h3>
-	  <span class="number">{{ .Weight }}</span>
 	</header>
   <div class="description">
   	<h5 class="topic-description-intro">{{ .Params.Question }}</h5>
