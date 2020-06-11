@@ -7,8 +7,8 @@ topics: ["power", "bodies"]
 
 Sousveillance/Counter-Surveillance, CCTV, Tracking
 
-- Geoff Manaugh [http://www.bldgblog.com/tag/surveillance/](http://www.bldgblog.com/tag/surveillance/)
-- Glenn Greenwald [https://www.ted.com/talks/glenn_greenwald_why_privacy_matters](https://www.ted.com/talks/glenn_greenwald_why_privacy_matters)
+- Geoff Manaugh [surveillance/](http://www.bldgblog.com/tag/surveillance/)
+- Glenn Greenwald [why_privacy_matters](https://www.ted.com/talks/glenn_greenwald_why_privacy_matters)
 - Metahaven – Black Transparency
 
 - Adam Harvey (Hyperface)
