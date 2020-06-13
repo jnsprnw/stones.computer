@@ -3,6 +3,7 @@ title: "Stones and Resources"
 date: 2020-03-11T11:46:31+01:00
 draft: false
 topics: ["material"]
+weight: 5
 ---
 
 Raw material, Energy and Computation

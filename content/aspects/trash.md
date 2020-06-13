@@ -3,6 +3,7 @@ title: "Mediamateriality and Trash"
 date: 2020-03-11T11:46:31+01:00
 draft: false
 topics: ["material"]
+weight: 6
 ---
 
 Expaneded notion of media
