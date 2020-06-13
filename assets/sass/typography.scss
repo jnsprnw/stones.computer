@@ -2,9 +2,9 @@
 
 :root {
   --size-1: min(max(3rem, 30px), 80px); // Headlines topics and aspects
-  --size-3: min(max(1.2rem, 14px), 18px); // Questions and table link
-  --size-4: min(max(0.9rem, 14px), 16px); // Default text size
-  --size-5: min(max(0.7rem, 12px), 16px); // Captions
+  --size-3: min(max(1.3rem, 15px), 20px); // Questions and table link
+  --size-4: min(max(1.0rem, 15px), 18px); // Default text size
+  --size-5: min(max(0.7rem, 12px), 18px); // Captions
 }
 
 i { font-style: normal; }
@@ -93,7 +93,7 @@ sup { font-size: 0.7em; }
 
 @mixin text-1 () {
   font-size: var(--size-4);
-  line-height: 1.6;
+  line-height: 1.7;
 
   @media print {
     font-size: 12pt;
