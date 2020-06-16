@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import cola from 'webcola';
   import { forceSimulation, forceLink, forceManyBody, forceCenter, forceCollide } from 'd3-force'
 
   let width = 0;
