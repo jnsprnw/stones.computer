@@ -24,7 +24,9 @@
   {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-  {{ if eq .File.TranslationBaseName "table" }}
+  {{ with .File }}
+  {{ if eq .TranslationBaseName "table" }}
     <script src="/js/svelte.js" defer></script>
+  {{ end }}
   {{ end }}
 </head>
