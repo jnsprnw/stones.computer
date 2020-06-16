@@ -17,6 +17,7 @@
     "hugo:dev": "hugo server --bind=0.0.0.0 -D"
   },
   "dependencies": {
+    "d3-force": "^2.0.1",
     "fuse.js": "^6.0.3"
   }
 }

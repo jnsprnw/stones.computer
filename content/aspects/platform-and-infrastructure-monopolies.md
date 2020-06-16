@@ -1,5 +1,5 @@
 ---
-title: "Platform and infrastructure monopolies"
+title: "Monopolies"
 date: 2020-06-10T23:15:50+02:00
 draft: false
 topics: ["power"]

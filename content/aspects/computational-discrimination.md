@@ -5,7 +5,7 @@ draft: false
 topics: ["power", "bodies"]
 hashtags: ["antiBlackBox", "criticalCodeStudies", "algorithmicViolence"]
 weight: 12
-links: ["platform-and-infrastructure-monopolies", "surveillance", "understanding-the-digital-human"]
+links: ["platform-and-infrastructure-monopolies", "surveillance", "understanding-the-digital-human", visibility-invsibility]
 group: 3
 ---
 

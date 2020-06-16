@@ -9,6 +9,11 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 	  baseName = "items"
 	  isPlainText = true
 	  notAlternative = true
+  [outputFormats.Aspects]
+    mediaType = "application/json"
+    baseName = "aspects"
+    isPlainText = true
+    notAlternative = true
 
 [params]
   description = "Post-Digital Materiality"
@@ -19,7 +24,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   privacy = "https://jonasparnow.com/privacy"
 
 [outputs]
-  home = ["HTML", "Items"]
+  home = ["HTML", "Items", "Aspects"]
 
 [markup.goldmark.renderer]
   unsafe = true

@@ -33,6 +33,44 @@ ul, ol {
   margin: 0;
 }
 
+.map {
+  width: 100%;
+  height: 500px;
+}
+
+line {
+  stroke: rgba(0, 0, 0, 0.05);
+  transition: stroke $transition;
+
+  &.isActive {
+    stroke: rgba(0, 0, 0, 0.2);
+  }
+}
+
+circle {
+  stroke: #fff;
+  transition: stroke $transition, fill $transition;
+  fill: #eee;
+}
+
+text {
+  fill: rgba(0, 0, 0, 1);
+  transition: fill $transition;
+}
+
+.hasActive {
+  text {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+
+  g.isActive {
+    text {
+      fill: rgba(0, 0, 0, 1);
+      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff;
+    }
+  }
+}
+
 @import "./layout";
 @import "./typography";
 @import "./icons";
