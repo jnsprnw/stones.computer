@@ -1,0 +1,5 @@
+{{- $.Scratch.Add "list" slice -}}
+{{- range $index, $element := (.Site.GetPage "/aspects").Resources -}}
+  {{- $.Scratch.Add "list" (dict "id" $element.File.BaseFileName "title" $element.Title "group" $element.Params.group "links" $element.Params.links "topics" $element.Params.topics) -}}
+{{- end -}}
+{{- $.Scratch.Get "list" | jsonify -}}
