@@ -14,6 +14,9 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   description = "Post-Digital Materiality"
   contentTypes = ["sources"]
   listItemTypes = ["sources", "articles", "projects"]
+  source = "https://github.com/z3to/stones.computer"
+  imprint = "https://jonasparnow.com/imprint"
+  privacy = "https://jonasparnow.com/privacy"
 
 [outputs]
   home = ["HTML", "Items"]
