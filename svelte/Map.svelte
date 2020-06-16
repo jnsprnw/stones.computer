@@ -116,7 +116,7 @@
   {/each}
   {#each aspects as { x, y, title, group, links, id }, i}
   <g on:mouseover={() => handleover([id, ...links], id)} on:mouseleave={handleleave} class:isActive={activeNodes.includes(id)}>
-    <text x={x} y={y} class="label" text-anchor="middle">{ title }</text>
+    <text x={x} y={y} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
   </g>
   {/each}
 </svg>
