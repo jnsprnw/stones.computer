@@ -5,6 +5,7 @@ draft: false
 topics: ["material"]
 weight: 6
 links: ["stones-and-resources", "cycles-networks-ecologies"]
+group: 2
 ---
 
 Expaneded notion of media

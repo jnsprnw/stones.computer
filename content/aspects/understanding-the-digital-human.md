@@ -5,6 +5,7 @@ draft: false
 topics: ["bodies"]
 weight: 13
 links: ["emotional-interfaces", "platform-and-infrastructure-monopolies"]
+group: 4
 ---
 
 Menschlichkeit in technischen Umgebungen, Post-Internet-Art, Alienation

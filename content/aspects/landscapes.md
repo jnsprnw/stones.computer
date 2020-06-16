@@ -5,6 +5,7 @@ draft: false
 topics: ["material", "power"]
 weight: 7
 links: ["spatial-order"]
+group: 2
 ---
 
 Urbanism, Data centres, Infrastructures

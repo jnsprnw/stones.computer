@@ -5,6 +5,7 @@ draft: false
 topics: ["material", "bodies"]
 weight: 4
 links: ["time", "stones-and-resources", "epistemic-traces"]
+group: 4
 ---
 
 Posthumanism, Thought versus Consciousness, ...

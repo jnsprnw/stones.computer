@@ -5,6 +5,7 @@ draft: false
 topics: ["material", "power"]
 weight: 8
 links: ["upscaling", "mediamateriality-and-trash", "epistemic-traces", "platform-and-infrastructure-monopolies"]
+group: 2
 ---
 
 Kreisläufe und Produktionsketten

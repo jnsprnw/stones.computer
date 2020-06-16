@@ -5,6 +5,7 @@ draft: false
 topics: ["material"]
 weight: 5
 links: ["time", "non-human-and-non-organic", "mediamateriality-and-trash", "extractivism"]
+group: 2
 ---
 
 Raw material, Energy and Computation

@@ -5,6 +5,7 @@ draft: false
 topics: ["power", "bodies"]
 weight: 10
 links: ["computational-discrimination", "platform-and-infrastructure-monopolies", "visibility-invsibility"]
+group: 3
 ---
 
 Sousveillance/Counter-Surveillance, CCTV, Tracking

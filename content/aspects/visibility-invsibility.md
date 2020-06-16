@@ -5,6 +5,7 @@ draft: false
 topics: ["power", "bodies"]
 weight: 9
 links: ["surveillance", "computational-discrimination"]
+group: 3
 ---
 
 Invisible Images, Open Black box, ...

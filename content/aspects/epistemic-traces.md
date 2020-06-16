@@ -5,6 +5,7 @@ draft: false
 topics: ["material"]
 weight: 16
 links: ["non-human-and-non-organic", "cycles-networks-ecologies"]
+group: 4
 ---
 
 Material Knowledge, Sensing, ...

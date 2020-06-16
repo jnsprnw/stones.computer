@@ -5,6 +5,7 @@ draft: false
 topics: ["material"]
 weight: 15
 links: ["stones-and-resources", "spatial-order"]
+group: 4
 ---
 
 Raw material, Neo-Kolonialismus, Slow Violence

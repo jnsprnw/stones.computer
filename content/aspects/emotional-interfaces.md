@@ -5,6 +5,7 @@ draft: false
 topics: ["bodies"]
 weight: 14
 links: ["understanding-the-digital-human", "platform-and-infrastructure-monopolies"]
+group: 4
 ---
 
 Verhältnis und Abhängigkeiten der Körper-Maschine-Relation
