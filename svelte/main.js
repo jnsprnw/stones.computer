@@ -1,7 +1,4 @@
 import Table from './Table.svelte';
 
-const app = new Table({
-	target: document.getElementById('table')
-});
-
-export default app;
+const targetTable = document.getElementById('table')
+if (targetTable) new Table({ target: targetTable });

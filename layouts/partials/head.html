@@ -5,28 +5,15 @@
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="robots" content="index,follow">
 
-  <meta property="og:url" content="{{ .Site.BaseURL }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ .Site.Title }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/schema.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@{{ .Site.Params.author }}">
-  <meta name="twitter:url" content="{{ .Site.BaseURL }}">
-  <meta name="twitter:title" content="{{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ .Site.Params.description }}">
-
-  <link rel="icon" sizes="152x152" href="favicon-152x152.png">
-  <link rel="apple-touch-icon" href="favicon-152x152.png">
+  <link rel="icon" sizes="152x152" href="{{ "/favicon-152x152.png" | absURL }}">
+  <link rel="apple-touch-icon" href="{{ "/favicon-152x152.png" | absURL }}">
 
   {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
-  {{ with .File }}
-  {{ if eq .TranslationBaseName "table" }}
-    <script src="/js/svelte.js" defer></script>
-  {{ end }}
-  {{ end }}
+  <script type="text/javascript" src="/js/svelte.js" defer></script>
 </head>
