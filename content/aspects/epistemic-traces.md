@@ -4,6 +4,7 @@ date: 2020-03-11T11:46:31+01:00
 draft: false
 topics: ["material"]
 weight: 16
+links: ["non-human-and-non-organic", "cycles-networks-ecologies"]
 ---
 
 Material Knowledge, Sensing, ...

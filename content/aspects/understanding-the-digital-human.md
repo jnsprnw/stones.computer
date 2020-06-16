@@ -4,6 +4,7 @@ date: 2020-03-11T11:46:31+01:00
 draft: false
 topics: ["bodies"]
 weight: 13
+links: ["emotional-interfaces", "platform-and-infrastructure-monopolies"]
 ---
 
 Menschlichkeit in technischen Umgebungen, Post-Internet-Art, Alienation
