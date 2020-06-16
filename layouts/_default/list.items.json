@@ -1,7 +1,7 @@
-{{- $aspects := where .Site.RegularPages "Section" "eq" "aspects" -}}
-{{- $topics := where .Site.RegularPages "Section" "eq" "topics" -}}
+{{- $aspects := (.Site.GetPage "/aspects").Resources -}}
+{{- $topics := (.Site.GetPage "/topics").Resources -}}
 {{- $.Scratch.Add "list" slice -}}
-{{- range $index, $element := sort (where .Site.RegularPages "Section" "in" site.Params.listItemTypes) "Title" -}}
+{{- range $index, $element := sort ((.Site.GetPage "/sources").Resources | append (.Site.GetPage "/projects").Resources) "Title" -}}
 	{{- $aspect := index (where $aspects "File.BaseFileName" "eq" $element.Params.aspect) 0 -}}
 	{{- $topic := index (where $topics "File.BaseFileName" "eq" $element.Params.topic) 0 -}}
   {{- $.Scratch.Add "list" (dict "id" $index "title" $element.Title "authors" (delimit $element.Params.authors ", " " and ") "aspect" $aspect.Title "aspectID" $element.Params.aspect "topic" $topic.Title "medium" $element.Params.medium "year" $element.Params.year "tags" $element.Params.tags "link" $element.Params.link) -}}
