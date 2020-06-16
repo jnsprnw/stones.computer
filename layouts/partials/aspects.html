@@ -1,4 +1,3 @@
-{{ $pages := .context.Site.RegularPages }}
-{{ range $index, $element := where .context.Site.RegularPages "Section" "aspects" }}
-	{{ partial "aspect.html" (dict "context" $element "pages" $pages "count" $index) }}
+{{ range $index, $element := (.Site.GetPage "/aspects").Resources }}
+	{{ partial "aspect.html" (dict "context" $element "count" $index) }}
 {{ end }}

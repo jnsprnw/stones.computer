@@ -11,7 +11,7 @@
   	{{ .Content }}
   	<div class="aspects">
 	  	<span class="caption">Aspects</span>
-	  	{{ $content := where (where .Site.RegularPages "Section" "eq" "aspects") "Params.topics" "intersect" (slice .File.BaseFileName) }}
+	  	{{ $content := where ((.Site.GetPage "/aspects").Resources) "Params.topics" "intersect" (slice .File.BaseFileName) }}
 	  	<ul class="list">
 	  		{{ range $content }}
 	  		{{ $id := .Title | urlize | lower }}

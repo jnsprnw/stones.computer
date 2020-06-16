@@ -1,7 +1,7 @@
 baseURL = "https://stones.computer"
 languageCode = "en-gb"
 title = "Stones that calculate – Post-Digital Materiality"
-disableKinds = ["page", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [outputFormats]
   [outputFormats.Items]
