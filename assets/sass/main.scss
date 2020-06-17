@@ -16,9 +16,14 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-font);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
   transition: background-color $transition, color $transition;
+
+  @media print {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 *, *:before, *:after {
@@ -48,7 +53,7 @@ line {
 }
 
 circle {
-  stroke: #fff;
+  stroke: var(--color-bg);
   transition: stroke $transition, fill $transition;
   fill: #eee;
 }
@@ -56,6 +61,7 @@ circle {
 text {
   fill: rgba(0, 0, 0, 1);
   transition: fill $transition;
+  text-shadow: 2px 0 0 var(--color-bg), -2px 0 0 var(--color-bg), 0 2px 0 var(--color-bg), 0 -2px 0 var(--color-bg);
 }
 
 .hasActive {
@@ -66,7 +72,6 @@ text {
   g.isActive {
     text {
       fill: rgba(0, 0, 0, 1);
-      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff;
     }
   }
 }

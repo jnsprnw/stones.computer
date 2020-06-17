@@ -1,6 +1,6 @@
 baseURL = "https://stones.computer"
 languageCode = "en-gb"
-title = "Stones that calculate – Post-Digital Materiality"
+title = "Stones that calculate"
 disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [outputFormats]
@@ -16,6 +16,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
     notAlternative = true
 
 [params]
+  subtitle = "Post-Digital Materiality"
   description = "Post-Digital Materiality"
   contentTypes = ["sources"]
   listItemTypes = ["sources", "articles", "projects"]
