@@ -8,17 +8,4 @@ links: ["time", "non-human-and-non-organic", "mediamateriality-and-trash", "extr
 group: 2
 ---
 
-Raw material, Energy and Computation
-
-- Jeffrey Cohen (Stone – An Ecology of the Inhuman)
-- Richard Rhodes (Energy – A Human History)
-- Paul Dourish (The Stuff of Bits)
-- Stine/Tarr (At the Intersection of Histories: Technology and the Environment)
-
-Neri Oxman (Mediated Matter)
-
-- Toxic Water Series [the-toxic-series/](http://tomhegen.de/fotodesign/the-toxic-series/)
-- Earth [http://erde-film.at/english](http://erde-film.at/english)
-- Examining AI and Data Platforms through the Lens of Digital Materialitie lecture: [https://www.youtube](https://www.youtube.com/watch?v=fL_mJ1Fpufg)
-- Jeffrey Cohen ([Geophilia](http://www.continentcontinent.cc/index.php/continent/article/view/181))
-- Nathan Ensmenger ([Environmental History of Computing](https://muse.jhu.edu/article/712112))
+The most basic approach when dealing with materiality in the digital world is probably the rock-hard realities behind our information systems. The creation as well as the maintenance of devices but also the large-scale infrastructures behind them consume natural resources in quantities that are beyond the human imagination but above all beyond the human eye. In this aspect we collect voices that examine the ecological and historical background [Ensmenger] of these resources in more detail. In addition to rocks itself, which Jeffrey Cohen [Geophilia link] considers in relation to humanity, Richard Rhodes is concerned with the cultural history of energy. The complex interaction of environment and technology is becoming more and more pervasive, as it is becoming increasingly evident on the surface of the earth.[Earth Movie]
