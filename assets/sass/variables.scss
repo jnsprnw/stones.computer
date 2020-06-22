@@ -29,16 +29,20 @@ $z-index-header-foreground: 2 !default;
   --color-accent: #{$color-accent};
   --color-interactive: #{$color-interactive};
   --color-highlight: #{$color-highlight};
-  --color-gray-1: #42403C;
-  --color-gray-2: #9C9995;
-  --color-gray-3: #C0C0BE;
-  --color-gray-4: #F5F5F5;
 
   --margin: max(calc(2vw + 0.5vmin), 2px); // Used for spacing
   --base: calc(1.5vw); // Used for fonts
 
   --color-border-primary: var(--color-fg); // TODO: is this used?
   --color-border-secondary: var(--color-fg); // TODO: is this used?
+}
+
+.theme-dark {
+  --color-fg: #{$color-white};
+  --color-bg: rgb(29, 31, 33);
+  --color-accent: #{$color-accent};
+  --color-interactive: #{$color-interactive};
+  --color-highlight: #{$color-highlight};
 }
 
 // background-color: #ffff01;
