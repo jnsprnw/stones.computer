@@ -1,6 +1,6 @@
 {{ $id := .context.Title | urlize | lower }}
 <section class="aspect" role="listitem" aria-labelledby="title_{{ $id }}" id="{{ $id }}">
-	<a href="#{{ $id }}" class="caption anchor float" title="Jump to section">Aspect {{ add .count 1 }}</a>
+	<a href="#{{ $id }}" class="caption anchor float" title="Jump to aspect »{{ .context.Title }}«">Aspect {{ add .count 1 }}</a>
 	<h3 id="title_{{ $id }}" class="aspect-title">{{ .context.Title }}</h3>
 	<div class="content">
 	  {{ .context.Content }}

@@ -1,13 +1,12 @@
 {{ $id := .Title | urlize | lower }}
 <section class="topic" id="{{ $id }}">
 	<header class="topic-header">
-		<a href="#{{ $id }}" class="caption anchor float" title="Jump to section">Topic</a>
+		<a href="#{{ $id }}" class="caption anchor float" title="Jump to topic »{{ .Title }}«">Topic</a>
 		<span class="number">{{ .Weight }}</span>
 	  <h3 class="topic-title">{{ .Title }}</h3>
 	</header>
   <div class="description">
   	<h5 class="topic-description-intro">{{ .Params.Question }}</h5>
-  	{{ .Content }}
   	{{ .Content }}
   	<div class="aspects">
 	  	<span class="caption">Aspects</span>
