@@ -1,7 +1,8 @@
 @import "./global";
 
 :root {
-  --spacing: calc(var(--margin) * 0.5);
+  --spacing-025: calc(var(--margin) * 0.25);
+  --spacing-05: calc(var(--margin) * 0.5);
   --spacing-1: calc(var(--margin) * 1);
   --spacing-15: calc(var(--margin) * 1.5);
   --spacing-2: calc(var(--margin) * 2);
@@ -35,7 +36,7 @@
   }
 
   .logo {
-    padding-bottom: var(--spacing);
+    padding-bottom: var(--spacing-05);
   }
 
   .subtitle {
@@ -106,8 +107,8 @@
     .section-intro-headline {
       display: inline-block;
       border-bottom: var(--border-area);
-      padding: 0 0 var(--spacing) var(--spacing-1);
-      margin-bottom: var(--spacing);
+      padding: 0 0 var(--spacing-05) var(--spacing-1);
+      margin-bottom: var(--spacing-05);
       margin-left: calc(var(--spacing-1) * -1);
 
       @media print {
@@ -184,7 +185,7 @@
         padding-bottom: var(--spacing-2);
 
         @include query($medium) {
-          padding: var(--spacing-3) var(--spacing) 0 var(--spacing-3);
+          padding: var(--spacing-3) var(--spacing-05) 0 var(--spacing-3);
         }
 
         @media print {
@@ -229,7 +230,7 @@
 
           .float {
             position: absolute;
-            left: calc(var(--spacing) * -2.5);
+            left: calc(var(--spacing-05) * -2.5);
             top: 0;
             writing-mode: vertical-lr;
             transform: rotate(-180deg);
@@ -242,13 +243,13 @@
 
         @include query($wide) {
           .float {
-            left: calc(var(--spacing) * -2);
+            left: calc(var(--spacing-05) * -2);
           }
         }
 
         @include query($extra-wide) {
           .float {
-            left: calc(var(--spacing) * -1.7);
+            left: calc(var(--spacing-05) * -1.7);
           }
         }
       }
@@ -459,11 +460,15 @@
     a {
       display: flex;
       justify-content: space-between;
-      padding: var(--spacing);
+      padding: var(--spacing-05);
 
       @media print {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+      }
+
+      @include query($medium) {
+        padding: var(--spacing-025) var(--spacing-05);
       }
     }
 
@@ -491,6 +496,7 @@
 
       @include query($medium) {
         grid-template-columns: var(--spacing-15) 1fr var(--spacing-1);
+        padding: var(--spacing-05);
       }
 
       .reference-description {
@@ -516,8 +522,8 @@
   li > a {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
-    padding-bottom: var(--spacing);
-    padding-top: var(--spacing);
+    padding-bottom: var(--spacing-05);
+    padding-top: var(--spacing-05);
 
     .title {
       grid-column-end: span 5;
@@ -528,7 +534,7 @@
     }
 
     @include query($medium) {
-      grid-column-gap: var(--spacing);
+      grid-column-gap: var(--spacing-05);
 
       .title {
         grid-column-end: span 1;
@@ -544,7 +550,7 @@
     width: 100%;
     border: 0;
     border-bottom: var(--border-link);
-    padding: var(--spacing) var(--spacing);
+    padding: var(--spacing-05) var(--spacing-05);
     margin-bottom: var(--spacing-2);
     transition: border-color $transition;
 
@@ -555,7 +561,9 @@
 }
 
 .page-footer {
-  margin: var(--spacing-2) 0;
+  @include query($wide) {
+    padding: var(--spacing-2) var(--spacing-5);
+  }
 }
 
 .table-link {
@@ -571,7 +579,7 @@
   a {
     text-decoration: none;
     font-size: var(--size-3);
-    padding: var(--spacing) var(--spacing-1);
+    padding: var(--spacing-05) var(--spacing-1);
     display: block;
     background-color: var(--color-accent);
     color: var(--color-bg);
