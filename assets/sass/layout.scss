@@ -9,10 +9,10 @@
   --spacing-3: calc(var(--margin) * 3);
   --spacing-4: calc(var(--margin) * 4);
   --spacing-5: calc(var(--margin) * 5);
-  --border-area: 1px solid rgba(0, 0, 0, 1);
-  --border-area--side: 10px solid rgba(0, 0, 0, 1);
-  --border-area--top: 5px solid rgba(0, 0, 0, 1);
-  --border-link: 1px solid rgba(0, 0, 0, 0.8);
+  --border-area: 1px solid var(--color-fg);
+  --border-area--side: 10px solid var(--color-fg);
+  --border-area--top: 5px solid var(--color-fg);
+  --border-link: 1px solid var(--color-fg);
 }
 
 .wrapper {
