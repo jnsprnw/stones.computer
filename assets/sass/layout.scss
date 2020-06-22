@@ -369,6 +369,10 @@
       position: absolute;
       left: 0;
       top: calc(var(--size-5) * -2.2);
+
+      @include query($medium) {
+        top: 0;
+      }
     }
 
     @include query($medium) {
@@ -392,18 +396,12 @@
     }
 
     @include query($wide) {
-      &:nth-child(odd) {
+      &:nth-child(odd), &:nth-child(even) {
         padding-top: var(--spacing-15);
 
         .float {
           left: var(--spacing-3);
-          top: calc(var(--size-5) * -2.2);
-        }
-      }
-
-      &:nth-child(even) {
-        .float {
-          left: var(--spacing-3);
+          top: calc(var(--size-5) * -1.8);
         }
       }
     }
