@@ -1,5 +1,5 @@
 ---
-title: "Material of the material"
+title: "Material of the digital"
 question: "What is the stone?"
 date: 2020-04-08T13:22:57+02:00
 draft: false
