@@ -10,6 +10,7 @@
 
 i { font-style: normal; }
 sup { font-size: 0.7em; }
+q { font-style: italic; quotes: none; }
 
 ::selection {
   color: var(--color-fg);
@@ -63,6 +64,13 @@ sup { font-size: 0.7em; }
   @include headline-2();
   color: var(--color-fg);
   @include outline(var(--color-bg));
+}
+
+.section-headline-test {
+  font-family: "Times New Roman", Times, serif;
+  font-size: var(--size-2);
+  font-weight: normal;
+  line-height: 1;
 }
 
 @mixin headline-3 () {
@@ -207,8 +215,12 @@ p + p {
 }
 
 // Regular links in paragraphs, footer or intro
-p a, .page-footer a, .info a, ul a {
+p a, .page-footer a, .info a, ul a, .section-headline-test a {
   @include link-1();
+}
+
+.section-headline-test a {
+  font-style: italic;
 }
 
 @mixin link-2 () {
