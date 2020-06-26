@@ -1,7 +1,7 @@
 @import "./global";
 
 :root {
-  --size-1: min(max(3rem, 40px), 80px); // Headlines topics and aspects
+  --size-1: min(max(10rem, 40px), 140px); // Headlines topics and aspects
   --size-3: min(max(1.3rem, 15px), 20px); // Questions and table link
   --size-4: min(max(1.0rem, 15px), 18px); // Default text size
   --size-5: min(max(0.7rem, 12px), 14px); // Captions
@@ -26,9 +26,23 @@ sup { font-size: 0.7em; }
   }
 }
 
-.logo {
+.title {
   @include headline-1();
-  display: inline-block;
+  // display: inline-block;
+  color: var(--color-bg);
+  text-transform: uppercase;
+  @include outline(var(--color-fg));
+  text-align: center;
+  line-height: 1.5;
+}
+
+.subtitle, .info {
+  font-size: var(--size-5);
+  white-space: nowrap;
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
 
 @mixin headline-2 () {
@@ -82,7 +96,7 @@ sup { font-size: 0.7em; }
   }
 }
 
-.section-intro-headline, .topic-description-intro, .link-title, .subtitle {
+.section-intro-headline, .topic-description-intro, .link-title {
   @include headline-5();
 
   @media print {

@@ -36,11 +36,25 @@
   }
 
   .logo {
+    position: relative;
+  }
+
+  .title {
     padding-bottom: var(--spacing-05);
   }
 
-  .subtitle {
+  .subtitle, .info {
     padding-bottom: var(--spacing-1);
+    padding: var(--spacing-025) var(--spacing-05);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -31%);
+    top: 31%;
+  }
+
+  .info {
+    transform: translate(-50%, -66%);
+    top: 66%;
   }
 }
 
