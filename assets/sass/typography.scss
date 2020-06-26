@@ -2,6 +2,7 @@
 
 :root {
   --size-1: min(max(10rem, 40px), 140px); // Headlines topics and aspects
+  --size-2: min(max(3rem, 40px), 80px); // Headlines topics and aspects
   --size-3: min(max(1.3rem, 15px), 20px); // Questions and table link
   --size-4: min(max(1.0rem, 15px), 18px); // Default text size
   --size-5: min(max(0.7rem, 12px), 14px); // Captions
@@ -19,7 +20,7 @@ sup { font-size: 0.7em; }
 @mixin headline-1 () {
   font-weight: $font-weight-bold;
   line-height: 1;
-  font-size: var(--size-1);
+  font-size: var(--size-2);
 
   @media print {
     font-size: 20pt;
@@ -28,6 +29,7 @@ sup { font-size: 0.7em; }
 
 .title {
   @include headline-1();
+  font-size: var(--size-1);
   // display: inline-block;
   color: var(--color-bg);
   text-transform: uppercase;
