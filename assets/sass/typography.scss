@@ -28,15 +28,31 @@ q { font-style: italic; quotes: none; }
   }
 }
 
+.draft {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--color-highlight);
+  position: fixed;
+  font-size: var(--size-5);
+  letter-spacing: 0.5em;
+  width: 100vw;
+  left: 0;
+  font-weight: bold;
+  z-index: 100;
+  top: 0;
+}
+
 .title {
   @include headline-1();
   font-size: var(--size-1);
   // display: inline-block;
-  color: var(--color-bg);
+  // color: var(--color-bg);
   text-transform: uppercase;
-  @include outline(var(--color-fg));
+  // @include outline(var(--color-fg));
   text-align: center;
   line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
 }
 
 .subtitle, .info {
@@ -71,6 +87,15 @@ q { font-style: italic; quotes: none; }
   font-size: var(--size-2);
   font-weight: normal;
   line-height: 1;
+
+  a {
+    white-space: nowrap;
+  }
+
+  i {
+    font-size: 0.6em;
+    vertical-align: 0.2em;
+  }
 }
 
 @mixin headline-3 () {
