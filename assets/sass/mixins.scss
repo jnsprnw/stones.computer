@@ -5,10 +5,12 @@
 }
 
 @mixin outline($color) {
-  text-shadow: -1px 1px 0 $color, 1px 1px 0 $color, 1px -1px 0 $color, -1px -1px 0 $color;
+	-webkit-text-stroke: 1px $color;
+  // text-shadow: -1px 1px 0 $color, 1px 1px 0 $color, 1px -1px 0 $color, -1px -1px 0 $color;
 
   @media print {
-    text-shadow: none;
+  	-webkit-text-stroke: none;
+    // text-shadow: none;
     color: #000;
   }
 }
