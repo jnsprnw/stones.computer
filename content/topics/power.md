@@ -1,5 +1,5 @@
 ---
-title: "Power and Geopolitics in the digital"
+title: "Power and geopolitics in the digital"
 question: "Where is the Stone?"
 date: 2020-04-08T13:22:57+02:00
 draft: false
