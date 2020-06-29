@@ -269,7 +269,7 @@
       }
 
       .description {
-        margin-top: var(--spacing-2);
+        margin-top: var(--spacing-3);
 
         @media print {
           margin-top: 0;
@@ -281,7 +281,7 @@
         }
       }
 
-      .aspects {
+      .aspects-links {
         margin-top: var(--spacing-3);
 
         @include query($medium) {

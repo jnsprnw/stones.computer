@@ -173,7 +173,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .info {
+.reference-description, .page-footer, .tag, .label, .info, .aspects-links {
   @include text-2();
 }
 
@@ -268,6 +268,10 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
 .link-aspect, .link-reference, .link-table, .caption.anchor {
   @include link-2();
 }
+
+// .link-aspect {
+//   font-family: "Times New Roman", Times, serif;
+// }
 
 .homepage-projects {
   .title {
