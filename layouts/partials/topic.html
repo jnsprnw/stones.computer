@@ -8,15 +8,20 @@
   <div class="description">
   	<h5 class="topic-description-intro">{{ .Params.Question }}</h5>
   	{{ .Content }}
-  	<div class="aspects">
-	  	<span class="caption">Aspects</span>
-	  	{{ $content := where ((.Site.GetPage "/aspects").Resources) "Params.topics" "intersect" (slice .File.BaseFileName) }}
+  	<div class="aspects-links">
+  		{{ $content := where ((.Site.GetPage "/aspects").Resources) "Params.topics" "intersect" (slice .File.BaseFileName) }}
+  		<span>Related aspects: {{ range $content }}
+	  		{{ $id := .Title | urlize | lower }}
+	  		<a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«"><span>{{ .Title }}</span><i>↓</i></a>
+	  		{{ end }}
+	  	</span>
+	  	<!-- <span class="caption">Aspects</span>
 	  	<ul class="list">
 	  		{{ range $content }}
 	  		{{ $id := .Title | urlize | lower }}
 	  		<li class="link"><a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«"><span>{{ .Title }}</span><i>↓</i></a></li>
 	  		{{ end }}
-	  	</ul>
+	  	</ul> -->
 	  </div>
   </div>
 </section>
