@@ -1,0 +1,14 @@
+---
+title: "Cycles"
+date: 2020-03-11T11:46:31+01:00
+draft: false
+topics: ["material", "power"]
+weight: 8
+links: ["upscaling", "mediamateriality", "epistemic-traces", "platform-and-infrastructure-monopolies"]
+group: 2
+hashtags: ["Networks", "Systems and Ecologies"]
+---
+
+There are many models and ways of thinking to understand the ecological crises of our time. The keyword "cycles" aims at systemic and network oriented abstractions. While Tega Brain still warns us that the environment cannot be fully understood in terms of cybernetic reductions and decided in sorts of policies [Link Tega Brain], Keller Easterling proposes an updated version of systemic thinking with her idea of the medium design. Another approach comes from Bruno Latour, who finds a mapping of a new conception of the Earth in the critical zones coming from Earth System Sciences and introduces it in depth with the recently launched [exhibition at the ZKM](https://critical-zones.zkm.de/).
+
+Furthermore, Timothy Morton helps us to understand how a rigid image of nature can block ecological lines of sight and, in a similarly productive way, T.J. Demos points to the bridge between environmental processes and artistic approaches. We have listed some artistic voices that deal with such problems in depth.

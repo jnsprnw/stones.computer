@@ -6,16 +6,7 @@ topics: ["power", "bodies"]
 weight: 9
 links: ["surveillance", "computational-discrimination"]
 group: 3
+hashtags: ["vision machine", "non-representational images", "black box"]
 ---
 
-Invisible Images, Open Black box, ...
-
-- Trevor Paglen (Invisible Images – The New Inquiry)
-- Sichtbarkeit/Sichtbarmachung Panel
-- Marianna van den Boomen (Deprensentation)
-- Jan Distelmeyer (Digitalitzität, Leiten)
-
-- Kate Crawford + Vladan Joler – Autonomy of AI ([https://anatomyof.ai/](https://anatomyof.ai/))
-- Hito Steyerl – How Not To Be Seen
-
-James Bridle – New Ways of Seeing → BBC Podcast
+Vision has a long cultural and technological history.[Kittler] Facing the post-digital reality, we have to admit that the human "meat" vision has become an exception. In our current visual culture, most images are actually produced for machines or by machines that are completely inaccessible to a human gaze due to their digital structure. The dominant vision of vision machines, firstly defined by Paul Virilio, is a different kind of vision by human standards. On a structural level, it has a fundamentally different representative mode of operation, if above all data structures are compared with each other. Later Harun Farocki, building on that legacy, introduced the notion of operational images. A type of images that dropped their representational dimension and rather became part of a (technical) process itself – thinking machines.[Farocki] Still today, the conception of the "digital image" between the visible surface and the invisible mostly technological subface remains a theoretical challenge. Contemporary attempts to this problem can be found in approaches to understand the inner working mechanisms of so called [black boxes](https://anatomyof.ai/), [artistic counter-practices](https://www.youtube.com/watch?v=WbOmXEnluzg) or conceptual re-framings[Hinterwaldner].

@@ -1,5 +1,5 @@
 ---
-title: "Digital Human"
+title: "Understanding the Digital Human"
 date: 2020-03-11T11:46:31+01:00
 draft: false
 topics: ["bodies"]
@@ -8,15 +8,4 @@ links: ["emotional-interfaces", "computational-discrimination"]
 group: 4
 ---
 
-Menschlichkeit in technischen Umgebungen, Post-Internet-Art, Alienation
-
-- Lee Mackinnon ([love-machines-and-the-tinder-bot-bildungsroman](https://www.e-flux.com/journal/74/59802/love-machines-and-the-tinder-bot-bildungsroman/))
-- Xenophily and Computational Denaturalization (Patricia Reed)
-- Queering Homophily (Wendy Chun)
-
-- Arvida Byström (Inflated Fiction)
-- Sebastian Schmieg
-- Leah Schrager
-
-- [https://pdfs.semanticscholar.org](https://pdfs.semanticscholar.org/d009/646e46ae849d535272a5ad4d1a5a75caa514.pdf)
-- [Link in Bio](https://mdbk.de/en/exhibitions/link-in-bio-kunst-nach-den-sozialen-medien/)
+Vision has a long cultural and technological history.[Kittler] Facing the post-digital reality, we have to admit that the human "meat" vision has become an exception. In our current visual culture, most images are actually produced for machines or by machines that are completely inaccessible to a human gaze due to their digital structure. The dominant vision of vision machines, firstly defined by Paul Virilio, is a different kind of vision by human standards. On a structural level, it has a fundamentally different representative mode of operation, if above all data structures are compared with each other. Later Harun Farocki, building on that legacy, introduced the notion of operational images. A type of images that dropped their representational dimension and rather became part of a (technical) process itself – thinking machines.[Farocki] Still today, the conception of the "digital image" between the visible surface and the invisible mostly technological subface remains a theoretical challenge. Contemporary attempts to this problem can be found in approaches to understand the inner working mechanisms of so called black boxes [Autonomy of AI], artistic counter-practices[Hito] or conceptual re-framings[Hinterwaldner].

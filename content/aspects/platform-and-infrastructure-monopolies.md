@@ -4,7 +4,7 @@ date: 2020-06-10T23:15:50+02:00
 draft: false
 topics: ["power"]
 weight: 11
-links: ["computational-discrimination", "surveillance", "spatial-order", "emotional-interfaces", "cycles-networks-ecologies"]
+links: ["computational-discrimination", "surveillance", "spatial-order", "emotional-interfaces", "cycles"]
 group: 3
 ---
 

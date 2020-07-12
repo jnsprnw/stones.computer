@@ -1,13 +1,13 @@
 ---
-title: "Non-Anthropocentrism"
+title: "The Stack"
 date: 2020-05-24T20:09:07+02:00
 draft: false
 aspect: "upscaling"
-authors: ["Rosi Braidotti"]
+authors: ["Benjamin Bratton"]
 topic: "bodies"
-link: ""
+link: "https://mitpress.mit.edu/books/stack"
 medium: "book"
-year: 1900
+year: 2016
 tags: []
 weight: 1
 ---

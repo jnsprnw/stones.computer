@@ -5,6 +5,7 @@ draft: false
 topics: ["material", "power"]
 weight: 7
 links: ["spatial-order"]
+hashtags: ["urbanism", "dataCentres", "infrastructures"]
 group: 2
 ---
 

@@ -2,13 +2,11 @@
 title: "Comparative Planetology"
 date: 2020-05-24T20:09:07+02:00
 draft: false
-aspect: "scale"
+aspect: "upscaling"
 authors: ["Lukáš Likavčan"]
 topic: "bodies"
-link: "https://mitpress.mit.edu/books/data-feminism"
-medium: "book"
+link: "https://www.likavcan.com/articles/introduction-to-comparative-planetology"
+medium: ""
 year: 2020
-tags: ["algorithmic discrimination", "machine bias", "jim code", "racial hierarchies", "discriminatory designs"]
+tags: []
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt.
