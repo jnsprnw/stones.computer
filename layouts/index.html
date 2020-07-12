@@ -20,7 +20,7 @@
         {{ end }}
       </div>
     </section>
-    <section class="homepage-topics" aria-labelledby="topics">
+    <section class="homepage-topics">
       <header class="wrapper">
         <h2 class="section-headline-test">Digitality promised us <a href="#material-of-the-material">immaterialness <i>↓</i></a>, <a href="#material-of-the-material">equality <i>↓</i></a> and <a href="#material-of-the-material">disembodiment <i>↓</i></a>. It never came to be.</h2>
       </header>
@@ -43,7 +43,7 @@
         {{ partial "topics.html" . }}
       </div>
     </section>
-    <section class="homepage-aspects" aria-labelledby="aspects">
+    <section class="homepage-aspects">
       <header class="wrapper">
         <h2 class="section-headline-test">We propose the following aspects as framework to understand the post-digital condition.</h2>
       </header>
@@ -64,6 +64,24 @@
       <div class="aspects wrapper">
         {{ partial "aspects.html" . }}
       </div>
+    </section>
+    <section class="homepage-footer">
+      <header class="wrapper">
+        <h2 class="section-headline-test">Thank you very much for your attention</h2>
+      </header>
+      <div>
+        {{ with .Site.GetPage "footer.md" }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+      <footer>
+        {{ with .Site.GetPage "paul.md" }}
+          {{ .Content }}
+        {{ end }}
+        {{ with .Site.GetPage "jonas.md" }}
+          {{ .Content }}
+        {{ end }}
+      </footer>
     </section>
   </div>
 
