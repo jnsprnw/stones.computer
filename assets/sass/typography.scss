@@ -16,6 +16,7 @@ q { font-style: italic; quotes: none; }
   color: var(--color-fg);
   background-color: var(--color-highlight);
   text-shadow: none;
+  -webkit-text-stroke: 0;
 }
 
 @mixin headline-1 () {
