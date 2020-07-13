@@ -1,7 +1,6 @@
 ---
 title: "Understanding the Digital Human"
-date: 2020-03-11T11:46:31+01:00
-draft: false
+date: 2020-05-24T22:13:55+02:00
 topics: ["bodies"]
 weight: 13
 links: ["emotional-interfaces", "computational-discrimination"]

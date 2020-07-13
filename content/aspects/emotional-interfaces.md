@@ -1,7 +1,6 @@
 ---
 title: "Emotional Interfaces"
-date: 2020-03-11T11:46:31+01:00
-draft: false
+date: 2020-07-13T15:43:21+02:00
 topics: ["bodies"]
 weight: 14
 links: ["understanding-the-digital-human", "platform-and-infrastructure-monopolies"]

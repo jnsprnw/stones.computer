@@ -1,10 +1,9 @@
 ---
 title: "Time"
-date: 2020-06-08T14:16:36+02:00
-draft: false
+date: 2020-07-13T15:26:43+02:00
 topics: ["material"]
 hashtags: ["deeptime", "polytemporality", "slowViolence"]
-weight: 2
+weight: 3
 links: ["upscaling", "stones-and-resources"]
 group: 1
 ---

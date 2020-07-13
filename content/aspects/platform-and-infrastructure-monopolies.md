@@ -1,7 +1,6 @@
 ---
 title: "Monopolies"
-date: 2020-06-10T23:15:50+02:00
-draft: false
+date: 2020-07-13T15:26:43+02:00
 topics: ["power"]
 weight: 11
 links: ["computational-discrimination", "surveillance", "spatial-order", "emotional-interfaces", "cycles"]

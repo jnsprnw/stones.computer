@@ -1,7 +1,6 @@
 ---
 title: "Computational discrimination"
-date: 2020-05-24T22:13:55+02:00
-draft: false
+date: 2020-07-13T15:44:41+02:00
 topics: ["power", "bodies"]
 hashtags: ["antiBlackBox", "criticalCodeStudies", "algorithmicViolence"]
 weight: 12

@@ -1,7 +1,6 @@
 ---
 title: "Upscaling"
-date: 2020-06-08T14:38:25+02:00
-draft: false
+date: 2020-07-13T15:26:43+02:00
 topics: ["material", "power", "bodies"]
 hashtags: ["planetaryScaleComputation", "anthropocene", "planetology"]
 weight: 1

@@ -1,7 +1,6 @@
 ---
 title: "Epistemic Traces"
-date: 2020-03-11T11:46:31+01:00
-draft: false
+date: 2020-07-13T15:44:14+02:00
 topics: ["material"]
 weight: 16
 links: ["non-human-and-non-organic", "cycles"]
