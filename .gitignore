@@ -13,3 +13,5 @@ $RECYCLE.BIN/
 .DS_Store
 /node_modules
 /static/js
+
+npm-debug.log
