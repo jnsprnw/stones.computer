@@ -15,3 +15,5 @@ $RECYCLE.BIN/
 /static/js
 
 npm-debug.log
+/static/js/svelte.js
+/static/js/svelte.js.map
