@@ -574,6 +574,25 @@
   }
 }
 
+.homepage-outro {
+  padding-top: var(--spacing-3);
+
+  @include query($wide) {
+    padding: var(--spacing-3) var(--spacing-5) 0;
+  }
+
+  .byline {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-3);
+    margin-top: var(--spacing-2);
+
+    @include query($medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 .page-footer {
   @include query($wide) {
     padding: var(--spacing-2) var(--spacing-5);
