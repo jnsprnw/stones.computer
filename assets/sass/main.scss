@@ -43,12 +43,13 @@ ul, ol {
   height: 500px;
 }
 
-line {
+line, path {
   stroke: rgba(0, 0, 0, 0.05);
   transition: stroke $transition;
+  fill: none;
 
   &.isActive {
-    stroke: rgba(0, 0, 0, 0.2);
+    stroke: rgba(0, 0, 0, 0.4);
   }
 }
 
