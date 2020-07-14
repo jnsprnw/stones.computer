@@ -43,7 +43,7 @@ q { font-style: italic; quotes: none; }
   top: 0;
 }
 
-.title {
+.page-title {
   @include headline-1();
   font-size: var(--size-1);
   // display: inline-block;
@@ -174,7 +174,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .info, .aspects-links {
+.reference-description, .page-footer, .tag, .label, .info, .aspects-links, .byline p {
   @include text-2();
 }
 
@@ -275,7 +275,11 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
 // }
 
 .homepage-projects {
-  .title {
-    font-weight: $font-weight-bold;
+  span, a {
+    line-height: 1.3;
+
+    &.title {
+      font-weight: $font-weight-bold;
+    }
   }
 }
