@@ -5,13 +5,13 @@
       <a href="/table">All projects</a>
     </nav>
     <header class="homepage-header wrapper" role="banner">
-      <span class="draft">Draft</span>
+      <span class="draft">Draft – Review Process – Feedback welcome</span>
       <hgroup class="logo">
         <h1 class="title" role="heading" aria-level="1">Stones<br>that<br>calculate</h1>
         <span class="subtitle">{{ .Site.Params.subtitle }}</span>
         <span class="info">Curated by Paul Heinicker and Jonas Parnow</span>
       </hgroup>
-      <button id="switch" onclick="toggleTheme()">Switch</button>
+<!--       <button id="switch" onclick="toggleTheme()">Switch</button> -->
     </header>
     <section class="homepage-intro wrapper">
       <div>
@@ -66,9 +66,6 @@
       </div>
     </section>
     <section class="homepage-footer">
-      <header class="wrapper">
-        <h2 class="section-headline-test">Thank you very much for your attention</h2>
-      </header>
       <div>
         {{ with .Site.GetPage "footer.md" }}
           {{ .Content }}
