@@ -17,7 +17,8 @@
       'medium',
       'tags',
       'link',
-      'year'
+      'year',
+      'people'
     ]
   };
 
