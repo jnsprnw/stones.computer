@@ -38,7 +38,7 @@
 	})
 </script>
 
-<input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} />
+<input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} class="search" />
 
 <ul class="plain">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }, i}

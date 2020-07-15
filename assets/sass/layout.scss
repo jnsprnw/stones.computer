@@ -560,7 +560,7 @@
     }
   }
 
-  input {
+  input.search {
     width: 100%;
     border: 0;
     border-bottom: var(--border-link);
@@ -570,6 +570,7 @@
 
     &:focus, &:hover {
       border-color: var(--color-accent);
+      outline: none;
     }
   }
 }

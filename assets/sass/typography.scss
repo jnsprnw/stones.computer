@@ -149,8 +149,12 @@ q { font-style: italic; quotes: none; }
   }
 }
 
-p, ul, input, .btn, .p, ol {
+p, ul, input.search, .btn, .p, ol {
   @include text-1();
+}
+
+input.search {
+  font-weight: $font-weight-bold;
 }
 
 p {
