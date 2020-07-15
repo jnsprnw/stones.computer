@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Fuse from 'fuse.js';
+	import trim from 'lodash/trim';
 
 	let input; // Input field
 	let items = []; // All items
@@ -23,7 +24,12 @@
   };
 
 	function handleInput () {
-		const term = input.value
+		const term = trim(input.value)
+		// First, check if search term is present and fuse has been initialised
+		// If false, return all items
+		// If true, return fuse search results but map over them to bring forward the item
+		// This is because fuse add search metadata to the results.
+		// This would conflict with returning the simple list of all items
 		result = term.length && fuse ? fuse.search(term).map((d) => d.item) : items
 	}
 
@@ -41,7 +47,7 @@
 <input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} class="search" />
 
 <ul class="plain">
-	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }, i}
+	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
 	<li>
 		<a href="{link}" class="link-table">
 			<span class="title">{ title }</span>
