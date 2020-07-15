@@ -3,12 +3,12 @@
   "version": "1.0.1",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
-    "rollup": "^2.13.1",
+    "rollup": "^2.21.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^6.1.0",
-    "svelte": "^3.23.0"
+    "svelte": "^3.24.0"
   },
   "scripts": {
     "build": "rollup -c; hugo --gc",
@@ -17,7 +17,7 @@
     "hugo:dev": "hugo server --bind=0.0.0.0 -D"
   },
   "dependencies": {
-    "d3-force": "^2.0.1",
-    "fuse.js": "^6.0.3"
+    "d3-scale": "^3.2.1",
+    "fuse.js": "^6.4.0"
   }
 }
