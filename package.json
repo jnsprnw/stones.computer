@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "d3-scale": "^3.2.1",
-    "fuse.js": "^6.4.0"
+    "fuse.js": "^6.4.0",
+    "lodash": "^4.17.19"
   }
 }
