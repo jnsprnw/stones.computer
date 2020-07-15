@@ -5,6 +5,8 @@
   import map from 'lodash/map';
   import uniqBy from 'lodash/uniqBy';
 
+  const TOPICS = ['material', 'power', 'bodies']
+
   let width = 0;
   let height = 0;
   const margin = 20;
@@ -14,19 +16,28 @@
   const edges = [];
   let activeNodes = [];
   let activeEdges = [];
+  let activeTopic;
 
-  function handleover (links, id) {
+  function handleoverAspect (links, id) {
     activeNodes = links
     activeEdges = links.map((link) => [link, id])
   }
 
-  function handleleave () {
+  function handleleaveAspect () {
     activeNodes = []
     activeEdges = []
   }
 
+  function handleoverTopic (topic) {
+    activeTopic = topic
+  }
+
+  function handleleaveTopic () {
+    activeTopic = null
+  }
+
   function generateArc (x1, x2, i) {
-    const _y = i ? y / 2 : y + y / 2
+    const _y = i ? y / 4 : height - y / 4
     return `M${x1} ${y} C${x1} ${_y}, ${x2} ${_y}, ${x2} ${y}`
   }
 
@@ -38,8 +49,6 @@
         links.push({
           source: id,
           target: key,
-          x1,
-          x2,
           d: generateArc(x1, x2, i % 2)
         })
       })
@@ -78,12 +87,18 @@
 
 <svelte:window on:resize='{resize}'/>
 
-<svg bind:this={svg} class="map" class:hasActive={activeEdges.length || activeNodes.length}>
-  {#each links as { x1, x2, source, target, d }, i}
+<ul class="map-topics">
+  {#each TOPICS as topic}
+  <li on:mouseover={() => handleoverTopic(topic)} on:mouseleave={handleleaveTopic}>{ topic }</li>
+  {/each}
+</ul>
+
+<svg bind:this={svg} class="map" class:hasActive={activeEdges.length || activeNodes.length || activeTopic}>
+  {#each links as { x1, x2, source, target, d }}
   <path d={d} class:isActive={activeEdges.some((edge) => { return edge[1] === source && edge[0] === target })} />
   {/each}
-  {#each aspects as { x, title, group, links, id }, i}
-  <g on:mouseover={() => handleover([id, ...links], id)} on:mouseleave={handleleave} class:isActive={activeNodes.includes(id)} transform={`rotate(-90, ${x}, ${y})`}>
+  {#each aspects as { x, title, group, links, id, topics }}
+  <g on:mouseover={() => handleoverAspect([id, ...links], id)} on:mouseleave={handleleaveAspect} class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))} transform={`rotate(-90, ${x}, ${y})`}>
     <a xlink:href={`#${id}`}>
       <title>Jump to {title}</title>
       <text x={x} y={y} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
