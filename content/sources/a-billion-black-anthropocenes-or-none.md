@@ -4,10 +4,9 @@ date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "extractivism"
 authors: ["Kathryn Yusoff"]
-topic: ""
-link: ""
-medium: ""
-year: 1900
-tags: []
-weight: 1
+link: "https://www.upress.umn.edu/book-division/books/a-billion-black-anthropocenes-or-none"
+medium: "book"
+year: 2019
+tags: ["extractive economies", "colonialism", "black feminist theory"]
+weight: 3
 ---

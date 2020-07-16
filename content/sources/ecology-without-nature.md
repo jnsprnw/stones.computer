@@ -4,10 +4,9 @@ date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "cycles"
 authors: ["Timothy Morton"]
-topic: ""
-link: ""
-medium: ""
-year: 1900
-tags: []
-weight: 1
+link: "https://www.hup.harvard.edu/catalog.php?isbn=9780674034853"
+medium: "book"
+year: 2009
+tags: ["environmental thinking", "environmental aesthetics", "dark ecology"]
+weight: 3
 ---

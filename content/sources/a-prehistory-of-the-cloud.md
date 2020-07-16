@@ -4,10 +4,9 @@ date: 2020-05-24T20:09:07+02:00
 draft: false
 aspect: "landscapes"
 authors: ["Tung-Hui Hu"]
-topic: ""
-link: ""
-medium: ""
-year: 1900
-tags: []
+link: "https://mitpress.mit.edu/books/prehistory-cloud"
+medium: "book"
+year: 2016
+tags: ["digital cloud", "network technologies", "military"]
 weight: 1
 ---
