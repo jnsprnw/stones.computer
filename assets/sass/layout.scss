@@ -23,6 +23,10 @@
   max-width: 1600px;
 }
 
+body {
+  margin-bottom: var(--spacing-2);
+}
+
 .homepage-header {
   padding-top: var(--spacing-2);
   padding-bottom: var(--spacing-2);
@@ -556,32 +560,47 @@
 
 .homepage-projects {
   margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
 
   .list {
     li > a {
       display: grid;
-      grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
-      padding-bottom: var(--spacing-05);
-      padding-top: var(--spacing-05);
+      grid-template-columns: 4fr 1fr 2rem;
+      padding-bottom: var(--spacing-2);
+      padding-top: var(--spacing-1);
+      grid-row-gap: var(--spacing-05);
 
       .title {
         grid-column-end: span 5;
       }
 
-      .authors {
-        grid-column-end: span 2;
+      .aspect {
+        display: none;
+      }
+
+      @include query($narrow) {
+        grid-template-columns: 2fr 1fr 1fr 2rem;
+        padding-bottom: var(--spacing-1);
+        padding-top: var(--spacing-1);
+        grid-row-gap: var(--spacing-05);
+
+        .aspect {
+          display: unset;
+        }
       }
 
       @include query($medium) {
+        grid-template-columns: 2fr 1fr 1fr 1fr 2rem;
         grid-column-gap: var(--spacing-05);
 
         .title {
           grid-column-end: span 1;
         }
+      }
 
-        .authors {
-          grid-column-end: span 1;
-        }
+      @include query($wide) {
+        padding-bottom: var(--spacing-05);
+        padding-top: var(--spacing-05);
       }
     }
 
@@ -596,6 +615,10 @@
       &:focus, &:hover {
         background-color: var(--color-highlight);
         outline: none;
+      }
+
+      @include query($wide) {
+        margin: var(--spacing-1) 0;
       }
     }
   }
