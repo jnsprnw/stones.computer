@@ -5,7 +5,7 @@
       <a href="/table">All projects</a>
     </nav>
     <header class="homepage-header wrapper" role="banner">
-      <span class="draft">Draft – Review Process – Feedback welcome</span>
+      <span class="draft">Review Process – Feedback welcome</span>
       <hgroup class="logo">
         <h1 class="page-title" role="heading" aria-level="1">Stones<br>that<br>calculate</h1>
         <span class="subtitle">{{ .Site.Params.subtitle }}</span>
@@ -22,7 +22,7 @@
     </section>
     <section class="homepage-topics">
       <header class="wrapper">
-        <h2 class="section-headline-test">Digitality promised us <a href="#material-of-the-material">immaterialness <i>↓</i></a>, <a href="#material-of-the-material">equality <i>↓</i></a> and <a href="#material-of-the-material">disembodiment <i>↓</i></a>. It never came to be.</h2>
+        <h2 class="section-headline">Digitality promised us <a href="#material-of-the-digital" title="Jump to topic »Material of the digital«">immaterialness <i>↓</i></a>, <a href="#power-and-geopolitics-in-the-digital" title="Jump to topic »Power and geopolitics in the digital«">equality <i>↓</i></a> and <a href="#bodies-of-the-digital" title="Jump to topic »Bodies of the digital«">disembodiment <i>↓</i></a>. It never came to be.</h2>
       </header>
       <div class="topics-list wrapper">
         {{ partial "topics.html" . }}
@@ -30,7 +30,7 @@
     </section>
     <section class="homepage-aspects">
       <header class="wrapper">
-        <h2 class="section-headline-test">We propose the following aspects as framework to understand the post-digital condition.</h2>
+        <h2 class="section-headline">We propose the following aspects as framework to understand the post-digital condition.</h2>
       </header>
       <div class="homepage-map wrapper" id="map"></div>
       <div class="aspects wrapper">
@@ -38,12 +38,12 @@
       </div>
     </section>
     <section class="homepage-outro">
-      <div>
+      <div class="wrapper">
         {{ with .Site.GetPage "footer.md" }}
           {{ .Content }}
         {{ end }}
       </div>
-      <footer class="byline vcard">
+      <footer class="wrapper byline vcard">
         {{ with .Site.GetPage "paul.md" }}
           {{ .Content }}
         {{ end }}
