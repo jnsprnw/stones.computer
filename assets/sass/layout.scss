@@ -597,6 +597,11 @@ body {
           grid-column-end: span 1;
         }
       }
+
+      @include query($wide) {
+        padding-bottom: var(--spacing-05);
+        padding-top: var(--spacing-05);
+      }
     }
 
     input.search {
@@ -610,6 +615,10 @@ body {
       &:focus, &:hover {
         background-color: var(--color-highlight);
         outline: none;
+      }
+
+      @include query($wide) {
+        margin: var(--spacing-1) 0;
       }
     }
   }
