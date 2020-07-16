@@ -100,7 +100,7 @@
   {#each aspects as { x, title, group, links, id, topics }}
   <g on:mouseover={() => handleoverAspect([id, ...links], id)} on:mouseleave={handleleaveAspect} class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))} transform={`rotate(-90, ${x}, ${y})`}>
     <a xlink:href={`#${id}`}>
-      <title>Jump to {title}</title>
+      <title>Jump to aspect »{title}«</title>
       <text x={x} y={y} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
     </a>
   </g>
