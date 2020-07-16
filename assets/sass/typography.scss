@@ -132,7 +132,7 @@ q { font-style: italic; quotes: none; }
   }
 }
 
-.section-intro-headline, .topic-description-intro, .link-title {
+.section-intro-headline, .topic-description-intro, .link-title, .homepage-projects .header h1 {
   @include headline-5();
 
   @media print {
@@ -149,12 +149,20 @@ q { font-style: italic; quotes: none; }
   }
 }
 
-p, ul, input.search, .btn, .p, ol {
+p, ul, input.search, .btn, .p, ol, .homepage-projects .header a {
   @include text-1();
 }
 
 input.search {
+  @include text-1();
   font-weight: $font-weight-bold;
+
+  &::placeholder {
+    @include text-1();
+    font-weight: $font-weight-default;
+    color: var(--color-fg);
+    opacity: 1;
+  }
 }
 
 p {
@@ -262,7 +270,7 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
     color: var(--color-interactive);
   }
 
-  &[href^="#"], &[href^="/#"] { // Style internal links differently
+  &[href^="#"], &[href^="/#"], &.internal { // Style internal links differently
     &:hover, &:focus {
       color: $color-accent;
     }
@@ -270,7 +278,7 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
 }
 
 // Internal links to aspects
-.link-aspect, .link-reference, .link-table, .caption.anchor {
+.link-aspect, .link-reference, .link-table, .caption.anchor, .homepage-projects .header a {
   @include link-2();
 }
 
@@ -278,7 +286,7 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
 //   font-family: "Times New Roman", Times, serif;
 // }
 
-.homepage-projects {
+.homepage-projects .list {
   span, a {
     line-height: 1.3;
 

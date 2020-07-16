@@ -1,10 +1,10 @@
 {{ define "main" }}
-  <main>
-    <header class="wrapper">
-      <h1>{{ .Title }}</h1>
-      {{- .Content -}}
+  <main class="homepage-projects">
+    <header class="wrapper header">
+    	<h1>Archive</h1>
+      <a href="/" class="internal">&#8592; Back</a>
     </header>
-    <section class="homepage-projects">
+    <section class="list">
       {{ partial "projects.html" . }}
     </section>
   </main>

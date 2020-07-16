@@ -555,44 +555,48 @@
 }
 
 .homepage-projects {
-  li > a {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
-    padding-bottom: var(--spacing-05);
-    padding-top: var(--spacing-05);
+  margin-top: var(--spacing-1);
 
-    .title {
-      grid-column-end: span 5;
-    }
-
-    .authors {
-      grid-column-end: span 2;
-    }
-
-    @include query($medium) {
-      grid-column-gap: var(--spacing-05);
+  .list {
+    li > a {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1rem;
+      padding-bottom: var(--spacing-05);
+      padding-top: var(--spacing-05);
 
       .title {
-        grid-column-end: span 1;
+        grid-column-end: span 5;
       }
 
       .authors {
-        grid-column-end: span 1;
+        grid-column-end: span 2;
+      }
+
+      @include query($medium) {
+        grid-column-gap: var(--spacing-05);
+
+        .title {
+          grid-column-end: span 1;
+        }
+
+        .authors {
+          grid-column-end: span 1;
+        }
       }
     }
-  }
 
-  input.search {
-    width: 100%;
-    border: 0;
-    border-bottom: var(--border-link);
-    padding: var(--spacing-05) var(--spacing-05);
-    margin-bottom: var(--spacing-2);
-    transition: border-color $transition;
+    input.search {
+      width: 100%;
+      border: 0;
+      border-bottom: var(--border-link);
+      padding: var(--spacing-05) var(--spacing-05);
+      margin: var(--spacing-2) 0;
+      transition: border-color $transition, background-color $transition;
 
-    &:focus, &:hover {
-      border-color: var(--color-accent);
-      outline: none;
+      &:focus, &:hover {
+        background-color: var(--color-highlight);
+        outline: none;
+      }
     }
   }
 }
