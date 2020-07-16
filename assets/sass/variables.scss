@@ -1,8 +1,7 @@
-$font-family-default: 'Inter', system-ui, sans-serif;
+$font-family-default: "Inter", system-ui, sans-serif;
+$font-family-serif: "Times New Roman", "Times", serif;
 $font-weight-default: 500 !default;
 $font-weight-bold:    800 !default;
-
-$spacing:     2rem !default; // TODO: Clean up;
 
 $color-default:      #000000 !default;
 $color-white:		     #ffffff !default;
@@ -22,6 +21,7 @@ $extra-wide:    1700px !default;
 $z-index-table-link: 3 !default;
 $z-index-header-background: 1 !default;
 $z-index-header-foreground: 2 !default;
+$z-index-banner: 4 !default;
 
 :root {
   --color-fg: #{$color-default};
