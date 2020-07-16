@@ -5,9 +5,9 @@ draft: false
 aspect: "emotional-interfaces"
 authors: ["Rosalind Picard"]
 topic: "bodies"
-link: ""
-medium: ""
-year: 1990
-tags: []
+link: "https://mitpress.mit.edu/books/affective-computing"
+medium: "book"
+year: 1995
+tags: ["emotions", "intelligence"]
 weight: 4
 ---
