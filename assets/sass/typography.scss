@@ -19,6 +19,13 @@ q { font-style: italic; quotes: none; }
   -webkit-text-stroke: 0;
 }
 
+.draft {
+  text-transform: uppercase;
+  font-size: var(--size-5);
+  font-weight: $font-weight-bold;
+  @include ls();
+}
+
 @mixin headline-1 () {
   font-weight: $font-weight-bold;
   line-height: 1;
@@ -29,31 +36,14 @@ q { font-style: italic; quotes: none; }
   }
 }
 
-.draft {
-  text-align: center;
-  text-transform: uppercase;
-  background-color: var(--color-highlight);
-  position: fixed;
-  font-size: var(--size-5);
-  letter-spacing: 0.5em;
-  width: 100vw;
-  left: 0;
-  font-weight: bold;
-  z-index: 100;
-  top: 0;
-}
-
 .page-title {
   @include headline-1();
   font-size: var(--size-1);
-  // display: inline-block;
-  // color: var(--color-bg);
   text-transform: uppercase;
-  // @include outline(var(--color-fg));
   text-align: center;
   line-height: 1.5;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: normal;
+  font-family: $font-family-serif;
+  font-weight: $font-weight-default;
 }
 
 .subtitle, .info {
@@ -62,13 +52,22 @@ q { font-style: italic; quotes: none; }
   background-color: var(--color-fg);
   color: var(--color-bg);
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  @include ls();
 }
 
 @mixin headline-2 () {
   @include headline-1();
-  text-transform: uppercase;
-  letter-spacing: 0.8em;
+  font-family: $font-family-serif;
+  font-weight: normal;
+
+  a {
+    white-space: nowrap;
+  }
+
+  i {
+    font-size: 0.6em;
+    vertical-align: 0.2em;
+  }
 
   @media print {
     font-size: 20pt;
@@ -80,23 +79,7 @@ q { font-style: italic; quotes: none; }
 .section-headline {
   @include headline-2();
   color: var(--color-fg);
-  @include outline(var(--color-bg));
-}
-
-.section-headline-test {
-  font-family: "Times New Roman", Times, serif;
-  font-size: var(--size-2);
-  font-weight: normal;
-  line-height: 1;
-
-  a {
-    white-space: nowrap;
-  }
-
-  i {
-    font-size: 0.6em;
-    vertical-align: 0.2em;
-  }
+  // @include outline(var(--color-bg));
 }
 
 @mixin headline-3 () {
@@ -178,6 +161,13 @@ p + p {
   margin-top: var(--spacing)
 }
 
+.homepage-intro div {
+  @include query($narrow) {
+    column-count: 2;
+    column-gap: var(--spacing-1);
+  }
+}
+
 @mixin text-2 () {
   font-size: var(--size-5);
 
@@ -253,11 +243,11 @@ p + p {
 }
 
 // Regular links in paragraphs, footer or intro
-p a, .page-footer a, .info a, ul a, .section-headline-test a {
+p a, .page-footer a, .info a, ul a, .section-headline a {
   @include link-1();
 }
 
-.section-headline-test a {
+.section-headline a {
   font-style: italic;
 }
 
@@ -283,7 +273,7 @@ p a, .page-footer a, .info a, ul a, .section-headline-test a {
 }
 
 // .link-aspect {
-//   font-family: "Times New Roman", Times, serif;
+//   font-family: $font-family-serif;
 // }
 
 .homepage-projects .list {

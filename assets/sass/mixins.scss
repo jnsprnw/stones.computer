@@ -14,3 +14,11 @@
     color: #000;
   }
 }
+
+@mixin ls () {
+  letter-spacing: 0.2em;
+
+  @include query($medium) {
+    letter-spacing: 0.5em;
+  }
+}
