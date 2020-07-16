@@ -27,6 +27,17 @@ body {
   margin-bottom: var(--spacing-2);
 }
 
+.draft {
+  position: fixed;
+  text-align: center;
+  background-color: var(--color-highlight);
+  width: 100vw;
+  left: 0;
+  z-index: $z-index-banner;
+  top: 0;
+  padding: var(--spacing-05) 0;
+}
+
 .homepage-header {
   padding-top: var(--spacing-2);
   padding-bottom: var(--spacing-2);
@@ -72,16 +83,12 @@ body {
 
 .homepage-topics, .homepage-aspects {
   .section-headline {
-    padding: var(--spacing-1) var(--spacing-2);
-    background-color: var(--color-fg);
-    overflow-x: hidden;
-
-    @media print {
-      background-color: transparent;
-    }
+    padding: var(--spacing-1) 0 var(--spacing-5);
+    // background-color: var(--color-fg);
+    // overflow-x: hidden;
 
     @include query($wide) {
-      padding: var(--spacing-1) var(--spacing-5);
+      padding: var(--spacing-1) 0;
     }
 
     @include query($extra-wide) {
@@ -273,7 +280,15 @@ body {
       }
 
       .description {
-        margin-top: var(--spacing-3);
+        margin-top: var(--spacing-2);
+
+        @include query($narrow) {
+          margin-top: 0;
+        }
+
+        @include query($medium) {
+          margin-top: var(--spacing-2);
+        }
 
         @media print {
           margin-top: 0;
@@ -287,6 +302,10 @@ body {
 
       .aspects-links {
         margin-top: var(--spacing-3);
+
+        @include query($narrow) {
+          margin-top: var(--spacing-05);
+        }
 
         @include query($medium) {
           margin-top: var(--spacing-1);
@@ -320,7 +339,7 @@ body {
     }
 
     &:last-child {
-      border-bottom: var(--border-area);
+      // border-bottom: var(--border-area);
 
       @media print {
         border-bottom: $border-print;
@@ -506,7 +525,7 @@ body {
 
     a {
       display: grid;
-      grid-template-columns: var(--spacing-15) 1fr var(--spacing-1);
+      grid-template-columns: var(--spacing-15) 1fr var(--spacing-2);
 
       @include query($narrow) {
         grid-template-columns: var(--spacing-2) 1fr var(--spacing-2);
@@ -644,6 +663,9 @@ body {
 }
 
 .page-footer {
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-1);
+
   @include query($wide) {
     padding: var(--spacing-2) var(--spacing-5);
   }

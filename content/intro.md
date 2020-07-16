@@ -5,4 +5,8 @@ _build:
   render: false
 ---
 
-By stones that calculate, we mean all information processing devices and infrastructures of our automated society, whose basic components consist of (rare-earth) elements. From smartphones, internet cables to data centres, we consider the material complexity, cycles and dependencies that it requires to provide the enormous data and energy resources for, among other things, our daily Netflix consumption. Taking into account the effects of both climate crisis and Corona pandemic, we are interested in making visible the connections between ecology, power and information technology.
+By stones that *involve*, we mean the assemblage of all information processing devices or infrastructures and their socio-political impact on our automated society. This website is an online collection of resources that maps academic as well as artistic perspectives which reflect digital conditions within materialist discourses. 
+
+Given the complexity of this research area, we focus on three prominent topics of materialism from which we later derive certain aspects. First, we consider the material complexities, cycles and dependencies that are required to provide the enormous data foundation and energy resources for planetary-scale computation. We then scale further to power and geopolitical questions of the digital and in the last step ask for moments of embodiment in the apparently dematerialised digital space.
+
+This archive is an evolving exercise to provide an entry point and simplified overview for inspiration and further explorations. We keep adding and redefining content. You can help us by submitting your suggestion at the very end of this page.
