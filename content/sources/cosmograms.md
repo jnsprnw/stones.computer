@@ -2,13 +2,11 @@
 title: "Cosmograms"
 date: 2020-05-24T20:09:07+02:00
 draft: false
-aspect: "scale"
+aspect: "upscaling"
 authors: ["John Tresch"]
-topic: "bodies"
-link: "https://mitpress.mit.edu/books/data-feminism"
-medium: "book"
-year: 2020
-tags: ["algorithmic discrimination", "machine bias", "jim code", "racial hierarchies", "discriminatory designs"]
+link: "https://cpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/a/151/files/2016/07/2._tresch.cosmogram_in_royoux_0-uyw556.pdf"
+medium: "article"
+year: 2005
+tags: ["cosmogram", "cosmos", world view"]
+weight: 2
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt.
