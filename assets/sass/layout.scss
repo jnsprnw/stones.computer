@@ -104,6 +104,10 @@ body {
     // background-color: var(--color-fg);
     // overflow-x: hidden;
 
+    @include query($narrow) {
+      padding: var(--spacing-1) 0 var(--spacing-1);
+    }
+
     @include query($wide) {
       padding: var(--spacing-1) 0;
     }
