@@ -7,5 +7,5 @@ people: ["Alexey Orlov"]
 aspect: "epistemic-traces"
 link: "http://geocinema.network/"
 medium: "project"
-notReferenced: true
+weight: 6
 ---
