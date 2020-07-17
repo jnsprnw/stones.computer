@@ -1,5 +1,5 @@
 ---
-title: "Medium Design"
+title: "Down to Earth: Politics in the New Climatic Regime"
 date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "cycles"
