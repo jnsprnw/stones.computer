@@ -8,5 +8,5 @@ link: "https://placesjournal.org/article/a-city-is-not-a-computer/"
 medium: "article"
 year: 2017
 tags: ["urban information", "city knowing", "urban intelligence"]
-weight: 1
+weight: 4
 ---
