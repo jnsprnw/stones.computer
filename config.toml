@@ -23,6 +23,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   source = "https://github.com/z3to/stones.computer"
   imprint = "https://jonasparnow.com/imprint"
   privacy = "https://jonasparnow.com/privacy"
+  images = ["preview.jpg"]
 
 [outputs]
   home = ["HTML", "Items", "Aspects"]
