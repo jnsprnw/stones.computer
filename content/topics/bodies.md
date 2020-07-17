@@ -6,4 +6,4 @@ draft: false
 weight: 3
 ---
 
-The last viewing angle focuses on the production conditions of digital infrastructures. The focus is on the concept of labour and the exploitation of the human body. The discussion is nourished, for example, by embodiment and feminist theories. The complex relationship of dependence between human self-perception and technical devices in the sense of techno-intimacy or moments of identification are also examined.
+The third pillar combines approaches concerning the conditions of production and consumption rendered by platforms and services of our daily usage. The focus is on the concept of labour and the exploitation of the human body. The discussion is nourished, for example, by notions of embodiment and feminist theories. The complex relationship of dependence between human self-perception and technical devices in the sense of techno-intimacy or moments of identification are also examined.
