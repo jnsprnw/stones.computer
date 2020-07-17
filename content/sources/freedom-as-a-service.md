@@ -5,9 +5,9 @@ draft: false
 aspect: "platform-and-infrastructure-monopolies"
 authors: ["Evgeny Morozov"]
 topic: ""
-link: ""
-medium: ""
-year: 1900
-tags: []
+link: "https://us.macmillan.com/books/9780374280284"
+medium: "book"
+year: 2022
+tags: ["The New Digital Feudalism and the Future of the City"]
 weight: 2
 ---
