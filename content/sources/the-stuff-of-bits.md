@@ -9,4 +9,5 @@ medium: "book"
 year: 2017
 tags: ["material information", "computer", "networks", "databases"]
 weight: 3
+notReferenced: true
 ---
