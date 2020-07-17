@@ -139,6 +139,7 @@ p, ul, input.search, .btn, .p, ol, .homepage-projects .header a {
 input.search {
   @include text-1();
   font-weight: $font-weight-bold;
+  border-radius: 0;
 
   &::placeholder {
     @include text-1();
