@@ -9,6 +9,7 @@
   --spacing-3: calc(var(--margin) * 3);
   --spacing-4: calc(var(--margin) * 4);
   --spacing-5: calc(var(--margin) * 5);
+  --spacing-8: calc(var(--margin) * 8);
   --border-area: 1px solid var(--color-fg);
   --border-area--side: 10px solid var(--color-fg);
   --border-area--top: 5px solid var(--color-fg);
@@ -43,7 +44,7 @@ body {
 }
 
 .homepage-header {
-  padding-top: var(--spacing-2);
+  padding-top: var(--spacing-8);
   padding-bottom: var(--spacing-2);
 
   @include query($wide) {
@@ -54,27 +55,39 @@ body {
     display: block;
   }
 
-  .logo {
-    position: relative;
+  .page-title {
+    padding-bottom: var(--spacing-2);
   }
 
-  .title {
-    padding-bottom: var(--spacing-05);
+  @include query($narrow) {
+    padding-top: var(--spacing-3);
+
+    .page-title {
+      padding-bottom: 0;
+    }
+
+    .logo {
+      position: relative;
+    }
+
+    .subtitle, .info {
+      padding-bottom: var(--spacing-1);
+      padding: var(--spacing-025) var(--spacing-05);
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -31%);
+      top: 31%;
+    }
+
+    .info {
+      transform: translate(-50%, -66%);
+      top: 66%;
+    }
   }
 
-  .subtitle, .info {
-    padding-bottom: var(--spacing-1);
-    padding: var(--spacing-025) var(--spacing-05);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -31%);
-    top: 31%;
-  }
-
-  .info {
-    transform: translate(-50%, -66%);
-    top: 66%;
-  }
+  // .title {
+  //   padding-bottom: var(--spacing-05);
+  // }
 }
 
 .homepage-intro {
@@ -529,7 +542,7 @@ body {
 
     a {
       display: grid;
-      grid-template-columns: var(--spacing-15) 1fr var(--spacing-2);
+      grid-template-columns: var(--spacing-2) 1fr var(--spacing-2);
 
       @include query($narrow) {
         grid-template-columns: var(--spacing-2) 1fr var(--spacing-2);
