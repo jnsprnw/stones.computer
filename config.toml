@@ -17,7 +17,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [params]
   subtitle = "Post-Digital Materiality"
-  description = "Post-Digital Materiality"
+  description = "Online collection of resources that maps academic as well as artistic perspectives which reflect digital conditions within materialist discourses."
   contentTypes = ["sources"]
   listItemTypes = ["sources", "articles", "projects"]
   source = "https://github.com/z3to/stones.computer"
