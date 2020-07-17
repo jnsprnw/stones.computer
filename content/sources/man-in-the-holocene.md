@@ -9,4 +9,5 @@ medium: "book"
 year: 1979
 tags: ["holocene", "humanity"]
 weight: 5
+notReferenced: true
 ---
