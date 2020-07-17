@@ -1,5 +1,5 @@
 ---
-title: "Non-Human and Non-Organic"
+title: "Non-Human"
 date: 2020-07-13T15:26:43+02:00
 topics: ["material", "bodies"]
 weight: 4
