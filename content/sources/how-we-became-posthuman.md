@@ -9,5 +9,5 @@ link: "https://www.johnhuntpublishing.com/zer0-books/our-books/in-the-dust-of-th
 medium: "book"
 year: 2011
 tags: ["posthumanism", "virtual bodies", "cybernetics"]
-weight: 5
+weight: 1
 ---
