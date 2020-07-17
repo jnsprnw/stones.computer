@@ -291,7 +291,7 @@ body {
         }
 
         @include query($medium) {
-          margin-top: var(--spacing-2);
+          margin-top: var(--spacing-3);
         }
 
         @media print {
