@@ -650,8 +650,10 @@ body {
 .homepage-outro {
   padding-top: var(--spacing-3);
 
-  @include query($wide) {
-    padding: var(--spacing-3) var(--spacing-5) 0;
+  .outro {
+    @include query($wide) {
+      padding: var(--spacing-3) var(--spacing-5) 0;
+    }
   }
 
   .byline {
@@ -662,6 +664,10 @@ body {
 
     @include query($medium) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include query($wide) {
+      padding: var(--spacing-3) var(--spacing-5) 0;
     }
   }
 }
