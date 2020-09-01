@@ -57,7 +57,7 @@ body {
   padding-left: 0;
   padding-right: 0;
 
-  background: linear-gradient(0deg, transparent 0%, var(--color-highlight) 50%, transparent 100%);
+  @include gradient();
 
   @include query($wide) {
     // padding: var(--spacing-2) var(--spacing-5);
@@ -700,7 +700,7 @@ body {
 
 .homepage-outro {
   margin-top: var(--spacing-3);
-  background: linear-gradient(0deg, transparent 0%, var(--color-highlight) 50%, transparent 100%);
+  @include gradient();
 
   .outro {
     @include query($wide) {

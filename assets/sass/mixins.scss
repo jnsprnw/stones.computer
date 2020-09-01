@@ -22,3 +22,7 @@
     letter-spacing: 0.5em;
   }
 }
+
+@mixin gradient () {
+  background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-highlight) 50%, var(--color-bg) 100%);
+}
