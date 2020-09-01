@@ -254,7 +254,7 @@ p + p {
 
   &:hover, &:focus {
     color: var(--color-interactive);
-    text-decoration-color: var(--color-bg);
+    text-decoration-color: transparent;
   }
 
   &[href^="#"], &[href^="/#"] { // Style internal links differently
