@@ -4,17 +4,16 @@
     <nav class="table-link">
       <a href="/table">All resources</a>
     </nav>
-    <header class="homepage-header wrapper" role="banner">
-      <span class="draft">Review Process – Feedback welcome</span>
-      <hgroup class="logo">
-        <h1 class="page-title" role="heading" aria-level="1">Stones<br>that<br>calculate</h1>
-        <span class="subtitle">{{ .Site.Params.subtitle }}</span>
-        <span class="info">Curated by Paul Heinicker and Jonas Parnow</span>
-      </hgroup>
-<!--       <button id="switch" onclick="toggleTheme()">Switch</button> -->
+    <header class="homepage-header" role="banner">
+      <div class="wrapper">
+        <span class="info">Collection of resources about<br><strong>post-digital materiality</strong><br> compiled by <a href="https://jonasparnow.com" rel="author">Jonas <i class="reference-icon">↗</i></a> and <a href="http://paulheinicker.com/" rel="author">Paul <i class="reference-icon">↗</i></a></span>
+        <hgroup class="logo">
+          <h1 class="page-title" role="heading" aria-level="1">Stones<br>that calculate</h1>
+        </hgroup>
+      </div>
     </header>
-    <section class="homepage-intro wrapper">
-      <div>
+    <section class="homepage-intro">
+      <div class="wrapper">
         {{ with .Site.GetPage "intro.md" }}
           {{ .Content }}
         {{ end }}
@@ -39,20 +38,20 @@
     </section>
     <section class="homepage-outro">
       <header class="wrapper">
-        <h2 class="section-headline">Thanks for reading. Help us to think towards an ecological usage of resources, data justice and an healthy (dis)respect to the human body by submitting missing references.</h2>
+        <h2 class="section-headline">Thanks for reading. Help us to think towards an ecological usage of resources, data justice and an healthy respect to the human body by submitting missing references.</h2>
       </header>
-      <!-- <div class="wrapper outro">
+      <footer class="wrapper outro">
         {{ with .Site.GetPage "footer.md" }}
           {{ .Content }}
         {{ end }}
-      </div> -->
-      <footer class="wrapper byline vcard">
-        {{ with .Site.GetPage "paul.md" }}
-          {{ .Content }}
-        {{ end }}
-        {{ with .Site.GetPage "jonas.md" }}
-          {{ .Content }}
-        {{ end }}
+        <div class="byline vcard">
+          {{ with .Site.GetPage "paul.md" }}
+            {{ .Content }}
+          {{ end }}
+          {{ with .Site.GetPage "jonas.md" }}
+            {{ .Content }}
+          {{ end }}
+        </div>
       </footer>
     </section>
   </div>

@@ -16,6 +16,11 @@
   --border-link: 1px solid var(--color-fg);
 }
 
+@mixin padding-sides-default-wide() {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -44,11 +49,18 @@ body {
 }
 
 .homepage-header {
-  padding-top: var(--spacing-8);
-  padding-bottom: var(--spacing-2);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-1);
+  padding-top: 0;
+  padding-bottom: 0; // var(--spacing-2);
+
+  padding-left: 0;
+  padding-right: 0;
+
+  background: linear-gradient(0deg, transparent 0%, var(--color-highlight) 50%, transparent 100%);
 
   @include query($wide) {
-    padding: var(--spacing-2) var(--spacing-5);
+    // padding: var(--spacing-2) var(--spacing-5);
   }
 
   & > * {
@@ -56,32 +68,40 @@ body {
   }
 
   .page-title {
-    padding-bottom: var(--spacing-2);
+    padding-bottom: var(--spacing-3);
+    margin-left: -0.02em;
   }
 
   @include query($narrow) {
-    padding-top: var(--spacing-3);
+    // padding-top: var(--spacing-3);
 
     .page-title {
       padding-bottom: 0;
+      @include padding-sides-default-wide();
     }
 
     .logo {
-      position: relative;
-    }
-
-    .subtitle, .info {
-      padding-bottom: var(--spacing-1);
-      padding: var(--spacing-025) var(--spacing-05);
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -31%);
-      top: 32%;
+      // position: relative;
+      // padding: var(--spacing-2) var(--spacing-2) var(--spacing-3);
+      padding-top: var(--spacing-2);
+      padding-bottom: var(--spacing-3);
     }
 
     .info {
-      transform: translate(-50%, -66%);
-      top: 68%;
+      // padding-bottom: var(--spacing-1);
+      width: 100%;
+      @include padding-sides-default-wide();
+      // padding: var(--spacing-025) var(--spacing-05);
+      // padding: 0 var(--spacing-2);
+      // position: absolute;
+      // left: 50%;
+      // transform: translate(-50%, -31%);
+      // top: 32%;
+    }
+
+    .info {
+      // transform: translate(-50%, -66%);
+      // top: 68%;
     }
   }
 
@@ -93,8 +113,12 @@ body {
 .homepage-intro {
   padding-bottom: var(--spacing-3);
 
+  p {
+    @include padding-sides-default-wide();
+  }
+
   @include query($wide) {
-    padding: 0 var(--spacing-5) var(--spacing-3);
+    // padding: 0 var(--spacing-5) var(--spacing-3);
   }
 }
 
@@ -113,7 +137,11 @@ body {
     }
 
     @include query($extra-wide) {
-      padding: var(--spacing-1) var(--spacing-2);
+      padding-top: var(--spacing-1);
+      padding-bottom: var(--spacing-1);
+      padding-left: 0;
+      padding-right: 0;
+      // @include padding-sides-default-wide();
     }
   }
 
@@ -214,7 +242,9 @@ body {
       }
 
       @include query($wide) {
-        padding: var(--spacing-3);
+        padding-top: var(--spacing-3);
+        padding-bottom: var(--spacing-3);
+        @include padding-sides-default-wide();
       }
 
       @media print {
@@ -316,8 +346,9 @@ body {
         }
 
         .topic-description-intro {
-          display: inline-block;
-          margin-bottom: var(--spacing-1);
+          margin-top: 0.6em;
+          // display: inline-block;
+          // margin-bottom: var(--spacing-1);
         }
       }
 
@@ -580,12 +611,14 @@ body {
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-3);
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: grid;
   grid-template-rows: auto 1fr;
 
   svg {
     width: 100%;
+    height: 100%;
+    // transform: rotate(15deg);
   }
 
   ul {
@@ -666,27 +699,32 @@ body {
 }
 
 .homepage-outro {
-  padding-top: var(--spacing-3);
+  margin-top: var(--spacing-3);
+  background: linear-gradient(0deg, transparent 0%, var(--color-highlight) 50%, transparent 100%);
 
   .outro {
     @include query($wide) {
-      padding: var(--spacing-3) var(--spacing-5) 0;
+      padding-top: var(--spacing-3);
+
+      & > * {
+        @include padding-sides-default-wide();
+      }
     }
   }
 
   .byline {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--spacing-3);
-    margin-top: var(--spacing-2);
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-column-gap: var(--spacing-3);
+    margin-top: var(--spacing-1);
 
-    @include query($medium) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @include query($medium) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
-    @include query($wide) {
-      padding: var(--spacing-3) var(--spacing-5) 0;
-    }
+    // @include query($wide) {
+    //   padding: var(--spacing-3) var(--spacing-5) 0;
+    // }
   }
 }
 

@@ -1,7 +1,7 @@
 @import "./global";
 
 :root {
-  --size-1: min(max(10rem, 40px), 140px); // Headlines topics and aspects
+  --size-1: min(max(8rem, 40px), 120px); // Headlines topics and aspects
   --size-2: min(max(3rem, 35px), 80px); // Headlines topics and aspects
   --size-3: min(max(1.3rem, 15px), 20px); // Questions and table link
   --size-4: min(max(1.0rem, 15px), 18px); // Default text size
@@ -40,26 +40,32 @@ q { font-style: italic; quotes: none; }
   @include headline-1();
   font-size: var(--size-1);
   text-transform: uppercase;
-  text-align: center;
+  // text-align: center;
   font-family: $font-family-serif;
   font-weight: $font-weight-default;
 
   @include query($narrow) {
-    line-height: 1.5;
+    // line-height: 1.5;
   }
 }
 
-.subtitle, .info {
-  font-size: var(--size-5);
+.info {
+  font-size: var(--size-3);
+  line-height: 1.45;
   display: block;
+  // color: var(--color-fg);
+  // display: block;
+
+  a {
+    text-decoration: none;
+  }
 
   @include query($narrow) {
-    display: inline-block;
-    white-space: nowrap;
-    text-transform: uppercase;
-    background-color: var(--color-fg);
-    color: var(--color-bg);
-    @include ls();
+    // display: inline-block;
+    // white-space: nowrap;
+    // text-transform: uppercase;
+    // background-color: var(--color-fg);
+    // @include ls();
   }
 }
 
@@ -170,10 +176,15 @@ p + p {
   margin-top: var(--spacing)
 }
 
-.homepage-intro div {
+.homepage-intro div, .homepage-outro .outro {
+  p {
+    font-size: var(--size-3);
+    max-width: calc(var(--size-3) * 50);
+  }
+
   @include query($narrow) {
-    column-count: 2;
-    column-gap: var(--spacing-1);
+    // column-count: 2;
+    // column-gap: var(--spacing-1);
   }
 }
 
@@ -185,8 +196,12 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .info, .aspects-links, .byline p {
+.reference-description, .page-footer, .tag, .label, .aspects-links {
   @include text-2();
+}
+
+.label {
+  font-weight: $font-weight-bold;
 }
 
 .reference-counter, .reference-icon {
