@@ -40,11 +40,13 @@ ul, ol {
 
 line, path {
   stroke: rgba(0, 0, 0, 0.05);
-  transition: stroke $transition;
+  transition: stroke $transition, stroke-width $transition;
+  stroke-width: 1px;
   fill: none;
 
   &.isActive {
-    stroke: rgba(0, 0, 0, 0.4);
+    stroke: $color-accent;
+    stroke-width: 1px;
   }
 }
 

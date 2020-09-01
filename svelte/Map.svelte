@@ -9,7 +9,7 @@
 
   let width = 0;
   let height = 0;
-  const margin = 20;
+  const margin = 40;
   let svg;
 
   let nodes = [];
@@ -37,7 +37,7 @@
   }
 
   function generateArc (x1, x2, i) {
-    const _y = i ? y / 4 : height - y / 4
+    const _y = i ? y / 10 : height - y / 10
     return `M${x1} ${y} C${x1} ${_y}, ${x2} ${_y}, ${x2} ${y}`
   }
 
@@ -101,7 +101,7 @@
   <g on:mouseover={() => handleoverAspect([id, ...links], id)} on:mouseleave={handleleaveAspect} class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))} transform={`rotate(-90, ${x}, ${y})`}>
     <a xlink:href={`#${id}`}>
       <title>Jump to aspect »{title}«</title>
-      <text x={x} y={y} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
+      <text x={x} y={y} style={`transform: rotate(70deg); transform-origin: ${x}px ${y}px;`} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
     </a>
   </g>
   {/each}
