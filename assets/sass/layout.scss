@@ -738,19 +738,78 @@ body {
 .homepage-menu {
   position: fixed;
   z-index: $z-index-table-link;
-  top: var(--spacing-05);
+  bottom: 0; // var(--spacing-05);
   right: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   @media print {
     display: none;
   }
 
-  a {
-    padding-right: var(--spacing-1);
-    display: block;
+  nav {
+    background-color: #fff;
+    transition: background-color $transition;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: var(--spacing-05) var(--spacing-1) var(--spacing-05) var(--spacing-05);
 
-    i {
-      display: inline-block;
+    a {
+      display: block;
+
+      i {
+        display: inline-block;
+      }
+    }
+  }
+
+  @include query($narrow) {
+    top: 0;
+    bottom: auto;
+
+    nav {
+      background-color: transparent;
+      padding: var(--spacing-05) var(--spacing-2) var(--spacing-05) var(--spacing-1);
+
+      &:hover:not(.isBeginning) {
+        background-color: #fff;
+      }
+
+      a {
+        padding-right: var(--spacing-05);
+      }
+    }
+  }
+
+  @include query($medium) {
+    top: 0;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+
+    nav {
+      padding-left: var(--spacing-1);
+      padding-right: var(--spacing-05);
+
+      a {
+        padding-right: var(--spacing-05);
+      }
+    }
+  }
+
+  @include query($wide) {
+    nav {
+      padding-left: var(--spacing-05);
+      padding-right: var(--spacing-1);
+      flex-direction: column;
+
+      a {
+        padding-right: 0;
+      }
     }
   }
 }
