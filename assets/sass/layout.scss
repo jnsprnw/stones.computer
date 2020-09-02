@@ -67,7 +67,12 @@ body {
     display: block;
   }
 
+  .logo {
+
+  }
+
   .page-title {
+    padding-top: var(--spacing-3);
     padding-bottom: var(--spacing-3);
     margin-left: -0.02em;
   }
@@ -76,15 +81,9 @@ body {
     // padding-top: var(--spacing-3);
 
     .page-title {
-      padding-bottom: 0;
-      @include padding-sides-default-wide();
-    }
-
-    .logo {
-      // position: relative;
-      // padding: var(--spacing-2) var(--spacing-2) var(--spacing-3);
       padding-top: var(--spacing-2);
       padding-bottom: var(--spacing-3);
+      @include padding-sides-default-wide();
     }
 
     .info {
@@ -113,11 +112,10 @@ body {
 .homepage-intro {
   padding-bottom: var(--spacing-3);
 
-  p {
-    @include padding-sides-default-wide();
-  }
-
-  @include query($wide) {
+  @include query($narrow) {
+    p {
+      @include padding-sides-default-wide();
+    }
     // padding: 0 var(--spacing-5) var(--spacing-3);
   }
 }
@@ -703,9 +701,9 @@ body {
   @include gradient();
 
   .outro {
-    @include query($wide) {
-      padding-top: var(--spacing-3);
+    padding-top: var(--spacing-3);
 
+    @include query($wide) {
       & > * {
         @include padding-sides-default-wide();
       }
