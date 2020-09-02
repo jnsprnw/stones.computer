@@ -202,6 +202,7 @@ p + p {
 
 .label {
   font-weight: $font-weight-bold;
+  cursor: pointer;
 }
 
 .reference-counter, .reference-icon {
@@ -287,6 +288,8 @@ p a, .page-footer a, .info a, ul a, .section-headline a {
   }
 
   &[href^="#"], &[href^="/#"], &.internal { // Style internal links differently
+    cursor: pointer;
+
     &:hover, &:focus {
       &, i {
         color: $color-accent;

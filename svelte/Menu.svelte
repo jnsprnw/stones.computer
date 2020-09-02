@@ -37,13 +37,17 @@
     const offset = window.innerHeight / 2
     tops = map(anchors, ({ id }) => document.getElementById(id).offsetTop - offset)
   }
+
+  function scrollTo (id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 <svelte:window bind:scrollY={y} on:resize={getTops} />
 
 <nav>
   {#each anchors as { id, label }, i}
-  <a href={`#${id}`} class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
+  <a on:click={() => scrollTo(id)} class="internal" class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
   {/each}
   <a href="/table"><i>↗</i> References</a>
 </nav>
