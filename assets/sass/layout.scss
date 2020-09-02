@@ -737,10 +737,10 @@ body {
   }
 }
 
-.table-link {
+.homepage-menu {
   position: fixed;
   z-index: $z-index-table-link;
-  bottom: 0;
+  top: var(--spacing-05);
   right: 0;
 
   @media print {
@@ -748,16 +748,11 @@ body {
   }
 
   a {
-    text-decoration: none;
-    font-size: var(--size-3);
-    padding: var(--spacing-05) var(--spacing-1);
+    padding-right: var(--spacing-1);
     display: block;
-    background-color: var(--color-accent);
-    color: var(--color-bg);
-    transition: background-color $transition;
 
-    &:hover, &:focus {
-      background-color: #000;
+    i {
+      display: inline-block;
     }
   }
 }

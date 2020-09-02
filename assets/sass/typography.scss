@@ -196,7 +196,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .aspects-links {
+.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-menu {
   @include text-2();
 }
 
@@ -281,24 +281,36 @@ p a, .page-footer a, .info a, ul a, .section-headline a {
   transition: color $transition;
 
   &:hover, &:focus {
-    color: var(--color-interactive);
+    &, i {
+      color: var(--color-interactive);
+    }
   }
 
   &[href^="#"], &[href^="/#"], &.internal { // Style internal links differently
     &:hover, &:focus {
-      color: $color-accent;
+      &, i {
+        color: $color-accent;
+      }
     }
   }
 }
 
 // Internal links to aspects
-.link-aspect, .link-reference, .link-table, .caption.anchor, .homepage-projects .header a {
+.link-aspect, .link-reference, .link-table, .caption.anchor, .homepage-projects .header a, .homepage-menu a {
   @include link-2();
 }
 
-// .link-aspect {
-//   font-family: $font-family-serif;
-// }
+.homepage-menu a {
+  i {
+    color: transparent;
+  }
+
+  &.isActive {
+    i {
+      color: var(--color-fg);
+    }
+  }
+}
 
 .homepage-projects .list {
   span, a {
