@@ -742,13 +742,13 @@ body {
   right: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   @media print {
     display: none;
   }
 
   nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: background-color $transition;
     display: flex;
@@ -770,12 +770,7 @@ body {
     bottom: auto;
 
     nav {
-      background-color: transparent;
       padding: var(--spacing-05) var(--spacing-2) var(--spacing-05) var(--spacing-1);
-
-      &:hover:not(.isBeginning) {
-        background-color: #fff;
-      }
 
       a {
         padding-right: var(--spacing-05);
@@ -789,11 +784,16 @@ body {
     left: auto;
     width: auto;
     background-color: transparent;
-    box-shadow: none;
 
     nav {
+      background-color: transparent;
       padding-left: var(--spacing-1);
       padding-right: var(--spacing-05);
+      box-shadow: none;
+
+      &:hover {
+        background-color: #fff;
+      }
 
       a {
         padding-right: var(--spacing-05);
@@ -806,6 +806,10 @@ body {
       padding-left: var(--spacing-05);
       padding-right: var(--spacing-1);
       flex-direction: column;
+
+      &:hover:not(.isBeginning) {
+        background-color: #fff;
+      }
 
       a {
         padding-right: 0;
