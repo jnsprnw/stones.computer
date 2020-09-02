@@ -25,6 +25,10 @@
     getTops();
   })
 
+  // First, we loop over each top-position and check if it already reached
+  // Then, we filter each not-yet-reached out
+  // The length of elements minus one is the index of the last one
+  // If no one is reached, we still highlight the first one by having a min value of 0
   $: currentActive = Math.max((compact(map(tops, (top) => top < y))).length - 1, 0)
 
   function getIcon (i, c) {
@@ -34,7 +38,7 @@
   }
 
   function getTops () {
-    const offset = window.innerHeight / 2
+    const offset = window.innerHeight / 2 // Half the window size. We use this to trigger the reached status already have way through
     tops = map(anchors, ({ id }) => document.getElementById(id).offsetTop - offset)
   }
 
