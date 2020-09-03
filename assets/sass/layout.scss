@@ -51,24 +51,11 @@ body {
 .homepage-header {
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-1);
-  padding-top: 0;
-  padding-bottom: 0; // var(--spacing-2);
-
-  padding-left: 0;
-  padding-right: 0;
-
+  padding: 0;
   @include gradient();
-
-  @include query($wide) {
-    // padding: var(--spacing-2) var(--spacing-5);
-  }
 
   & > * {
     display: block;
-  }
-
-  .logo {
-
   }
 
   .page-title {
@@ -78,8 +65,6 @@ body {
   }
 
   @include query($narrow) {
-    // padding-top: var(--spacing-3);
-
     .page-title {
       padding-top: var(--spacing-2);
       padding-bottom: var(--spacing-3);
@@ -87,26 +72,10 @@ body {
     }
 
     .info {
-      // padding-bottom: var(--spacing-1);
       width: 100%;
       @include padding-sides-default-wide();
-      // padding: var(--spacing-025) var(--spacing-05);
-      // padding: 0 var(--spacing-2);
-      // position: absolute;
-      // left: 50%;
-      // transform: translate(-50%, -31%);
-      // top: 32%;
-    }
-
-    .info {
-      // transform: translate(-50%, -66%);
-      // top: 68%;
     }
   }
-
-  // .title {
-  //   padding-bottom: var(--spacing-05);
-  // }
 }
 
 .homepage-intro {
@@ -116,7 +85,6 @@ body {
     p {
       @include padding-sides-default-wide();
     }
-    // padding: 0 var(--spacing-5) var(--spacing-3);
   }
 }
 
@@ -344,9 +312,7 @@ body {
         }
 
         .topic-description-intro {
-          margin-top: 0.6em;
-          // display: inline-block;
-          // margin-bottom: var(--spacing-1);
+          margin-top: 0.6em; // TODO: Use spacing variable
         }
       }
 
@@ -711,18 +677,7 @@ body {
   }
 
   .byline {
-    // display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    // grid-column-gap: var(--spacing-3);
     margin-top: var(--spacing-1);
-
-    // @include query($medium) {
-    //   grid-template-columns: repeat(2, 1fr);
-    // }
-
-    // @include query($wide) {
-    //   padding: var(--spacing-3) var(--spacing-5) 0;
-    // }
   }
 }
 
@@ -738,7 +693,7 @@ body {
 .homepage-menu {
   position: fixed;
   z-index: $z-index-table-link;
-  bottom: 0; // var(--spacing-05);
+  bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
@@ -749,7 +704,7 @@ body {
 
   nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: var(--color-bg);
     transition: background-color $transition;
     display: flex;
     width: 100%;
@@ -792,7 +747,7 @@ body {
       box-shadow: none;
 
       &:hover {
-        background-color: #fff;
+        background-color: var(--color-bg);
       }
 
       a {
@@ -808,7 +763,7 @@ body {
       flex-direction: column;
 
       &:hover:not(.isBeginning) {
-        background-color: #fff;
+        background-color: var(--color-bg);
       }
 
       a {
