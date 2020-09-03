@@ -200,6 +200,10 @@ p + p {
   @include text-2();
 }
 
+.tag {
+  line-height: 1.1;
+}
+
 .label {
   font-weight: $font-weight-bold;
   cursor: pointer;
