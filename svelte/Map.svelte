@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { scalePoint } from 'd3-scale';
+  import { scalePoint, scaleLinear } from 'd3-scale';
   import range from 'lodash/range';
   import map from 'lodash/map';
   import uniqBy from 'lodash/uniqBy';
@@ -9,7 +9,10 @@
 
   let width = 0;
   let height = 0;
-  const margin = 40;
+  const margin = {
+    v: [20, 60],
+    h: [20, 60]
+  };
   let svg;
 
   let nodes = [];
@@ -36,20 +39,38 @@
     activeTopic = null
   }
 
-  function generateArc (x1, x2, i) {
-    const _y = i ? y / 10 : height - y / 10
-    return `M${x1} ${y} C${x1} ${_y}, ${x2} ${_y}, ${x2} ${y}`
+  function between (v, max, min) {
+    // Makes sure the curve does not get outside the area
+    return Math.max(Math.min(v, max), min)
+  }
+
+  function getBezier (y1, y2, i, a) {
+    if (i) {
+      // If the curve goes below, we use the smaller y-value
+      // And subtract the x-distance to get nice curves
+      return Math.min(y1, y2) - a
+    } else {
+      // If the curve goes above, we use the higher y-value
+      // And add the x-distance to get nice curves
+      return Math.max(y1, y2) + a
+    }
+  }
+
+  function generateArc (x1, x2, y1, y2, i) {
+    const a = Math.max(Math.abs(x1 - x2), mv) // Calculate this to get the x-distance, but use at least the current vertical margin
+    const _y = between(getBezier(y1, y2, i, a), height, 0) // We make sure the curve does not get outside the area
+    return `M${x1} ${y1} C${x1} ${_y}, ${x2} ${_y}, ${x2} ${y2}`
   }
 
   function generateLinks (arr) {
     const links = []
-    arr.forEach(({ x: x1, links: keys, id }) => {
+    arr.forEach(({ x: x1, y: y1, links: keys, id }) => {
       keys.forEach((key, i) => {
-        const { x: x2 } = arr.find((node) => node.id === key)
+        const { x: x2, y: y2 } = arr.find((node) => node.id === key)
         links.push({
           source: id,
           target: key,
-          d: generateArc(x1, x2, i % 2)
+          d: generateArc(x1, x2, y1, y2, i % 2)
         })
       })
     })
@@ -65,20 +86,45 @@
       });
   })
 
+  // Margin vertical
+  $: mVertical = scaleLinear()
+    .domain([500, 1000])
+    .range([margin.v[1], margin.v[0]]);
+
+  $: mv = between(mVertical(width), margin.v[1], margin.v[0])
+
+  // Margin horizonzal
+  $: mHorizontal = scaleLinear()
+    .domain([500, 1000])
+    .range([margin.h[0], margin.h[1]]);
+
+  $: mh = between(mHorizontal(width), margin.h[1], margin.h[0])
+
+  $: y = scalePoint()
+    .domain(range(nodes.length))
+    .range([mv, height - mv]);
+
   $: x = scalePoint()
     .domain(range(nodes.length))
-    .range([margin, width - margin]);
+    .range([mh, width - mh]);
+
+  // Rotation
+  $: r = scaleLinear()
+    .domain([500, 1000])
+    .range([0, 90]);
+
+  // Based on the width and maximum value of 90 and minimum value of 0
+  $: rotate = between(r(width), 90, 0)
 
   $: aspects = map(nodes, (node) => {
     return {
       ...node,
-      x: x(node.index)
+      x: x(node.index),
+      y: y(node.index)
     }
   })
 
   $: links = generateLinks(aspects)
-
-  $: y = height / 2
 
   function resize() {
     ({ width, height } = svg.getBoundingClientRect());
@@ -101,11 +147,11 @@
   {#each links as { x1, x2, source, target, d }}
   <path d={d} class:isActive={activeEdges.some((edge) => { return edge[1] === source && edge[0] === target })} />
   {/each}
-  {#each aspects as { x, title, group, links, id, topics }}
+  {#each aspects as { x, y, title, group, links, id, topics }}
   <g on:mouseover={() => handleoverAspect([id, ...links], id)} on:mouseleave={handleleaveAspect} class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))} transform={`rotate(-90, ${x}, ${y})`}>
     <a on:click={() => scrollTo(id)}>
       <title>Jump to aspect »{title}«</title>
-      <text x={x} y={y} style={`transform: rotate(70deg); transform-origin: ${x}px ${y}px;`} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
+      <text x={x} y={y} style={`transform: rotate(${rotate}deg); transform-origin: ${x}px ${y}px;`} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
     </a>
   </g>
   {/each}

@@ -582,12 +582,15 @@ body {
   svg {
     width: 100%;
     height: 100%;
+    margin-top: calc(var(--spacing-1) * -1);
     // transform: rotate(15deg);
   }
 
   ul {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: $z-index-network-menu;
 
     li {
       margin: 0 var(--spacing-05);
