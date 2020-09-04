@@ -1,9 +1,9 @@
 ---
-title: "Energy – A Human History"
+title: "Stone – An Ecology of the Inhuman"
 date: 2020-05-24T20:09:07+02:00
 draft: false
 aspect: "stones-and-resources"
-authors: ["Richard Rhodes"]
+authors: ["Jeffrey Cohen"]
 link: "https://www.upress.umn.edu/book-division/books/stone"
 medium: "book"
 year: 2015
