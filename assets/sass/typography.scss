@@ -40,32 +40,17 @@ q { font-style: italic; quotes: none; }
   @include headline-1();
   font-size: var(--size-1);
   text-transform: uppercase;
-  // text-align: center;
   font-family: $font-family-serif;
   font-weight: $font-weight-default;
-
-  @include query($narrow) {
-    // line-height: 1.5;
-  }
 }
 
 .info {
   font-size: var(--size-3);
   line-height: 1.45;
   display: block;
-  // color: var(--color-fg);
-  // display: block;
 
   a {
     text-decoration: none;
-  }
-
-  @include query($narrow) {
-    // display: inline-block;
-    // white-space: nowrap;
-    // text-transform: uppercase;
-    // background-color: var(--color-fg);
-    // @include ls();
   }
 }
 
@@ -93,7 +78,6 @@ q { font-style: italic; quotes: none; }
 .section-headline {
   @include headline-2();
   color: var(--color-fg);
-  // @include outline(var(--color-bg));
 }
 
 @mixin headline-3 () {
@@ -181,11 +165,6 @@ p + p {
     font-size: var(--size-3);
     max-width: calc(var(--size-3) * 50);
   }
-
-  @include query($narrow) {
-    // column-count: 2;
-    // column-gap: var(--spacing-1);
-  }
 }
 
 @mixin text-2 () {
@@ -200,7 +179,7 @@ p + p {
   @include text-2();
 }
 
-.tag {
+.hashtags {
   line-height: 1.1;
 }
 
