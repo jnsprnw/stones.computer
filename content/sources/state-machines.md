@@ -1,5 +1,5 @@
 ---
-title: "State Machines: Reflections and Actions at the Edge of Digital Citizenship, Finance, and Art"
+title: "State Machines"
 date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "spatial-order"
