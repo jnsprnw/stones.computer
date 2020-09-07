@@ -1,5 +1,5 @@
 ---
-title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+title: "Algorithms of Oppression"
 date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "platform-and-infrastructure-monopolies"
