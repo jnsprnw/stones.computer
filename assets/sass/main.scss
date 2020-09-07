@@ -55,7 +55,7 @@ svg {
     text-shadow: 2px 0 0 var(--color-bg), -2px 0 0 var(--color-bg), 0 2px 0 var(--color-bg), 0 -2px 0 var(--color-bg);
   }
 
-  .hasActive {
+  &.hasActive {
     .label {
       fill: rgba(0, 0, 0, 0.05);
     }
