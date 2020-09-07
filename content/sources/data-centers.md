@@ -9,4 +9,5 @@ medium: "book"
 year: 2020
 tags: ["privacy", "borders", "nationhood"]
 weight: 5
+notReferenced: true
 ---
