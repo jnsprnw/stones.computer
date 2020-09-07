@@ -1,5 +1,5 @@
 ---
-title: "Vibrant Matter – A Political Ecology of Things"
+title: "Vibrant Matter: A Political Ecology of Things"
 date: 2020-05-24T20:09:07+02:00
 draft: false
 aspect: "stones-and-resources"
