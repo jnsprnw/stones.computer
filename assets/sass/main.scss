@@ -38,38 +38,32 @@ ul, ol {
   margin: 0;
 }
 
-line, path {
-  stroke: rgba(0, 0, 0, 0.05);
-  transition: stroke $transition, stroke-width $transition;
-  stroke-width: 1px;
-  fill: none;
+svg {
+  .edge {
+    stroke: rgba(0, 0, 0, 0.05);
+    transition: stroke $transition;
+    fill: none;
 
-  &.isActive {
-    stroke: $color-accent;
-    stroke-width: 1px;
-  }
-}
-
-circle {
-  stroke: var(--color-bg);
-  transition: stroke $transition, fill $transition;
-  fill: #eee;
-}
-
-text {
-  fill: rgba(0, 0, 0, 1);
-  transition: fill $transition;
-  text-shadow: 2px 0 0 var(--color-bg), -2px 0 0 var(--color-bg), 0 2px 0 var(--color-bg), 0 -2px 0 var(--color-bg);
-}
-
-.hasActive {
-  text {
-    fill: rgba(0, 0, 0, 0.05);
+    &.isActive {
+      stroke: $color-accent;
+    }
   }
 
-  g.isActive {
-    text {
-      fill: rgba(0, 0, 0, 1);
+  .label {
+    fill: rgba(0, 0, 0, 1);
+    transition: fill $transition;
+    text-shadow: 2px 0 0 var(--color-bg), -2px 0 0 var(--color-bg), 0 2px 0 var(--color-bg), 0 -2px 0 var(--color-bg);
+  }
+
+  .hasActive {
+    .label {
+      fill: rgba(0, 0, 0, 0.05);
+    }
+
+    a.isActive {
+      .label {
+        fill: rgba(0, 0, 0, 1);
+      }
     }
   }
 }

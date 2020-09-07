@@ -111,7 +111,7 @@
   // Rotation
   $: r = scaleLinear()
     .domain([500, 1000])
-    .range([0, 90]);
+    .range([90, 0]);
 
   // Based on the width and maximum value of 90 and minimum value of 0
   $: rotate = between(r(width), 90, 0)
@@ -144,15 +144,22 @@
 </ul>
 
 <svg bind:this={svg} class="map" class:hasActive={activeEdges.length || activeNodes.length || activeTopic}>
-  {#each links as { x1, x2, source, target, d }}
-  <path d={d} class:isActive={activeEdges.some((edge) => { return edge[1] === source && edge[0] === target })} />
-  {/each}
-  {#each aspects as { x, y, title, group, links, id, topics }}
-  <g on:mouseover={() => handleoverAspect([id, ...links], id)} on:mouseleave={handleleaveAspect} class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))} transform={`rotate(-90, ${x}, ${y})`}>
-    <a on:click={() => scrollTo(id)}>
-      <title>Jump to aspect »{title}«</title>
-      <text x={x} y={y} style={`transform: rotate(${rotate}deg); transform-origin: ${x}px ${y}px;`} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
-    </a>
+  <g>
+    {#each links as { x1, x2, source, target, d }}
+    <path d={d} class="edge" class:isActive={activeEdges.some((edge) => { return edge[1] === source && edge[0] === target })} />
+    {/each}
   </g>
-  {/each}
+  <g>
+    {#each aspects as { x, y, title, group, links, id, topics }}
+    <a
+      on:click={() => scrollTo(id)}
+      on:mouseover={() => handleoverAspect([id, ...links], id)}
+      on:mouseleave={handleleaveAspect}
+      class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))}
+      style={`transform: rotate(-${rotate}deg); transform-origin: ${x}px ${y}px;`}>
+      <title>Jump to aspect »{title}«</title>
+      <text x={x} y={y} class="label" text-anchor="middle" dominant-baseline="middle">{ title }</text>
+    </a>
+    {/each}
+  </g>
 </svg>
