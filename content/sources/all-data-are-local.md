@@ -1,5 +1,5 @@
 ---
-title: "All Data Are Local – Thinking Critically in a Data-Driven Society"
+title: "All Data Are Local: Thinking Critically in a Data-Driven Society"
 date: 2020-07-14T12:52:57+02:00
 draft: false
 aspect: "computational-discrimination"
