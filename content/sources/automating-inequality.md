@@ -1,5 +1,5 @@
 ---
-title: "Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor"
+title: "Automating Inequality"
 date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "computational-discrimination"
