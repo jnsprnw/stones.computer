@@ -6,5 +6,6 @@ year: 2001
 aspect: "emotional-interfaces"
 link: "http://www.fursr.com/projects/painstation"
 medium: "project"
+weight: 5
 notReferenced: true
 ---
