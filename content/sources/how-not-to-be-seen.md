@@ -6,5 +6,6 @@ year: 2013
 aspect: "visibility-invsibility"
 link: "https://www.artforum.com/video/hito-steyerl-how-not-to-be-seen-a-fucking-didactic-educational-mov-file-2013-51651"
 medium: "project"
+weight: 5
 notReferenced: true
 ---
