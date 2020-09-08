@@ -8,6 +8,6 @@ link: "https://muse.jhu.edu/article/33271"
 medium: "article"
 year: 1998
 tags: ["history", "technology", "environment"]
-weight: 4
+weight: 3
 notReferenced: true
 ---
