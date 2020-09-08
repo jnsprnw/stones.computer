@@ -6,6 +6,6 @@ year: 1968
 aspect: "mediamateriality"
 link: "https://theoria.art-zoo.com/a-sedimentation-of-the-mind-earth-projects-robert-smithson/"
 medium: "project"
-weight: 3
+weight: 6
 notReferenced: true
 ---
