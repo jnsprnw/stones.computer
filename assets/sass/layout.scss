@@ -749,7 +749,7 @@ body {
       padding-right: var(--spacing-05);
       box-shadow: none;
 
-      &:hover {
+      &:not(.isBeginning):hover {
         background-color: var(--color-bg);
       }
 
@@ -764,10 +764,6 @@ body {
       padding-left: var(--spacing-05);
       padding-right: var(--spacing-1);
       flex-direction: column;
-
-      &:hover:not(.isBeginning) {
-        background-color: var(--color-bg);
-      }
 
       a {
         padding-right: 0;
