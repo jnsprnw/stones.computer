@@ -6,5 +6,6 @@ year: 2019
 aspect: "mediamateriality"
 link: "https://makingandbreaking.org/article/crapularity-aesthetics/"
 medium: "project"
+weight: 8
 notReferenced: true
 ---
