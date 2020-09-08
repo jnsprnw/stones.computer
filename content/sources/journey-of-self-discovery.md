@@ -6,5 +6,6 @@ year: 2016
 aspect: "emotional-interfaces"
 link: "http://bb9.berlinbiennale.de/de/participants/anna-uddenberg/"
 medium: "project"
+weight: 6
 notReferenced: true
 ---
