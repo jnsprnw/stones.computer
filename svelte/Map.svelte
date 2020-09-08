@@ -152,7 +152,8 @@
   <g>
     {#each aspects as { x, y, title, group, links, id, topics }}
     <a
-      on:click={() => scrollTo(id)}
+      href="#{id}"
+      on:click|preventDefault={() => scrollTo(id)}
       on:mouseover={() => handleoverAspect([id, ...links], id)}
       on:mouseleave={handleleaveAspect}
       class:isActive={activeNodes.includes(id) || (activeTopic && topics.includes(activeTopic))}
