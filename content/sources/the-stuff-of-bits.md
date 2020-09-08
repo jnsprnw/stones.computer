@@ -8,6 +8,6 @@ link: "https://mitpress.mit.edu/books/stuff-bits "
 medium: "book"
 year: 2017
 tags: ["material information", "computer", "networks", "databases"]
-weight: 3
+weight: 5
 notReferenced: true
 ---
