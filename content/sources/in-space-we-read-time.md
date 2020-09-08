@@ -8,6 +8,6 @@ link: "https://press.uchicago.edu/ucp/books/book/distributed/I/bo25156502.html"
 medium: "book"
 year: 2016
 tags: ["historyofcivilisation", "geopolitics", "physicalspace"]
-weight: 6
+weight: 7
 notReferenced: true
 ---
