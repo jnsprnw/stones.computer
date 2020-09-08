@@ -1,5 +1,5 @@
 ---
-title: "Comparative Planetology"
+title: "Introduction to Comparative Planetology"
 date: 2020-05-24T20:09:07+02:00
 draft: false
 aspect: "upscaling"
