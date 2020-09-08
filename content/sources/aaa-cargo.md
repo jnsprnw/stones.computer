@@ -6,5 +6,6 @@ year: 2018
 aspect: "cycles"
 link: "https://iffr.com/en/2018/films/aaa-cargo"
 medium: "project"
+weight: 7
 notReferenced: true
 ---
