@@ -6,5 +6,6 @@ year: 2018
 aspect: "visibility-invsibility"
 link: "https://anatomyof.ai"
 medium: "project"
+weight: 6
 notReferenced: true
 ---
