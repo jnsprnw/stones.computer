@@ -8,6 +8,6 @@ link: "https://us.macmillan.com/books/9780765389312"
 medium: "book"
 year: 2013
 tags: ["sciencefiction", "silicon", "waste"]
-weight: 8
+weight: 7
 notReferenced: true
 ---
