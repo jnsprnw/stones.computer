@@ -8,6 +8,6 @@ link: "https://www.dukeupress.edu/vibrant-matter"
 medium: "book"
 year: 2010
 tags: ["ecophilosophy", "materialism", "ecology"]
-weight: 5
+weight: 4
 notReferenced: true
 ---
