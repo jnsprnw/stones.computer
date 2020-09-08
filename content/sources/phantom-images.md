@@ -1,5 +1,5 @@
 ---
-title: "The Vision Machine"
+title: "Phantom Images"
 date: 2020-06-08T14:20:25+02:00
 draft: false
 aspect: "visibility-invsibility"
