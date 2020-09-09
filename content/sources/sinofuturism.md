@@ -1,6 +1,6 @@
 ---
 title: "Sinofuturism (1839–2046 AD)"
-date: 2020-07-16T13:54:31+02:00
+date: 2020-09-09T17:32:36+02:00
 authors: ["Lawrence Lek"]
 year: 2016
 aspect: "non-human"

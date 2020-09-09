@@ -1,6 +1,6 @@
 ---
 title: "Human-Machine Reconfigurations"
-date: 2020-07-16T13:54:31+02:00
+date: 2020-09-09T17:32:36+02:00
 authors: ["Lucy Suchman"]
 year: 2012
 aspect: "digital-human"

@@ -1,6 +1,6 @@
 ---
 title: "Xenophily and Computational Denaturalization"
-date: 2020-06-08T14:20:25+02:00
+date: 2020-09-09T17:32:36+02:00
 draft: false
 aspect: "digital-human"
 authors: ["Patricia Reed"]

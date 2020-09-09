@@ -1,6 +1,6 @@
 ---
 title: "Routledge Handbook of Surveillance Studies"
-date: 2020-07-13T16:07:28+02:00
+date: 2020-09-09T17:32:36+02:00
 aspect: "surveillance"
 authors: ["Kirstie Ball", "Kevin Haggerty", "David Lyon"]
 link: "https://www.routledge.com/Routledge-Handbook-of-Surveillance-Studies-1st-Edition/Ball-Haggerty-Lyon/p/book/9781138026025"

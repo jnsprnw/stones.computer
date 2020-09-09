@@ -1,6 +1,6 @@
 ---
 title: "Black Transparency: The Right to Know in the Age of Mass Surveillance"
-date: 2020-07-13T16:08:45+02:00
+date: 2020-09-09T17:32:36+02:00
 aspect: "surveillance"
 authors: ["Metahaven"]
 people: ["Vinca Kruk", "Daniel van der Velden"]

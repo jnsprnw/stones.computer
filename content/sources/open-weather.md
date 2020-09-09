@@ -1,6 +1,6 @@
 ---
 title: "Open Weather"
-date: 2020-07-16T13:54:31+02:00
+date: 2020-09-09T17:32:36+02:00
 authors: ["Sophie Dyer", "Sasha Engelmann"]
 year: 2019
 aspect: "epistemic-traces"

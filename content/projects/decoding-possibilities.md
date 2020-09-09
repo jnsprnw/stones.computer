@@ -1,6 +1,6 @@
 ---
 title: "Decoding Possibilities"
-date: 2020-04-08T13:22:57+02:00
+date: 2020-09-09T17:32:36+02:00
 draft: false
 aspect: "computational-discrimination"
 authors: ["Romi Morrison"]

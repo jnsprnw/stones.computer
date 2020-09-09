@@ -1,6 +1,6 @@
 ---
 title: "All Data Are Local"
-date: 2020-07-14T12:52:57+02:00
+date: 2020-09-09T17:32:36+02:00
 draft: false
 aspect: "computational-discrimination"
 authors: ["Yanni Alexander Loukissas"]

@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Comparative Planetology"
-date: 2020-05-24T20:09:07+02:00
+date: 2020-09-09T17:32:36+02:00
 draft: false
 aspect: "upscaling"
 authors: ["Lukáš Likavčan"]
