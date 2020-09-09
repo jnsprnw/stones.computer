@@ -2,7 +2,7 @@
 title: "Upscaling"
 date: 2020-07-13T15:26:43+02:00
 topics: ["material", "power", "bodies"]
-hashtags: ["Planetary Scale Computation", "Anthropocene", "Planetology"]
+hashtags: ["planetaryScaleComputation", "Anthropocene", "Planetology"]
 weight: 1
 links: ["time", "spatial-order", "non-human-and-non-organic", "cycles"]
 group: 1
