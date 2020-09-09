@@ -165,6 +165,10 @@ p + p {
     font-size: var(--size-3);
     max-width: calc(var(--size-3) * 50);
   }
+
+  h5:not(:first-child) {
+    margin-top: var(--spacing-2);
+  }
 }
 
 @mixin text-2 () {
