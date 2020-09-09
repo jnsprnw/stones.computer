@@ -606,6 +606,20 @@ body {
   margin-top: var(--spacing-1);
   margin-bottom: var(--spacing-1);
 
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .rss {
+      justify-self: end;
+    }
+
+    .back {
+      grid-column: 1 / span 2;
+    }
+  }
+
+
   .list {
     li > a {
       display: grid;
