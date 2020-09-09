@@ -756,7 +756,7 @@ body {
       padding-right: var(--spacing-05);
       box-shadow: none;
 
-      &:not(.isBeginning):hover {
+      &:not(.isBeginning):not(.isLast):hover {
         background-color: var(--color-bg);
       }
 

@@ -64,7 +64,7 @@
 
 <svelte:window bind:scrollY={y} on:resize={getTops} />
 
-<nav class:isBeginning={currentActive < 1}>
+<nav class:isBeginning={currentActive < 1} class:isLast={currentActive === anchors.length - 1}>
   {#each anchors as { id, label }, i}
   <a href="#{id}" on:click|preventDefault={() => scrollTo(id)} class="internal" class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
   {/each}
