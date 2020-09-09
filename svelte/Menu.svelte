@@ -27,7 +27,7 @@
 
   onMount (async () => {
     getTops();
-    setTheme(localStorage.getItem(THEME_KEY))
+    // setTheme(localStorage.getItem(THEME_KEY))
   })
 
   // First, we loop over each top-position and check if it already reached
@@ -69,5 +69,5 @@
   <a href="#{id}" on:click|preventDefault={() => scrollTo(id)} class="internal" class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
   {/each}
   <a href="/table"><i>↗</i> Archive</a>
-  <button on:click="{() => toggleTheme()}"><i>↗</i> { isDarkMode ? 'Light mode' : 'Dark mode' }</button>
+  <!-- <button on:click="{() => toggleTheme()}"><i>↗</i> { isDarkMode ? 'Light mode' : 'Dark mode' }</button> -->
 </nav>
