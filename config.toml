@@ -26,7 +26,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   images = ["preview.png"]
 
 [outputs]
-  home = ["HTML", "Items", "Aspects"]
+  home = ["HTML", "Items", "Aspects", "RSS"]
 
 [markup.goldmark.renderer]
   unsafe = true

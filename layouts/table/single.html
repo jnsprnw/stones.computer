@@ -2,7 +2,8 @@
   <div class="homepage-projects">
     <header class="wrapper header">
     	<h1>Archive</h1>
-      <a href="/" class="internal">&#8592; Back</a>
+    	<a href="{{ "index.xml" | absURL }}" class="rss">RSS feed</a>
+      <a href="{{ .Site.BaseURL }}" class="back">&#8592; Back</a>
     </header>
     <section class="list">
       {{ partial "projects.html" . }}
