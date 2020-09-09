@@ -4,7 +4,7 @@ date: 2020-05-24T22:13:55+02:00
 topics: ["bodies"]
 weight: 13
 links: ["emotional-interfaces", "computational-discrimination"]
-hashtags: ["Digital Subject", "Post-Internet", "Alienation and Intimacy"]
+hashtags: ["digitalSubject", "post-Internet", "alienation", "intimacy"]
 group: 4
 ---
 
