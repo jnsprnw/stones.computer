@@ -113,7 +113,7 @@ q { font-style: italic; quotes: none; }
   }
 }
 
-.section-intro-headline, .topic-description-intro, .link-title, .homepage-projects .header h1 {
+.section-intro-headline, .topic-description-intro, .link-title, .homepage-projects .header h1, .outro-headline {
   @include headline-5();
 
   @media print {
