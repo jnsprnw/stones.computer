@@ -161,7 +161,7 @@ p + p {
 }
 
 .homepage-intro div, .homepage-outro .outro {
-  p {
+  p, .homepage-logos {
     font-size: var(--size-3);
     max-width: calc(var(--size-3) * 50);
   }

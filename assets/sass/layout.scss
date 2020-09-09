@@ -685,6 +685,20 @@ body {
   .byline {
     margin-top: var(--spacing-1);
   }
+
+  .homepage-logos {
+    margin-top: var(--spacing-1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--spacing-1);
+    align-items: center;
+    justify-items: center;
+
+    img {
+      width: 50%;
+      max-width: 200px;
+    }
+  }
 }
 
 .page-footer {
