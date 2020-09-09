@@ -78,7 +78,7 @@
 <ul class="plain">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
 	<li>
-		<a href="{link}" class="link-table">
+		<a href="{link}" class="link-table" target="_blank">
 			<span class="title">{ title }</span>
 			<span class="authors">{ authors }</span>
 			<span class="year">{ year }</span>
