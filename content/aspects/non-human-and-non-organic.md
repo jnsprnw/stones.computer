@@ -4,7 +4,7 @@ date: 2020-07-13T15:26:43+02:00
 topics: ["material", "bodies"]
 weight: 4
 links: ["upscaling", "stones-and-resources", "epistemic-traces"]
-hashtags: ["Anthropocentrism", "Posthumanism", "Tacit Knowledge"]
+hashtags: ["anthropocentrism", "posthumanism", "tacitKnowledge"]
 group: 1
 ---
 
