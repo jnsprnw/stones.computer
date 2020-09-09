@@ -3,7 +3,7 @@ title: "Cycles"
 date: 2020-07-13T15:26:43+02:00
 topics: ["material", "power"]
 weight: 8
-links: ["upscaling", "mediamateriality", "epistemic-traces", "platform-and-infrastructure-monopolies"]
+links: ["upscaling", "mediamateriality", "epistemic-traces", "monopolies"]
 group: 2
 hashtags: ["networks", "systems", "ecologies"]
 ---

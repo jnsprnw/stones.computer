@@ -64,14 +64,21 @@
 
   function generateLinks (arr) {
     const links = []
+    // console.log({ arr })
     arr.forEach(({ x: x1, y: y1, links: keys, id }) => {
       keys.forEach((key, i) => {
-        const { x: x2, y: y2 } = arr.find((node) => node.id === key)
-        links.push({
-          source: id,
-          target: key,
-          d: generateArc(x1, x2, y1, y2, i % 2)
-        })
+        // console.log({ arr, key })
+        const datum = arr.find((node) => node.id === key)
+        if (datum) {
+          const { x: x2, y: y2 } = datum
+          links.push({
+            source: id,
+            target: key,
+            d: generateArc(x1, x2, y1, y2, i % 2)
+          })
+        } else {
+          console.log(`Error in Aspect ${id} to link ${key}`)
+        }
       })
     })
     return links

@@ -4,7 +4,7 @@ date: 2020-07-13T15:26:43+02:00
 topics: ["power"]
 hashtags: ["territorialization", "deterritorialization", "reterritorialization"]
 weight: 2
-links: ["upscaling", "landscapes", "platform-and-infrastructure-monopolies", "extractivism"]
+links: ["upscaling", "data-landscapes", "monopolies", "extractivism"]
 group: 1
 ---
 

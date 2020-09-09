@@ -2,7 +2,7 @@
 title: "Platform Capitalism"
 date: 2020-06-08T14:20:25+02:00
 draft: false
-aspect: "platform-and-infrastructure-monopolies"
+aspect: "monopolies"
 authors: ["Nick Srnicek"]
 topic: ""
 link: "https://www.wiley.com/en-us/Platform+Capitalism-p-9781509504862"

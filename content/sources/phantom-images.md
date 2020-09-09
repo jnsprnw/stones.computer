@@ -2,7 +2,7 @@
 title: "Phantom Images"
 date: 2020-06-08T14:20:25+02:00
 draft: false
-aspect: "visibility-invsibility"
+aspect: "invisibility"
 authors: ["Harun Farocki"]
 link: "https://monoskop.org/images/f/f8/Farocki_Harun_2004_Phantom_Images.pdf"
 medium: "book"

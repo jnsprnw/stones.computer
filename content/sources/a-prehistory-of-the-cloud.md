@@ -2,7 +2,7 @@
 title: "A Prehistory of the Cloud"
 date: 2020-05-24T20:09:07+02:00
 draft: false
-aspect: "landscapes"
+aspect: "data-landscapes"
 authors: ["Tung-Hui Hu"]
 link: "https://mitpress.mit.edu/books/prehistory-cloud"
 medium: "book"

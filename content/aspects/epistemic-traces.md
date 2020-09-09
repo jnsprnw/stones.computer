@@ -3,7 +3,7 @@ title: "Epistemic Traces"
 date: 2020-07-13T15:44:14+02:00
 topics: ["material"]
 weight: 16
-links: ["non-human-and-non-organic", "cycles"]
+links: ["non-human", "cycles"]
 group: 4
 hashtags: ["environmentalSensing", "materialKnowledge", "evidence"]
 ---

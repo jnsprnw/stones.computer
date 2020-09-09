@@ -2,7 +2,7 @@
 title: "Systemic Image"
 date: 2020-06-08T14:20:25+02:00
 draft: false
-aspect: "visibility-invsibility"
+aspect: "invisibility"
 authors: ["Inge Hinterwaldner"]
 link: "https://mitpress.mit.edu/books/systemic-image"
 medium: "book"

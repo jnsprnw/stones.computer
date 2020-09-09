@@ -3,7 +3,7 @@ title: "Stones and Resources"
 date: 2020-07-13T15:26:43+02:00
 topics: ["material"]
 weight: 5
-links: ["time", "non-human-and-non-organic", "mediamateriality", "extractivism"]
+links: ["time", "non-human", "mediamateriality", "extractivism"]
 hashtags: ["rawMaterial", "energyAndComputation"]
 group: 2
 ---

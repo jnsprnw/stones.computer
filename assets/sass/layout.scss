@@ -592,12 +592,12 @@ body {
   ul {
     display: flex;
     justify-content: center;
-    position: relative;
-    z-index: $z-index-network-menu;
 
     li {
       margin: 0 var(--spacing-05);
       cursor: default;
+      position: relative;
+      z-index: $z-index-network-menu;
     }
   }
 }

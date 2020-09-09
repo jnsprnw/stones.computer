@@ -3,7 +3,7 @@ title: "Surveillance"
 date: 2020-07-13T15:26:43+02:00
 topics: ["power", "bodies"]
 weight: 10
-links: ["computational-discrimination", "platform-and-infrastructure-monopolies", "visibility-invsibility"]
+links: ["computational-discrimination", "monopolies", "invisibility"]
 group: 3
 hashtags: ["sousveillance", "dataveillance"]
 ---

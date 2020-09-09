@@ -4,7 +4,7 @@ date: 2020-07-13T15:44:41+02:00
 topics: ["power", "bodies"]
 hashtags: ["antiBlackBox", "criticalCodeStudies", "algorithmicViolence"]
 weight: 12
-links: ["platform-and-infrastructure-monopolies", "surveillance", "understanding-the-digital-human", visibility-invsibility]
+links: ["monopolies", "surveillance", "digital-human", "invisibility"]
 group: 3
 ---
 

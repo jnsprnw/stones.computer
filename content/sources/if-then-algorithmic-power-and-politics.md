@@ -2,7 +2,7 @@
 title: "If…Then: Algorithmic Power and Politics"
 date: 2020-06-08T14:20:25+02:00
 draft: false
-aspect: "platform-and-infrastructure-monopolies"
+aspect: "monopolies"
 authors: ["Taina Bucher"]
 topic: ""
 link: "https://global.oup.com/academic/product/ifthen-9780190493035?cc=de&lang=en&"

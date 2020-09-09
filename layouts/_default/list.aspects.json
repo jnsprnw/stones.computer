@@ -1,6 +1,7 @@
 {{ $aspectsScratch := newScratch }}
 {{- $aspectsScratch.Add "list" slice -}}
 {{- range $index, $element := (.Site.GetPage "/aspects").Resources -}}
-  {{- $aspectsScratch.Add "list" (dict "id" $element.File.BaseFileName "index" $index "title" $element.Title "group" $element.Params.group "links" $element.Params.links "topics" $element.Params.topics) -}}
+	{{ $id := $element.Title | urlize | lower }}
+  {{- $aspectsScratch.Add "list" (dict "id" $id "index" $index "title" $element.Title "group" $element.Params.group "links" $element.Params.links "topics" $element.Params.topics) -}}
 {{- end -}}
 {{- $aspectsScratch.Get "list" | jsonify -}}

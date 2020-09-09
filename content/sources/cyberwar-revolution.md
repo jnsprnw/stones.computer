@@ -2,7 +2,7 @@
 title: "Cyberwar and Revolution"
 date: 2020-06-08T14:20:25+02:00
 draft: false
-aspect: "platform-and-infrastructure-monopolies"
+aspect: "monopolies"
 authors: ["Svitlana Matviyenko", "Nick Dyer-Witheford"]
 link: "https://www.upress.umn.edu/book-division/books/cyberwar-and-revolution"
 medium: "book"

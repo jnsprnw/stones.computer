@@ -2,7 +2,7 @@
 title: "Meeting the Universe Halfway"
 date: 2020-05-24T20:09:07+02:00
 draft: false
-aspect: "non-human-and-non-organic"
+aspect: "non-human"
 authors: ["Karen Barad"]
 link: "https://www.dukeupress.edu/meeting-the-universe-halfway"
 medium: "book"
