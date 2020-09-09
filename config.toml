@@ -17,6 +17,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [params]
   description = "Online collection of resources that maps academic as well as artistic perspectives which reflect digital conditions within materialist discourses."
+  keywords = "collection archive list digital materiality material stones computer technology art design theory"
   contentTypes = ["sources"]
   listItemTypes = ["sources", "articles", "projects"]
   source = "https://github.com/z3to/stones.computer"
