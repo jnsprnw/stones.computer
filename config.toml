@@ -30,3 +30,6 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[sitemap]
+  filename = "sitemap.xml"
