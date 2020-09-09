@@ -1,7 +1,7 @@
 ---
 title: "Extractivism"
 date: 2020-07-13T15:43:58+02:00
-topics: ["material"]
+topics: ["material", "power"]
 weight: 15
 links: ["stones-and-resources", "spatial-order"]
 group: 4
