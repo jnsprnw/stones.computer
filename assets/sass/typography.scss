@@ -175,7 +175,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-menu {
+.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-menu, .homepage-menu button {
   @include text-2();
 }
 
@@ -286,14 +286,21 @@ p a, .page-footer a, .info a, ul a, .section-headline a {
   @include link-2();
 }
 
-.homepage-menu a {
-  i {
-    color: transparent;
+.homepage-menu {
+  button {
+    border: none;
+    background-color: transparent;
   }
 
-  &.isActive {
+  a {
     i {
-      color: var(--color-fg);
+      color: transparent;
+    }
+
+    &.isActive {
+      i {
+        color: var(--color-fg);
+      }
     }
   }
 }

@@ -721,7 +721,7 @@ body {
     justify-content: space-between;
     padding: var(--spacing-05) var(--spacing-1) var(--spacing-05) var(--spacing-05);
 
-    a {
+    a, button {
       display: block;
 
       i {
@@ -737,7 +737,7 @@ body {
     nav {
       padding: var(--spacing-05) var(--spacing-2) var(--spacing-05) var(--spacing-1);
 
-      a {
+      a, button {
         padding-right: var(--spacing-05);
       }
     }
@@ -760,7 +760,7 @@ body {
         background-color: var(--color-bg);
       }
 
-      a {
+      a, button {
         padding-right: var(--spacing-05);
       }
     }
@@ -772,7 +772,7 @@ body {
       padding-right: var(--spacing-1);
       flex-direction: column;
 
-      a {
+      a, button {
         padding-right: 0;
       }
     }

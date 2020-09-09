@@ -3,6 +3,10 @@
   import map from 'lodash/map';
   import compact from 'lodash/compact';
 
+  const DARK_THEME_CLASS = 'theme-dark'
+  const THEME_KEY = 'isDarkTheme'
+  let isDarkMode = false;
+
   let y;
 
   const anchors = [{
@@ -23,6 +27,7 @@
 
   onMount (async () => {
     getTops();
+    setTheme(localStorage.getItem(THEME_KEY))
   })
 
   // First, we loop over each top-position and check if it already reached
@@ -45,6 +50,16 @@
   function scrollTo (id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }
+
+  function setTheme (isDarkTheme) {
+    isDarkMode = isDarkTheme
+    localStorage.setItem(THEME_KEY, isDarkTheme);
+    document.documentElement.className = isDarkTheme ? DARK_THEME_CLASS : '';
+  }
+
+  function toggleTheme() {
+    setTheme(!isDarkMode);
+  }
 </script>
 
 <svelte:window bind:scrollY={y} on:resize={getTops} />
@@ -54,4 +69,5 @@
   <a href="#{id}" on:click|preventDefault={() => scrollTo(id)} class="internal" class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
   {/each}
   <a href="/table"><i>↗</i> Archive</a>
+  <button on:click="{() => toggleTheme()}"><i>↗</i> { isDarkMode ? 'Light mode' : 'Dark mode' }</button>
 </nav>
