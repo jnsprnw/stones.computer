@@ -3,7 +3,7 @@ title: "Cloud Ethics"
 date: 2020-09-09T17:32:36+02:00
 draft: false
 aspect: "digital-human"
-authors: ["Loiuse Amoore"]
+authors: ["Louise Amoore"]
 link: "https://www.dukeupress.edu/cloud-ethics"
 medium: "book"
 year: 2020
