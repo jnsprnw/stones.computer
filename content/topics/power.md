@@ -1,6 +1,6 @@
 ---
 title: "Power and geopolitics in the digital"
-question: "Where is the Stone?"
+question: "Where is the stone?"
 date: 2020-07-17T08:57:38+02:00
 draft: false
 weight: 2
