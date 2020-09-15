@@ -21,6 +21,10 @@
   size: A4;
 }
 
+[role=mark] { // Triggered by highlighting footnotes
+  background-color: var(--color-highlight);
+}
+
 @mixin padding-sides-default-wide() {
   padding-left: var(--spacing-3);
   padding-right: var(--spacing-3);
@@ -489,12 +493,6 @@ body {
         margin-bottom: 0;
       }
     }
-
-    .footnote {
-      &.isHover {
-        background-color: var(--color-highlight);
-      }
-    }
   }
 }
 
@@ -518,10 +516,6 @@ body {
 
     @media print {
       border-bottom: $border-print;
-    }
-
-    &.isHover { // Triggered by highlighting footnotes
-      background-color: var(--color-highlight);
     }
 
     a {
@@ -767,7 +761,7 @@ body {
   }
 }
 
-.homepage-menu {
+.homepage-navigation {
   position: fixed;
   z-index: $z-index-table-link;
   bottom: 0;

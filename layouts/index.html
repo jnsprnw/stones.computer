@@ -1,8 +1,6 @@
 {{ define "main" }}
 
   <div>
-    <div class="homepage-menu" id="menu">
-    </div>
     <header class="homepage-header" role="banner" id="intro">
       <div class="wrapper">
         <span class="info">Collection of resources about<br> <strong>post-digital materiality</strong><br> compiled by <a href="https://jonasparnow.com" rel="author">Jonas <i class="reference-icon">↗</i></a> and <a href="http://paulheinicker.com/" rel="author">Paul <i class="reference-icon">↗</i></a></span>
@@ -20,7 +18,7 @@
       <header class="wrapper">
         <h2 class="section-headline">Digitality promised us <a href="#material-of-the-digital" title="Jump to topic »Material of the digital«">immaterialness<i> ↓</i></a>, <a href="#power-and-geopolitics-in-the-digital" title="Jump to topic »Power and geopolitics in the digital«">equality<i> ↓</i></a> and <a href="#bodies-of-the-digital" title="Jump to topic »Bodies of the digital«">disembodiment<i> ↓</i></a>. It never came to be.</h2>
       </header>
-      <div class="topics-list wrapper">
+      <div class="topics-list wrapper" role="list">
         {{ partial "topics.html" . }}
       </div>
     </section>
@@ -29,20 +27,20 @@
         <h2 class="section-headline">We propose the following aspects as framework to understand the post-digital condition.</h2>
       </header>
       <div class="homepage-map wrapper" id="map"></div>
-      <div class="aspects wrapper">
+      <div class="aspects wrapper" role="list">
         {{ partial "aspects.html" . }}
       </div>
     </section>
     <section class="homepage-outro" id="outro">
       <header class="wrapper">
-        <h2 class="section-headline">Help us to think towards an ecological usage of resources, data justice and a healthy respect to the human body by submitting missing <a href="https://www.constructeev.com/stones-computer" target="_blank">references</a>.</br></br>Find all links gathered in our <a href="/archive">archive</a>.</h2>
+        <h2 class="section-headline">Help us to think towards an ecological usage of resources, data justice and a healthy respect to the human body by submitting missing <a href="https://www.constructeev.com/stones-computer" target="_blank" rel="noopener">references</a>.</br></br>Find all links gathered in our <a href="/archive">archive</a>.</h2>
       </header>
       <footer class="wrapper outro">
-        <h5 class="outro-headline">Acknowledgement</h5>
+        <h4 class="outro-headline">Acknowledgement</h4>
         {{ with .Site.GetPage "footer.md" }}
           {{ .Content }}
         {{ end }}
-        <h5 class="outro-headline">Authors</h5>
+        <h4 class="outro-headline">Authors</h4>
         {{ with .Site.GetPage "paul.md" }}
           {{ .Content }}
         {{ end }}

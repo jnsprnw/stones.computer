@@ -2,7 +2,8 @@
 <html lang="en" class="theme-light">
   {{ partial "head.html" . }}
   <body>
-    <main id="main" aria-role="main">
+  	<div class="homepage-navigation" id="navigation" role="navigation"></div>
+    <main id="main" role="main">
     	{{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}

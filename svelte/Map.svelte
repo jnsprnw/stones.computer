@@ -150,7 +150,7 @@
   {/each}
 </ul>
 
-<svg bind:this={svg} class="map" class:hasActive={activeEdges.length || activeNodes.length || activeTopic}>
+<svg bind:this={svg} class="map" class:hasActive={activeEdges.length || activeNodes.length || activeTopic} role="figure">
   <g>
     {#each links as { x1, x2, source, target, d }}
     <path d={d} class="edge" class:isActive={activeEdges.some((edge) => { return edge[1] === source && edge[0] === target })} />

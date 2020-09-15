@@ -68,17 +68,12 @@
 	})
 </script>
 
-<!-- <ul>
-	{#each mediums as medium}
-	<li on:click={() => selectMedium(medium)}>{ medium }</li>
-	{/each}
-</ul> -->
-<input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} class="search" />
+<input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} class="search" role="search" />
 
-<ul class="plain">
+<ul class="plain" role="feed">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
 	<li>
-		<a href="{link}" class="link-table" target="_blank">
+		<a href="{link}" class="link-table" target="_blank" rel="noopener">
 			<span class="title">{ title }</span>
 			<span class="authors">{ authors }</span>
 			<span class="year">{ year }</span>

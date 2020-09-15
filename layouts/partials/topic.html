@@ -1,27 +1,20 @@
 {{ $id := .Title | urlize | lower }}
-<section class="topic" id="{{ $id }}">
+<section class="topic" id="{{ $id }}" aria-labelledby="title_{{ $id }}" role="listitem">
 	<header class="topic-header">
 		<a href="#{{ $id }}" class="caption anchor float" title="Jump to topic »{{ .Title }}«">Topic</a>
 		<span class="number">{{ .Weight }}</span>
-	  <h3 class="topic-title">{{ .Title }}</h3>
+	  <h3 class="topic-title" id="title_{{ $id }}">{{ .Title }}</h3>
 	</header>
   <div class="description">
-  	<h5 class="topic-description-intro">{{ .Params.Question }}</h5>
+  	<h4 class="topic-description-intro">{{ .Params.Question }}</h4>
   	{{ .Content }}
-  	<div class="aspects-links">
+  	<div class="aspects-links" role="list">
   		{{ $content := where ((.Site.GetPage "/aspects").Resources) "Params.topics" "intersect" (slice .File.BaseFileName) }}
   		<span>Related aspects: {{ range $content }}
 	  		{{ $id := .Title | urlize | lower }}
-	  		<a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«"><span>{{ .Title }}</span><i>↓</i></a>
+	  		<a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«" role="listitem"><span>{{ .Title }}</span><i>↓</i></a>
 	  		{{ end }}
 	  	</span>
-	  	<!-- <span class="caption">Aspects</span>
-	  	<ul class="list">
-	  		{{ range $content }}
-	  		{{ $id := .Title | urlize | lower }}
-	  		<li class="link"><a href="#{{ $id }}" class="link-aspect" title="Jump to aspect »{{ .Title }}«"><span>{{ .Title }}</span><i>↓</i></a></li>
-	  		{{ end }}
-	  	</ul> -->
 	  </div>
   </div>
 </section>

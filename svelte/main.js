@@ -6,6 +6,6 @@ import Map from './Map.svelte';
 const targetMap = document.getElementById('map')
 if (targetMap) new Map({ target: targetMap });
 
-import Menu from './Menu.svelte';
-const targetMenu = document.getElementById('menu')
-if (targetMenu) new Menu({ target: targetMenu });
+import Navigation from './Navigation.svelte';
+const targetNavigation = document.getElementById('navigation')
+if (targetNavigation) new Navigation({ target: targetNavigation });

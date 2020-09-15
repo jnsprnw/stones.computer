@@ -1,4 +1,4 @@
-<footer class="wrapper page-footer">
+<footer class="wrapper page-footer" role="contentinfo">
 	<span>Last updated <time datetime="{{ now.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ now.Format "Monday, 02 January 2006 15:04:05 MST" }}">{{ now.Format "January 2006"}}</time> – <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons</a>
 		{{ with .Site.Params.source -}}
 		– <a href="{{ . }}">Source on Github</a>
@@ -18,11 +18,11 @@
 	for (let l = 0; l < footnotes.length; l++) {
 		footnotes[l].addEventListener('mouseenter', function (e) {
 			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
-			if (reference) reference.classList.add('isHover');
+			if (reference) reference.setAttribute('role', 'mark');
 		})
 		footnotes[l].addEventListener('mouseleave', function (e) {
 			const reference = document.getElementById(e.target.getAttribute('aria-describedby'))
-			if (reference) reference.classList.remove('isHover');
+			if (reference) reference.removeAttribute('role');
 		})
 	}
 
@@ -31,11 +31,11 @@
 	for (let l = 0; l < references.length; l++) {
 		references[l].addEventListener('mouseenter', function (e) {
 			const footnote = document.getElementById('fn-' + e.target.getAttribute('id'))
-			if (footnote) footnote.classList.add('isHover');
+			if (footnote) footnote.setAttribute('role', 'mark');
 		})
 		references[l].addEventListener('mouseleave', function (e) {
 			const footnote = document.getElementById('fn-' + e.target.getAttribute('id'))
-			if (footnote) footnote.classList.remove('isHover');
+			if (footnote) footnote.removeAttribute('role');
 		})
 	}
 

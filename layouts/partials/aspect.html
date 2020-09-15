@@ -6,22 +6,22 @@
 	  {{ .context.Content }}
 	  {{ with .context.Params.hashtags }}
 	  <footer>
-	  	<ul class="hashtags">
+	  	<ul class="hashtags" role="list" aria-label="Hashtags">
 	  		{{ range . }}
-	  		<li class="tag">#{{ . }}</li>
+	  		<li class="tag" role="listitem">#{{ . }}</li>
 	  		{{ end }}
 	  	</ul>
 	  </footer>
 	  {{ end }}
 	</div>
 	<aside>
-	  <ol class="list list-complex references">
+	  <ol class="list list-complex references" role="list">
 	  	{{ $content := where ((.context.Site.GetPage "/sources").Resources) "Params.aspect" .context.File.BaseFileName }}
 	  	{{ range $index, $element := $content }}
-				<li class="link reference" id="{{ .File.BaseFileName }}">
-					<a href="{{ .Params.link }}" target="_blank" class="link-reference" title="External link to »{{ $element.Title }}«" rel="external">
+				<li class="link reference" id="{{ .File.BaseFileName }}" role="listitem">
+					<a href="{{ .Params.link }}" target="_blank" rel="noopener" class="link-reference" title="External link to »{{ $element.Title }}«" rel="external">
 						<span class="reference-counter">{{ if not $element.Params.notReferenced }}{{ add $index 1 }}{{ end }}</span>
-						<h5 class="link-title">{{ $element.Title }}</h5>
+						<h4 class="link-title">{{ $element.Title }}</h4>
 						<span class="reference-description">{{ with $element.Params.authors }}{{ delimit . ", " " and " }}; {{ end }}{{ with $element.Params.year }}{{ . }}{{ end }}</span>
 						<i class="reference-icon">↗</i>
 					</a>

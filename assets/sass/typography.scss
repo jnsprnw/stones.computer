@@ -184,7 +184,7 @@ p + p {
     max-width: calc(var(--size-3) * 50);
   }
 
-  h5:not(:first-child) {
+  h4:not(:first-child) {
     margin-top: var(--spacing-2);
   }
 }
@@ -197,7 +197,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-menu, .homepage-menu button {
+.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-navigation, .homepage-navigation button {
   @include text-2();
 }
 
@@ -274,7 +274,7 @@ p + p {
 }
 
 // Regular links in paragraphs, footer or intro
-p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-menu a .archive {
+p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-navigation a .archive {
   @include link-1();
 }
 
@@ -305,7 +305,7 @@ p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-menu a .archi
 }
 
 // Internal links to aspects
-.link-aspect, .link-reference, .link-table, .caption.anchor, .homepage-projects .header a, .homepage-menu a:not(.archive) {
+.link-aspect, .link-reference, .link-table, .caption.anchor, .homepage-projects .header a, .homepage-navigation a:not(.archive) {
   @include link-2();
 }
 
@@ -321,7 +321,7 @@ p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-menu a .archi
   }
 }
 
-.homepage-menu {
+.homepage-navigation {
   button {
     border: none;
     background-color: transparent;
