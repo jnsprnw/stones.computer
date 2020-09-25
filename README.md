@@ -1,8 +1,9 @@
 # Stones that calcuate
-## Post-Digital Materiality
-### Notes, thoughts and ressources curated by Paul Heinicker and Jonas Parnow.
+
+Collection of resources about **post-digital materiality** compiled by [Jonas](https://jonasparnow.com) and [Paul](http://paulheinicker.com/)
 
 https://stones.computer
+
 
 ### Serve
 To start both Hugo and Svelte run:
