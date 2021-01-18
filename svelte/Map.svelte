@@ -58,8 +58,8 @@
 
   function generateArc (x1, x2, y1, y2, i) {
     const a = Math.max(Math.abs(x1 - x2), mv) // Calculate this to get the x-distance, but use at least the current vertical margin
-    const _y = between(getBezier(y1, y2, i, a), height, 0) // We make sure the curve does not get outside the area
-    return `M${x1} ${y1} C${x1} ${_y}, ${x2} ${_y}, ${x2} ${y2}`
+    const y = between(getBezier(y1, y2, i, a), height, 0) // We make sure the curve does not get outside the area
+    return `M${x1} ${y1} C${x1} ${y}, ${x2} ${y}, ${x2} ${y2}`
   }
 
   function generateLinks (arr) {
