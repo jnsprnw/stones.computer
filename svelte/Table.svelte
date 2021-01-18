@@ -30,8 +30,8 @@
 		const term = trim(input.value)
 		// First, check if search term is present and fuse has been initialised
 		// If false, return all items
-		// If true, return fuse search results but map over them to bring forward the item
-		// This is because fuse add search metadata to the results.
+		// If true, return Fuse search results but map over them to bring forward the item
+		// This is because Fuse adds search metadata to the results.
 		// This would conflict with returning the simple list of all items
 		if (term.length && fuse || selectedMedium) {
 			let expression = term
