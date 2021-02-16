@@ -197,7 +197,7 @@ p + p {
   }
 }
 
-.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-navigation, .homepage-navigation button {
+.reference-description, .page-footer, .tag, .label, .aspects-links, .homepage-navigation, .homepage-navigation button, .homepage-map-footer span {
   @include text-2();
 }
 
@@ -274,7 +274,7 @@ p + p {
 }
 
 // Regular links in paragraphs, footer or intro
-p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-navigation a .archive {
+p a, .page-footer a, .info a, ul a, .section-headline a, .homepage-navigation a .archive, .homepage-map-footer a {
   @include link-1();
 }
 

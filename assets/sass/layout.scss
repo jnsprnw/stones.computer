@@ -581,7 +581,7 @@ body {
 
 .homepage-map {
   margin-top: var(--spacing-3);
-  margin-bottom: var(--spacing-3);
+  // margin-bottom: var(--spacing-3);
   width: 100%;
   height: 500px;
   display: grid;
@@ -608,6 +608,12 @@ body {
       z-index: $z-index-network-menu;
     }
   }
+}
+
+.homepage-map-footer {
+  margin-bottom: var(--spacing-3);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .homepage-projects {
