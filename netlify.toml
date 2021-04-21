@@ -6,3 +6,8 @@ command = "npm run build"
 HUGO_VERSION = "0.68.3"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
