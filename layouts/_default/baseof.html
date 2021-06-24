@@ -2,7 +2,7 @@
 <html lang="en" class="theme-light">
   {{ partial "head.html" . }}
   <body>
-  	<div class="homepage-navigation" id="navigation" role="navigation"></div>
+  	{{ if .IsHome }}<div class="homepage-navigation" id="navigation" role="navigation"></div>{{ end }}
     <main id="main" role="main">
     	{{ block "main" . }}{{ end }}
     </main>
