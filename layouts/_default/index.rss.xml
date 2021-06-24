@@ -9,7 +9,7 @@
     <atom:link href="{{ "index.xml" | absURL }}" rel="self" type="application/rss+xml" />
     {{- $aspects := (.Site.GetPage "/aspects").Resources -}}
     {{- $topics := (.Site.GetPage "/topics").Resources -}}
-    {{ range $element := sort ((.Site.GetPage "/sources").Resources | append (.Site.GetPage "/projects").Resources) "Title" -}}
+    {{ range $element := sort (.Site.GetPage "/sources").Resources "Title" -}}
     {{- $aspect := index (where $aspects "File.BaseFileName" "eq" $element.Params.aspect) 0 -}}
 
     <item>
