@@ -790,10 +790,11 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: var(--spacing-05) var(--spacing-1) var(--spacing-05) var(--spacing-05);
+    padding: 0 var(--spacing-1) 0 var(--spacing-05);
 
     a, button {
       display: block;
+      padding: var(--spacing-15) 0;
 
       i {
         display: inline-block;
