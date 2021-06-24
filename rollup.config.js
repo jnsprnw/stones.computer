@@ -11,7 +11,7 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'static/js/svelte.js'
+		file: 'assets/js/svelte.js'
 	},
 	plugins: [
 		svelte({
