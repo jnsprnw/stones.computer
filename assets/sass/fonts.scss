@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-MediumItalic.woff2') format('woff2'),
-      url('../fonts/Inter-MediumItalic.woff') format('woff');
+  src: url('../fonts/Inter-MediumItalic-subset.woff2') format('woff2'),
+      url('../fonts/Inter-MediumItalic-subset.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
-      url('../fonts/Inter-ExtraBold.woff') format('woff');
+  src: url('../fonts/Inter-ExtraBold-subset.woff2') format('woff2'),
+      url('../fonts/Inter-ExtraBold-subset.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
-      url('../fonts/Inter-Medium.woff') format('woff');
+  src: url('../fonts/Inter-Medium-subset.woff2') format('woff2'),
+      url('../fonts/Inter-Medium-subset.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
