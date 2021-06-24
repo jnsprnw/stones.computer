@@ -97,6 +97,10 @@ body {
       @include padding-sides-default-wide();
     }
   }
+
+  .intro-updated {
+    padding-top: var(--spacing-1);
+  }
 }
 
 .homepage-topics, .homepage-aspects {

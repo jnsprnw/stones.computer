@@ -178,6 +178,14 @@ p + p {
   margin-top: var(--spacing)
 }
 
+@mixin text-2 () {
+  font-size: var(--size-5);
+
+  @media print {
+    font-size: 10pt;
+  }
+}
+
 .homepage-intro div, .homepage-outro .outro {
   p, .homepage-logos {
     font-size: var(--size-3);
@@ -187,13 +195,9 @@ p + p {
   h4:not(:first-child) {
     margin-top: var(--spacing-2);
   }
-}
 
-@mixin text-2 () {
-  font-size: var(--size-5);
-
-  @media print {
-    font-size: 10pt;
+  .intro-updated {
+    @include text-2();
   }
 }
 
