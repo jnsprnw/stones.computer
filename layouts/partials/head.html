@@ -18,7 +18,7 @@
 
   <link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ .Site.Title }}">
 
-  {{ $svelte := resources.Get "js/svelte.js" | fingerprint }}
+  {{ $svelte := resources.Get "js/svelte.js" | js.Build (dict "minify" true) | fingerprint }}
   <script type="text/javascript" src="{{ $svelte.Permalink }}" integrity="{{ $svelte.Data.Integrity }}" defer></script>
 
   {{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) | fingerprint }}
