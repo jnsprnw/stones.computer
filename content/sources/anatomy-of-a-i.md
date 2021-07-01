@@ -6,6 +6,5 @@ year: 2018
 aspect: "invisibility"
 link: "https://anatomyof.ai"
 medium: "project"
-weight: 6
-notReferenced: true
+archiveOnly: true
 ---
