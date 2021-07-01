@@ -16,7 +16,7 @@
 	</div>
 	<aside>
 	  <ol class="list list-complex references" role="list">
-	  	{{ $content := where ((.context.Site.GetPage "/sources").Resources) "Params.aspect" .context.File.BaseFileName }}
+	  	{{ $content := where (where ((.context.Site.GetPage "/sources").Resources) "Params.aspect" .context.File.BaseFileName) "Params.archiveonly" "==" nil }}
 	  	{{ range $index, $element := $content }}
 				<li class="link reference" id="{{ .File.BaseFileName }}" role="listitem">
 					<a href="{{ .Params.link }}" target="_blank" rel="noopener" class="link-reference" title="External link to »{{ $element.Title }}«" rel="external">
