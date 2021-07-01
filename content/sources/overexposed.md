@@ -8,4 +8,5 @@ medium: "project"
 year: 2015
 tags: ["edward snowden", "nsa", "mass surveillance", "photographs"]
 notReferenced: true
+archiveOnly: true
 ---
