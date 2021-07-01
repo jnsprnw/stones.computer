@@ -11,7 +11,7 @@ More information on [https://gitlab.com/datwood/hugo-svelte](https://gitlab.com/
 ## Sources
 The file name is the short form of the title of the source in dash case, e.g. `the-stack.md`
 
-```
+```Markdown
 ---
 title: "The Stack: On Software and Sovereignty" # title of the source
 date: 2020-09-09T17:32:36+02:00 # date of the last edit
