@@ -7,5 +7,5 @@ link: "https://www.paolocirio.net/work/hd-stencils/overexposed/"
 medium: "project"
 year: 2015
 tags: ["edward snowden", "nsa", "mass surveillance", "photographs"]
-weight: 6
+notReferenced: true
 ---
