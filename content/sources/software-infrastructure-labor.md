@@ -10,4 +10,5 @@ year: 2016
 tags: ["software", "logistics", "infrastructure"]
 weight: 5
 notReferenced: true
+archiveOnly: true
 ---
