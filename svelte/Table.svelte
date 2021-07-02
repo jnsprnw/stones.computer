@@ -51,6 +51,8 @@
 		}
 	}
 
+	$: placeholder = items.length ? `Search in ${items.length} entries…` : 'Search…'
+
 	function selectMedium (medium) {
 		selectedMedium = selectedMedium === medium ? false : medium;
 		handleInput()
@@ -68,7 +70,7 @@
 	})
 </script>
 
-<input type="text" on:input={handleInput} placeholder="Search…" bind:this={input} class="search" role="search" />
+<input type="text" on:input={handleInput} placeholder={placeholder} bind:this={input} class="search" role="search" />
 
 <ul class="plain" role="feed">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
