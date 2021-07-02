@@ -8,4 +8,5 @@ medium: "project"
 year: 2019
 tags: ["partial histories, affects, and absences of place", "Historic Preservation Ordinance Zone"]
 notReferenced: true
+weight: 7
 ---
