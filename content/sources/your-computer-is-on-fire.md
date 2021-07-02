@@ -8,4 +8,5 @@ medium: "book"
 year: 2021
 tags: ["Techno-utopianism is dead: Now is the time to pay attention to the inequality, marginalization, and biases woven into our technological systems."]
 notReferenced: true
+weight: 9
 ---
