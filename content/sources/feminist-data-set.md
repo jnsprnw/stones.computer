@@ -8,4 +8,5 @@ medium: "project"
 year: 2017
 tags: ["AI", "public facing, social justice art practice", "data creation", "protest"]
 notReferenced: true
+weight: 6
 ---
