@@ -8,4 +8,5 @@ medium: "book"
 year: 2020
 tags: ["sinofuturist", "globalization", "metronormativity", "china"]
 notReferenced: true
+weight:5
 ---
