@@ -8,6 +8,6 @@ link: "https://www.lars-mueller-publishers.com/data-centers"
 medium: "book"
 year: 2020
 tags: ["privacy", "borders", "nationhood"]
-weight: 6
+weight: 7
 notReferenced: true
 ---
