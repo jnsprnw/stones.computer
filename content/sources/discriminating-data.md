@@ -8,4 +8,5 @@ medium: "book"
 year: 2021
 tags: ["Correlation, Neighborhoods, and the New Politics of Recognition", "How Big Data and machine learning encode discrimination and create agitated clusters of comforting rage"]
 notReferenced: true
+weight: 8
 ---
