@@ -7,4 +7,5 @@ aspect: "extractivism"
 link: "https://reports.phenomenalworld.org/inside-out/"
 medium: "project"
 notReferenced: true
+weight: 7
 ---
