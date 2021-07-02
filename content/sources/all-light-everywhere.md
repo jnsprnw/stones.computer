@@ -9,5 +9,5 @@ medium: "film"
 year: 2021
 tags: ["histories of cameras", "weapons", "policing", "justice"]
 notReferenced: true
-archiveOnly: true
+weight: 7
 ---
