@@ -4,7 +4,7 @@ Collection of resources about **post-digital materiality** compiled by [Jonas](h
 
 → [stones.computer](https://stones.computer)
 
-The website is mostly powered by Hugo. Some interactive parts are rendered by Svelte. We use `npm-run-all` to run both processes at the same time. Svelte build its script into the assets folder, where it is then loaded by Hugo.
+The website is mostly powered by Hugo. Some interactive parts are rendered by Svelte. We use `npm-run-all` to run both processes at the same time. Svelte builds its script into the assets folder, where it is then loaded by Hugo.
 
 More information on [https://gitlab.com/datwood/hugo-svelte](https://gitlab.com/datwood/hugo-svelte).
 
@@ -22,7 +22,7 @@ link: "https://mitpress.mit.edu/books/stack" # link to the source
 medium: "book" # the medium of the source
 year: 2016 # release year
 tags: ["The Stack", "accidental megastructure","planetary-scale computation", "diagram"] # tags that help the search on the archive page
-weight: 1 # number in the sidebar of the aspect
+weight: 1 # number in the sidebar of the aspect and also the ordering
 notReferenced: true # if the source is not directly referenced in the text
 archiveOnly: true # if the source is just displayed in the archive
 ---
