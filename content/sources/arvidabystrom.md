@@ -6,6 +6,6 @@ year: 2020
 aspect: "digital-human"
 link: "https://www.instagram.com/arvidabystrom/"
 medium: "project"
-weight: 7
+weight: 8
 notReferenced: true
 ---
