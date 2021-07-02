@@ -1,5 +1,5 @@
 ---
-title: "Sedimentary Exits: Field Notes for Public Longing"
+title: "Sedimentary Exits"
 date: 2021-07-01T13:58:08+02:00
 aspect: "data-landscapes"
 authors: ["Romi Morrison"]
