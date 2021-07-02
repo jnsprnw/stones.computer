@@ -8,4 +8,5 @@ medium: "book"
 year: 2006
 tags: ["Timothy Druckrey", "Archaeology of Hearing and Seeing by Technical Means"]
 notReferenced: true
+weight: 6
 ---
