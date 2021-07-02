@@ -8,6 +8,6 @@ link: "https://www.diaphanes.net/titel/timing-of-affect-2519"
 medium: "book"
 year: 2014
 tags: ["epistemologies", "aesthetics", "politics"]
-weight: 6
+weight: 7
 notReferenced: true
 ---
