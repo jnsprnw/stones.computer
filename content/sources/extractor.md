@@ -9,5 +9,5 @@ medium: "board game"
 year: 2019
 tags: ["resource mining", "data domination", "game"]
 notReferenced: true
-weight: 7
+weight: 6
 ---
