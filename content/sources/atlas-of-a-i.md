@@ -8,4 +8,5 @@ medium: "book"
 year: 2021
 tags: ["Power, Politics, and the Planetary Costs of Artificial Intelligence"]
 notReferenced: true
+weight: 8
 ---
