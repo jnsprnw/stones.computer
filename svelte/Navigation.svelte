@@ -53,5 +53,5 @@
   {#each anchors as { id, label }, i}
   <a href="#{id}" on:click|preventDefault={() => scrollTo(id)} class="internal" class:isActive={i === currentActive }><i>{ @html getIcon(i, currentActive) }</i> { label }</a>
   {/each}
-  <a href="/archive"><i>↗</i> <strong class="archive">Archive</strong></a>
+  <a href="/archive" rel="search"><i>↗</i> <strong class="archive">Archive</strong></a>
 </nav>
