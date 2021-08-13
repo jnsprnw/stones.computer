@@ -19,7 +19,7 @@
 	  	{{ $content := where (where ((.context.Site.GetPage "/sources").Resources) "Params.aspect" .context.File.BaseFileName) "Params.archiveonly" "==" nil }}
 	  	{{ range $index, $element := $content }}
 				<li class="link reference" id="{{ .File.BaseFileName }}" role="listitem">
-					<a href="{{ .Params.link }}" target="_blank" rel="noopener" class="link-reference" title="External link to »{{ $element.Title }}«" rel="external">
+					<a href="{{ .Params.link }}" target="_blank" class="link-reference" title="External link to »{{ $element.Title }}«" rel="noopener noreferrer external">
 						<span class="reference-counter">{{ if not $element.Params.notReferenced }}{{ add $index 1 }}{{ end }}</span>
 						<h4 class="link-title">{{ $element.Title }}</h4>
 						<span class="reference-description">{{ with $element.Params.authors }}{{ delimit . ", " " and " }}; {{ end }}{{ with $element.Params.year }}{{ . }}{{ end }}</span>
