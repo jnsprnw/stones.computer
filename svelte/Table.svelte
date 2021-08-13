@@ -75,7 +75,7 @@
 <ul class="plain" role="feed">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
 	<li>
-		<a href="{link}" class="link-table" target="_blank" rel="noopener">
+		<a href="{link}" class="link-table" target="_blank" rel="noopener noreferrer external">
 			<span class="title">{ title }</span>
 			<span class="authors">{ authors }</span>
 			<span class="year">{ year }</span>
