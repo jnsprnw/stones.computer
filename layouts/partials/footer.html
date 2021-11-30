@@ -1,5 +1,5 @@
 <footer class="wrapper page-footer" role="contentinfo">
-	<span>Last updated <time datetime="{{ now.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ now.Format "Monday, 02 January 2006 15:04:05 MST" }}">{{ now.Format "January 2006"}}</time> – <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons</a>
+	<span>Last updated <time datetime="{{ now.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ now.Format "Monday, 02 January 2006 15:04:05 MST" }}" itemprop="dateModified">{{ now.Format "January 2006"}}</time> – <a rel="license" itemprop="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons</a>
 		{{ with .Site.Params.source -}}
 		– <a href="{{ . }}">Source on Github</a>
 		{{ end -}}

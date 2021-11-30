@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="theme-light">
   {{ partial "head.html" . }}
-  <body>
+  <body itemscope itemtype="https://schema.org/CreativeWork">
   	{{ if .IsHome }}<div class="homepage-navigation" id="navigation" role="navigation"></div>{{ end }}
     <main id="main" role="main">
     	{{ block "main" . }}{{ end }}

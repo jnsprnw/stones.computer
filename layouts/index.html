@@ -3,8 +3,8 @@
   <div>
     <header class="homepage-header" role="banner" id="intro">
       <div class="wrapper">
-        <span class="info">Collection of resources about<br> <strong>post-digital materiality</strong><br> compiled by <a href="https://jonasparnow.com" rel="author">Jonas <i class="reference-icon">↗</i></a> and <a href="http://paulheinicker.com/" rel="author">Paul <i class="reference-icon">↗</i></a></span>
-        <h1 class="page-title" role="heading" aria-level="1">Stones <br>that calculate</h1>
+        <span class="info"><span itemprop="learningResourceType">Collection of resources</span> about<br> <strong itemprop="about">post-digital materiality</strong><br> compiled by <a href="https://jonasparnow.com" rel="author">Jonas <i class="reference-icon">↗</i></a> and <a href="http://paulheinicker.com/" rel="author">Paul <i class="reference-icon">↗</i></a></span>
+        <h1 class="page-title" role="heading" aria-level="1" itemprop="name">Stones <br>that calculate</h1>
       </div>
     </header>
     <section class="homepage-intro">
@@ -12,7 +12,7 @@
         {{ with .Site.GetPage "intro.md" }}
           {{ .Content }}
         {{ end }}
-        <p class="intro-updated">Last updated <time datetime="{{ now.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ now.Format "Monday, 02 January 2006 15:04:05 MST" }}">{{ now.Format "January 2006"}}</time> to <a href="https://github.com/z3to/stones.computer/releases/">version {{ .Site.Params.version }}</a>.</p>
+        <p class="intro-updated">Last updated <time datetime="{{ now.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ now.Format "Monday, 02 January 2006 15:04:05 MST" }}" itemprop="dateModified">{{ now.Format "January 2006"}}</time> to <a href="https://github.com/z3to/stones.computer/releases/">version <span itemprop="version">{{ .Site.Params.version }}</span></a>.</p>
       </div>
     </section>
     <section class="homepage-topics" id="topics">
