@@ -11,3 +11,13 @@ HUGO_ENABLEGITINFO = "true"
   for = "/*"
   [headers.values]
     Permissions-Policy = "interest-cohort=()"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    cache-control = "max-age=31536000"
+
+[[headers]]
+  for = "/sass/*"
+  [headers.values]
+    cache-control = "max-age=31536000"
