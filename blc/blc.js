@@ -5,7 +5,7 @@ const brokenLinks = [];
 let currentPage = '';
 let countBroken = 0;
 let countLinks = 0;
-const URL = 'https://jonasparnow.com';
+const URL = 'https://stones.computer';
 
 const siteChecker = new SiteChecker({
 	excludedKeywords: ['//res.cloudinary.com/', '//linkedin.com/']
