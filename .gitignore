@@ -13,6 +13,7 @@ $RECYCLE.BIN/
 .DS_Store
 /node_modules
 /static/js
+/blc/node_modules
 
 npm-debug.log
 /static/js/svelte.js

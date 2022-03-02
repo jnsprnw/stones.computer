@@ -1,0 +1,16 @@
+{
+  "name": "broken-link-checker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build blc.js -o bin -m"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "broken-link-checker": "^0.7.8"
+  }
+}

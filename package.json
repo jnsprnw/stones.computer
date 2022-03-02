@@ -14,7 +14,8 @@
     "build": "rollup -c; hugo --gc",
     "autobuild": "rollup -c -w",
     "dev": "run-p autobuild hugo:dev",
-    "hugo:dev": "hugo server --bind=0.0.0.0 -D"
+    "hugo:dev": "hugo server --bind=0.0.0.0 -D",
+    "action": "node ./blc/bin/index.js"
   },
   "dependencies": {
     "d3-scale": "^3.2.1",

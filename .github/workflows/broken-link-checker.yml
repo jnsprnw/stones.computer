@@ -1,0 +1,32 @@
+name: Broken Link Checker
+on: 
+  push:
+  schedule:
+    - cron:  '0 0 1 1-12 *'
+jobs:
+  BrokenLinkChecker:
+    runs-on: ubuntu-latest
+    outputs:
+      content: ${{ steps.scraper.outputs.content }}
+      countBroken: ${{ steps.scraper.outputs.countBroken }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Run the broken link checker script
+        id: scraper
+        run: npm run action
+  BrokeLinkPoster:
+    needs: [ BrokenLinkChecker ]
+    if: needs.BrokenLinkChecker.outputs.countBroken > 0
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create an issue
+        uses: actions-ecosystem/action-create-issue@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          title: This month’s broken links
+          body: ${{ needs.BrokenLinkChecker.outputs.content }}
+          labels: broken links
