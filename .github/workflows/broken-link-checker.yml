@@ -1,6 +1,5 @@
 name: Broken Link Checker
 on: 
-  push:
   schedule:
     - cron:  '0 0 1 1-12 *'
 jobs:
@@ -17,7 +16,7 @@ jobs:
           node-version: '14'
       - name: Run the broken link checker script
         id: scraper
-        run: npm run action
+        run: node ./blc/bin/index.js
   BrokeLinkPoster:
     needs: [ BrokenLinkChecker ]
     if: needs.BrokenLinkChecker.outputs.countBroken > 0
