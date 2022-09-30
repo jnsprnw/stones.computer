@@ -17,7 +17,7 @@
     "hugo:dev": "hugo server --bind=0.0.0.0 -D"
   },
   "dependencies": {
-    "d3-scale": "^3.2.1",
+    "d3-scale": "^4.0.2",
     "fuse.js": "^6.4.0",
     "lodash": "^4.17.19"
   }
