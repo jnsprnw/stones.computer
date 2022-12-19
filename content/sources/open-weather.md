@@ -6,5 +6,6 @@ year: 2019
 aspect: "epistemic-traces"
 link: "http://www.sashaengelmann.com/amateur-radio"
 medium: "project"
+weight: 7
 notReferenced: true
 ---
