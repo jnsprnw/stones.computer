@@ -2,9 +2,9 @@
 title: "Geological Filmmaking"
 date: 2020-09-09T17:32:36+02:00
 authors: ["Sasha Litvintseva"]
-year: 2019
+year: 2022
 aspect: "epistemic-traces"
-link: "https://www.sashalitvintseva.com/geologicalfilmmaking"
-medium: "project"
+link: "http://www.openhumanitiespress.org/books/titles/geological-filmmaking/"
+medium: "book"
 notReferenced: true
 ---
