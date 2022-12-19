@@ -6,5 +6,6 @@ year: 2022
 aspect: "epistemic-traces"
 link: "http://www.openhumanitiespress.org/books/titles/geological-filmmaking/"
 medium: "book"
+weight: 8
 notReferenced: true
 ---
