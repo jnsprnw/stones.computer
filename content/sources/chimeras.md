@@ -1,5 +1,5 @@
 ---
-title: "Chimeras: Inventory of synthetic cognition)"
+title: "Chimeras: Inventory of synthetic cognition"
 date: 2020-09-09T17:32:36+02:00
 authors: ["Ilan Manouach and Anna Engelhardt"]
 year: 2022
