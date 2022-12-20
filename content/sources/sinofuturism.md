@@ -6,5 +6,6 @@ year: 2016
 aspect: "non-human"
 link: "https://vimeo.com/179509486"
 medium: "project"
+weight: 7
 notReferenced: true
 ---
