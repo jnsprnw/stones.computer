@@ -1,6 +1,6 @@
 ---
 title: "Geological Filmmaking"
-date: 2020-09-09T17:32:36+02:00
+date: 2022-12-21T15:17:12+01:00
 authors: ["Sasha Litvintseva"]
 year: 2022
 aspect: "epistemic-traces"
