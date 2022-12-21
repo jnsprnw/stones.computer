@@ -70,7 +70,7 @@
 	})
 </script>
 
-<input type="text" on:input={handleInput} placeholder={placeholder} bind:this={input} class="search" role="search" />
+<input type="search" on:input={handleInput} placeholder={placeholder} bind:this={input} class="search" />
 
 <ul class="plain" role="feed">
 	{#each result as { title, authors, aspect, topic, aspect, aspectID, year, link }}
