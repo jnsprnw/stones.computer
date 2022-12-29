@@ -8,4 +8,5 @@ link: "https://asunder.earth/"
 medium: "project"
 year: 2019
 tags: ["planetary boundaries", "super-computer and Machine Learning image-making techniques", "Satellite, climate, geology, biodiversity and topography"]
+notReferenced: true
 ---
