@@ -8,4 +8,5 @@ link: "https://www.dukeupress.edu/assembly-codes"
 medium: "book"
 year: 2021
 tags: ["Globalization and Neoliberalism", "Science and Technology Studies", "Media Studies", "Fred Moten, Ebony Coletu, Shannon Mattern, Liam Cole Young, Ned Rossiter, Michael Palm, Kay Dickinson, Tung-Hui Hu, John Durham Peters, Stefano Harney"]
+archiveOnly: true
 ---
