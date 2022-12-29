@@ -8,4 +8,5 @@ link: "https://www.urbanomic.com/book/parallel-minds/"
 medium: "book"
 year: 2022
 tags: ["chemistry, synthetic biology, nanotech", "nature and culture", "interact intelligently"]
+archiveOnly: true
 ---
