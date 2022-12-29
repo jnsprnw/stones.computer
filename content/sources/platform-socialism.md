@@ -1,5 +1,5 @@
 ---
-title: "Platform Socialism – How to Reclaim our Digital Future from Big Tech"
+title: "Platform Socialism"
 date: 2022-12-21T11:11:24+01:00
 draft: false
 aspect: "monopolies"
