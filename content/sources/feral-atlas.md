@@ -8,4 +8,5 @@ link: "https://feralatlas.org/"
 medium: "website"
 year: 2021
 tags: ["scientists, humanists, and artists", "infrastructures", "human-built"]
+archiveOnly: true
 ---
