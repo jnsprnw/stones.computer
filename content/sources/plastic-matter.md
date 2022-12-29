@@ -8,4 +8,5 @@ link: "https://www.dukeupress.edu/plastic-matter"
 medium: "book"
 year: 2022
 tags: ["Queer Theory", "Media Studies", "Environmental Studies"]
+archiveOnly: true
 ---
