@@ -8,4 +8,5 @@ link: "https://www.aup.nl/en/book/9789463727426/media-infrastructures-and-the-po
 medium: "book"
 year: 2022
 tags: ["Hardwired Temporalities", "technical networks", "North American", "Europe", "Germany"]
+archiveOnly: true
 ---
