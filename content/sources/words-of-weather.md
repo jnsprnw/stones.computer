@@ -1,5 +1,5 @@
 ---
-title: "Words of Weather – A glossary"
+title: "Words of Weather"
 date: 2022-12-21T15:17:56+01:00
 draft: false
 aspect: "mediamateriality"
