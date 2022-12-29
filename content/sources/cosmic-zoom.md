@@ -1,5 +1,5 @@
 ---
-title: "The Cosmic Zoom – Scale, Knowledge, and Mediation"
+title: "Cosmic Zoom – Scale, Knowledge, and Mediation"
 date: 2022-12-21T15:17:27+01:00
 draft: false
 aspect: "upscaling"
