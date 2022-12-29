@@ -8,4 +8,5 @@ link: "https://read.dukeupress.edu/books/book/2684/Wild-Blue-MediaThinking-throu
 medium: "book"
 year: 2020
 tags: ["orientation", materiality", "saturation", "science fiction narratives", "documentary films", "ocean data visualizations", "animal communication methods", "underwater art"]
+archiveOnly: true
 ---
