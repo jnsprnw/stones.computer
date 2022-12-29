@@ -8,4 +8,5 @@ link: "https://www.sup.org/books/title/?id=28816"
 medium: "book"
 year: 2019
 tags: ["land, bodies, and natural resources", "pervasive datafication", "Colonialism"]
+archiveOnly: true
 ---
