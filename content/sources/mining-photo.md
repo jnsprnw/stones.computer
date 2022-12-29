@@ -1,5 +1,5 @@
 ---
-title: "Mining Photography – The Ecological Footprint of Image Production"
+title: "Mining Photography"
 date: 2020-09-09T17:32:36+02:00
 authors: ["Esther Ruelfs"]
 year: 2022
