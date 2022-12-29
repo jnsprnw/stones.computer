@@ -8,4 +8,5 @@ link: "https://lithium.hetnieuweinstituut.nl/en/publication-lithium-states-exhau
 medium: "book"
 year: 2021
 tags: ["activists, biologists, academics, journalists, architects, and philosophers", "transition to renewable energies", "mania and depression"]
+notReferenced: true
 ---
