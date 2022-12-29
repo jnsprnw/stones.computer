@@ -8,4 +8,5 @@ link: "https://www.legacyrussell.com/GLITCHFEMINISM"
 medium: "project"
 year: 2020
 tags: ["Manifesto", "error", "gender, technology, and the body", "Juliana Huxtable, Sondra Perry, boychild, Victoria Sin, and Kia LaBeija"]
+archiveOnly: true
 ---
