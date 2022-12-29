@@ -10,5 +10,6 @@ year: 2019
 tags: ["extraction", "capitalism", "neoliberalism", "empire"]
 weight: 7
 notReferenced: true
+archiveOnly: true
 ---
 
