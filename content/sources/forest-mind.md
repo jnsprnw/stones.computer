@@ -8,4 +8,5 @@ link: "https://spectorbooks.com/forest-mind-en"
 medium: "book"
 year: 2022
 tags: ["Indigenous University with the Inga people of Colombia", "colonial conquest and natural science intertwine"]
+archiveOnly: true
 ---
