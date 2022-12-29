@@ -9,4 +9,5 @@ medium: "paper"
 year: 2021
 tags: ["corporate interests", "end-to-end, permissionless innovation, and openness", "policy and technology"]
 notReferenced: true
+archiveOnly: true
 ---
