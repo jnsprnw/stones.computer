@@ -8,4 +8,5 @@ link: "https://www.harpercollins.com/products/zeros-and-ones-digital-women-and-t
 medium: "book"
 year: 1997
 tags: ["women’s natural relationship with modern technology", "feminism, machines and in particular, information technology"]
+archiveOnly: true
 ---
