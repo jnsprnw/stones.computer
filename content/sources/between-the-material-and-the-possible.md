@@ -8,4 +8,5 @@ link: "https://mitpress.mit.edu/9783956796005/"
 medium: "book"
 year: 2022
 tags: [" space settlements", "repurposing blockchain infrastructures", "financial instruments for redistributive purposes", "diagrammatic potential of infrastructural thinking", "infrastructural hypotheses"]
+archiveOnly: true
 ---
