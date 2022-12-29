@@ -1,5 +1,5 @@
 ---
-title: "Climatic Media – Transpacific Experiments in Atmospheric Control"
+title: "Climatic Media"
 date: 2022-12-21T15:21:30+01:00
 draft: false
 aspect: "mediamateriality"
