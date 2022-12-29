@@ -8,4 +8,5 @@ link: "https://press.uchicago.edu/ucp/books/book/chicago/M/bo63097564.html"
 medium: "book"
 year: 2021
 tags: ["philosophers, geographers, theologians", "Cartography", "Cultural and Historical Geography", "History of Science"]
+archiveOnly: true
 ---
