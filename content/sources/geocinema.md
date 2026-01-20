@@ -7,6 +7,15 @@ people: ["Alexey Orlov"]
 aspect: "epistemic-traces"
 link: "http://geocinema.network/"
 medium: "project"
-tags: ["planetary-scale sensory networks", "infrastructural architectures", "obscured labour,", "dissonant weather", "governmental policies", "scientific management", "episodic research"]
+tags:
+  [
+    "planetary-scale sensory networks",
+    "infrastructural architectures",
+    "obscured labour,",
+    "dissonant weather",
+    "governmental policies",
+    "scientific management",
+    "episodic research",
+  ]
 weight: 6
 ---
