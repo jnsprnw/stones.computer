@@ -8,9 +8,6 @@
 
   {{ partial "opengraph.html" . }}
   {{ template "_internal/schema.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:creator" content="@paulpunkt"/>
-  <meta name="twitter:creator" content="@zeto"/>
 
   <link rel="me" href="https://vis.social/@paulpunkt" />
   <link rel="me" href="https://vis.social/@jonas" />
@@ -28,19 +25,6 @@
 
   {{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) | fingerprint }}
   <script type="text/javascript" src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
-
-  <script type="text/javascript">
-    var _paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//mmmd.uber.space/matomo/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '2']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
 
   <script type="application/ld+json">
     {
@@ -72,7 +56,7 @@
       "datePublished": "2020-09-09T19:01:00.00Z",
       "dateModified": "{{ now.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
       "url": "{{ printf "%s" .Site.BaseURL }}",
-      "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+      "inLanguage": {{ .Site.LanguageCode | default "en-gb" }},
       "isFamilyFriendly": "true",
       "educationalUse": "syllabus",
       "isAccessibleForFree": "true",
