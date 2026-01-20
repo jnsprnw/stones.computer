@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" class="theme-light">
+<html lang="en-gb" class="theme-light">
   {{ partial "head.html" . }}
   <body itemscope itemtype="https://schema.org/CreativeWork">
-  	{{ if .IsHome }}<div class="homepage-navigation" id="navigation" role="navigation"></div>{{ end }}
-    <main id="main" role="main">
-    	{{ block "main" . }}{{ end }}
-    </main>
+    {{ if .IsHome }}
+    <div class="homepage-navigation" id="navigation" role="navigation"></div>
+    {{ end }}
+    <main id="main" role="main">{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
   </body>
 </html>
